@@ -1,0 +1,26 @@
+.gioi-thieu {
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 66.67% 33.33%;
+    padding: 16px 0;
+}
+
+.carousel-indicators button{ 
+    width: 10px !important; 
+    height: 10px !important; 
+    border-radius: 100%; 
+}
+
+.gt.item {
+    height: auto;
+    box-sizing: content-box;
+    padding: 10px;
+}
+
+.gt.item-1 {
+    grid-row: 1 / 3;
+}
+
+.gt.item-2 {
+    padding-bottom: 5px;
+}

@@ -1,0 +1,54 @@
+.san-pham-ban-chay {
+    background-color: bisque;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.spbc.card {
+    width: 180px;
+    padding: 10px;
+    margin: 12px;
+    border-radius: 15px;
+    border: none;
+}
+
+.spbc .card-body .card-text span{
+    font-size: medium;
+    font-weight: 400;
+}
+
+.spbc .card-body .card-text.text-secondary {
+    text-decoration:line-through 1px solid;
+}
+
+.spbc .card-body .card-text.so-luong {
+    background-color:lightgray;
+    box-sizing: border-box;
+    padding: 2px 10px;
+    margin-bottom: 5px;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.spbc .card-body .card-text.so-luong p {
+    font-size: small;
+    font-weight: bold;
+}
+
+.spbc .card-body .btn-chon-mua {
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.spbc .card-body .giam-gia {
+    border-radius: 15px 2px 15px 2px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, orange , red)
+}
+
+.spbc-title {
+    text-align: center;
+    color: white;
+}

@@ -12,6 +12,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    border-radius: 25px;
+}
+
 .header {
     background-image: url("./Images/header_desktop_a4bfadd206.webp");
     background-size: cover;
@@ -121,33 +125,5 @@ a {
     display: none;
 }
 
-.gioi-thieu {
-    background-color: aliceblue;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 66.67% 33.33%;
-    padding: 16px 0;
-}
 
-.carousel-indicators button{ 
-    width: 10px !important; 
-    height: 10px !important; 
-    border-radius: 100%; 
-}
 
-.item {
-    height: auto;
-}
-
-.item-1 {
-    grid-row: 1 / 3;
-    margin-right: 6px;
-}
-
-.item-2-3 {
-    margin-left: 6px;
-}
-
-.item-2 {
-    margin-bottom: 12px;
-}
