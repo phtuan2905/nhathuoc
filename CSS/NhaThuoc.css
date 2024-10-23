@@ -77,22 +77,14 @@ img {
     width: 50% !important;
 }
 
-.dang-nhap-btn, .gio-hang-btn {
-    background-color: rgb(55, 100, 223);
-    height: 55px;
-    width:fit-content !important;
-    box-sizing:border-box;
-    padding: 15px 5px;
+.dang-nhap a {
+    text-decoration: 0;
 }
 
-.dang-nhap-btn {
-    background: none;
-}
-
-.dang-nhap-btn a, .gio-hang-btn a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.gio-hang a {
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin: 5px;
 }
 
 .header-p3 {

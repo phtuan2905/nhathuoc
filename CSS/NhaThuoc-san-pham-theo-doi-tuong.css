@@ -1,3 +1,31 @@
 .sptdt.carousel.slide {
     background-color: lightblue;
 }
+
+.sptdt .carousel-inner {
+    padding: 10px 0;
+}
+
+.sptdt.carousel-inner {
+    background-color:steelblue;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.sptdt-indicator {
+    height: fit-content;
+}
+
+.sptdt-indicator button {
+    box-sizing: border-box;
+    padding: 8px 15px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+}

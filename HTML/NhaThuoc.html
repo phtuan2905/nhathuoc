@@ -28,7 +28,7 @@
     
             <div class="row no-gutters header-p2">
                 <div class="logo col-sm-12 col-lg-3 row">
-                    <a href=""><img src="../Images//NhaThuocLogo.png" alt="Logo Nha Thuoc" class="logo-img"></a>
+                    <a href="./NhaThuoc.html"><img src="../Images//NhaThuocLogo.png" alt="Logo Nha Thuoc" class="logo-img"></a>
                 </div>
                 <div class="search-bar col-sm-8 col-lg-6">
                     <span class="rounded-pill">
@@ -40,16 +40,12 @@
                         </div>
                     </span>
                 </div>
-                <div class="col-sm-4 col-lg-3 d-flex justify-content-center row">
-                    <div class="dang-nhap d-flex justify-content-center row">
-                        <span class="rounded-pill row dang-nhap-btn">
-                            <a href="" class="hp2-btn"><i class="fa-solid fa-user"></i> Đăng nhập</a>
-                        </span>
+                <div class="col-sm-4 col-lg-3 position-relative d-flex justify-content-evenly">
+                    <div class="dang-nhap d-flex align-items-center">
+                        <a href="" class="btn btn-link text-light"><i class="fa-solid fa-user"></i> Đăng nhập</a>
                     </div>
-                    <div class="gio-hang d-flex justify-content-center row">
-                        <span class="rounded-pill row gio-hang-btn">
-                            <a href="" class="hp2-btn"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a>
-                        </span>
+                    <div class="gio-hang d-flex align-items-center">
+                        <a href="" class="btn text-light btn-primary"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a>
                     </div>
                 </div>
                 
@@ -129,15 +125,12 @@
         <section class="gioi-thieu">
             <div class="gt item-1 item">
                 <div id="gt-slide" class="carousel slide" data-bs-ride="carousel">
-
-                    <!-- Indicators/dots -->
                     <div class="gt carousel-indicators">
                       <button type="button" data-bs-target="#gt-slide" data-bs-slide-to="0" class="active"></button>
                       <button type="button" data-bs-target="#gt-slide" data-bs-slide-to="1"></button>
                       <button type="button" data-bs-target="#gt-slide" data-bs-slide-to="2"></button>
                     </div>
                   
-                    <!-- The slideshow/carousel -->
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <a href="">
@@ -252,180 +245,182 @@
         </section>
 
         <section class="san-pham-theo-doi-tuong position-relative">
-            <div id="sptdt-slide" class="sptdt carousel slide" data-bs-ride="carousel">
-                <!-- Indicators/dots -->
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#sptdt-slide" data-bs-slide-to="0" class="active"></button>
-                  <button type="button" data-bs-target="#sptdt-slide" data-bs-slide-to="1"></button>
-                  <button type="button" data-bs-target="#sptdt-slide" data-bs-slide-to="2"></button>
+            <div id="sptdt-slide" class="sptdt carousel slide">
+                <div>
+                    <h4><i class="fa-solid fa-users"></i> Sản phẩm theo đối tượng</h4>
+                </div>
+
+                <div class="sptdt-indicator">
+                    <button type="button" data-bs-target="#sptdt-slide" data-bs-slide-to="0" class="active">Trẻ em</button>
+                    <button type="button" data-bs-target="#sptdt-slide" data-bs-slide-to="1">Mẹ và bé</button>
+                    <button type="button" data-bs-target="#sptdt-slide" data-bs-slide-to="2">Làm đẹp</button>
                 </div>
               
-                <!-- The slideshow/carousel -->
-                <div class="carousel-inner">
-                  <div class="carousel-item active" style="background-color: red;">
-                    <div class="row row-cols-sm-2 row-cols-md-6 gx-4 gy-4">
-                        <div class="col">
-                            <div class="sp card">
-                                <div class="card-body p-0 d-flex flex-column">
-                                    <a href="" class=>
-                                        <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
-                                        <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín dung dịch vệ sinh dung dịch vệ sinh dung dịch vệ sinh</h6>
-                                    </a>
-                                    <h5 class="card-text text-primary">
-                                        1.000.000đ <span>/ Hộp</span>
-                                    </h5>
-                                    <h6 class="card-text text-secondary">
-                                        1.250.000đ
-                                    </h6>
-                                    <div class="card-text so-luong">
-                                        <p class="text-muted">
-                                            Hộp 1 tỉ viên
-                                        </p>
+                <div class="sptdt carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row row-cols-sm-2 row-cols-md-6 gx-4 gy-4">
+                            <div class="col">
+                                <div class="sp card">
+                                    <div class="card-body p-0 d-flex flex-column">
+                                        <a href="" class=>
+                                            <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
+                                            <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín dung dịch vệ sinh dung dịch vệ sinh dung dịch vệ sinh</h6>
+                                        </a>
+                                        <h5 class="card-text text-primary">
+                                            1.000.000đ <span>/ Hộp</span>
+                                        </h5>
+                                        <h6 class="card-text text-secondary">
+                                            1.250.000đ
+                                        </h6>
+                                        <div class="card-text so-luong">
+                                            <p class="text-muted">
+                                                Hộp 1 tỉ viên
+                                            </p>
+                                        </div>
+                                        <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                        <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
+                                            -20%
+                                        </span>
                                     </div>
-                                    <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
-                                    <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
-                                        -20%
-                                    </span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="sp card">
-                                <div class="card-body p-0 d-flex flex-column">
-                                    <a href="" class=>
-                                        <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
-                                        <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín</h6>
-                                    </a>
-                                    <h5 class="card-text text-primary">
-                                        1.000.000đ <span>/ Hộp</span>
-                                    </h5>
-                                    <h6 class="card-text text-secondary">
-                                        1.250.000đ
-                                    </h6>
-                                    <div class="card-text so-luong">
-                                        <p class="text-muted">
-                                            Hộp 1 tỉ viên
-                                        </p>
+                            <div class="col">
+                                <div class="sp card">
+                                    <div class="card-body p-0 d-flex flex-column">
+                                        <a href="" class=>
+                                            <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
+                                            <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín</h6>
+                                        </a>
+                                        <h5 class="card-text text-primary">
+                                            1.000.000đ <span>/ Hộp</span>
+                                        </h5>
+                                        <h6 class="card-text text-secondary">
+                                            1.250.000đ
+                                        </h6>
+                                        <div class="card-text so-luong">
+                                            <p class="text-muted">
+                                                Hộp 1 tỉ viên
+                                            </p>
+                                        </div>
+                                        <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                        <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
+                                            -20%
+                                        </span>
                                     </div>
-                                    <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
-                                    <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
-                                        -20%
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item" style="background-color: blue;">
-                    <div class="row row-cols-sm-2 row-cols-md-6 gx-4 gy-4">
-                        <div class="col">
-                            <div class="sp card">
-                                <div class="card-body p-0 d-flex flex-column">
-                                    <a href="" class=>
-                                        <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
-                                        <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín dung dịch vệ sinh dung dịch vệ sinh dung dịch vệ sinh</h6>
-                                    </a>
-                                    <h5 class="card-text text-primary">
-                                        1.000.000đ <span>/ Hộp</span>
-                                    </h5>
-                                    <h6 class="card-text text-secondary">
-                                        1.250.000đ
-                                    </h6>
-                                    <div class="card-text so-luong">
-                                        <p class="text-muted">
-                                            Hộp 1 tỉ viên
-                                        </p>
-                                    </div>
-                                    <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
-                                    <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
-                                        -20%
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="sp card">
-                                <div class="card-body p-0 d-flex flex-column">
-                                    <a href="" class=>
-                                        <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
-                                        <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín</h6>
-                                    </a>
-                                    <h5 class="card-text text-primary">
-                                        1.000.000đ <span>/ Hộp</span>
-                                    </h5>
-                                    <h6 class="card-text text-secondary">
-                                        1.250.000đ
-                                    </h6>
-                                    <div class="card-text so-luong">
-                                        <p class="text-muted">
-                                            Hộp 1 tỉ viên
-                                        </p>
-                                    </div>
-                                    <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
-                                    <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
-                                        -20%
-                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                  </div>
-                  <div class="carousel-item" style="background-color: green;">
-                    <div class="row row-cols-sm-2 row-cols-md-6 gx-4 gy-4">
-                        <div class="col">
-                            <div class="sp card">
-                                <div class="card-body p-0 d-flex flex-column">
-                                    <a href="" class=>
-                                        <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
-                                        <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín dung dịch vệ sinh dung dịch vệ sinh dung dịch vệ sinh</h6>
-                                    </a>
-                                    <h5 class="card-text text-primary">
-                                        1.000.000đ <span>/ Hộp</span>
-                                    </h5>
-                                    <h6 class="card-text text-secondary">
-                                        1.250.000đ
-                                    </h6>
-                                    <div class="card-text so-luong">
-                                        <p class="text-muted">
-                                            Hộp 1 tỉ viên
-                                        </p>
+                    <div class="carousel-item">
+                        <div class="row row-cols-sm-2 row-cols-md-6 gx-4 gy-4">
+                            <div class="col">
+                                <div class="sp card">
+                                    <div class="card-body p-0 d-flex flex-column">
+                                        <a href="" class=>
+                                            <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
+                                            <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín dung dịch vệ sinh dung dịch vệ sinh dung dịch vệ sinh</h6>
+                                        </a>
+                                        <h5 class="card-text text-primary">
+                                            1.000.000đ <span>/ Hộp</span>
+                                        </h5>
+                                        <h6 class="card-text text-secondary">
+                                            1.250.000đ
+                                        </h6>
+                                        <div class="card-text so-luong">
+                                            <p class="text-muted">
+                                                Hộp 1 tỉ viên
+                                            </p>
+                                        </div>
+                                        <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                        <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
+                                            -20%
+                                        </span>
                                     </div>
-                                    <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
-                                    <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
-                                        -20%
-                                    </span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="sp card">
-                                <div class="card-body p-0 d-flex flex-column">
-                                    <a href="" class=>
-                                        <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
-                                        <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín</h6>
-                                    </a>
-                                    <h5 class="card-text text-primary">
-                                        1.000.000đ <span>/ Hộp</span>
-                                    </h5>
-                                    <h6 class="card-text text-secondary">
-                                        1.250.000đ
-                                    </h6>
-                                    <div class="card-text so-luong">
-                                        <p class="text-muted">
-                                            Hộp 1 tỉ viên
-                                        </p>
+                            <div class="col">
+                                <div class="sp card">
+                                    <div class="card-body p-0 d-flex flex-column">
+                                        <a href="" class=>
+                                            <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
+                                            <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín</h6>
+                                        </a>
+                                        <h5 class="card-text text-primary">
+                                            1.000.000đ <span>/ Hộp</span>
+                                        </h5>
+                                        <h6 class="card-text text-secondary">
+                                            1.250.000đ
+                                        </h6>
+                                        <div class="card-text so-luong">
+                                            <p class="text-muted">
+                                                Hộp 1 tỉ viên
+                                            </p>
+                                        </div>
+                                        <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                        <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
+                                            -20%
+                                        </span>
                                     </div>
-                                    <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
-                                    <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
-                                        -20%
-                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                  </div>
+                    <div class="carousel-item">
+                        <div class="row row-cols-sm-2 row-cols-md-6 gx-4 gy-4">
+                            <div class="col">
+                                <div class="sp card">
+                                    <div class="card-body p-0 d-flex flex-column">
+                                        <a href="" class=>
+                                            <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
+                                            <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín dung dịch vệ sinh dung dịch vệ sinh dung dịch vệ sinh</h6>
+                                        </a>
+                                        <h5 class="card-text text-primary">
+                                            1.000.000đ <span>/ Hộp</span>
+                                        </h5>
+                                        <h6 class="card-text text-secondary">
+                                            1.250.000đ
+                                        </h6>
+                                        <div class="card-text so-luong">
+                                            <p class="text-muted">
+                                                Hộp 1 tỉ viên
+                                            </p>
+                                        </div>
+                                        <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                        <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
+                                            -20%
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="sp card">
+                                    <div class="card-body p-0 d-flex flex-column">
+                                        <a href="" class=>
+                                            <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
+                                            <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín</h6>
+                                        </a>
+                                        <h5 class="card-text text-primary">
+                                            1.000.000đ <span>/ Hộp</span>
+                                        </h5>
+                                        <h6 class="card-text text-secondary">
+                                            1.250.000đ
+                                        </h6>
+                                        <div class="card-text so-luong">
+                                            <p class="text-muted">
+                                                Hộp 1 tỉ viên
+                                            </p>
+                                        </div>
+                                        <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                        <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
+                                            -20%
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </div>
         </section>
     </main>
 </body>
