@@ -1,0 +1,11 @@
+.san-pham-ban-chay {
+    background-color: bisque;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.spbc-title {
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 20px;
+}

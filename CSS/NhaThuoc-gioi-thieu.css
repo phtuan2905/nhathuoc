@@ -5,7 +5,7 @@
     padding: 16px 0;
 }
 
-.carousel-indicators button{ 
+.gt.carousel-indicators button{ 
     width: 10px !important; 
     height: 10px !important; 
     border-radius: 100%; 
