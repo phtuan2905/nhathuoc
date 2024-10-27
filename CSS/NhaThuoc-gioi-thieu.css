@@ -1,5 +1,8 @@
-.gioi-thieu {
+.gioi-thieu.bg-container {
     background-color: aliceblue;
+}
+
+.gioi-thieu.container {
     display: grid;
     grid-template-columns: 66.67% 33.33%;
     padding: 16px 0;

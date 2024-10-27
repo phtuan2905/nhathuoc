@@ -1,5 +1,8 @@
-.san-pham-ban-chay {
-    background-color: bisque;
+.san-pham-ban-chay.bg-container {
+    background-color: rgb(255, 241, 224);
+}
+
+.san-pham-ban-chay.container {
     box-sizing: border-box;
     padding: 10px;
 }

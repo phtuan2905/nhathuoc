@@ -16,12 +16,13 @@
 }
 
 .sp .card-body a .card-title {
+    color: #333;
     overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-   -webkit-line-clamp: 3;
-           line-clamp: 3;
-   -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+            line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .sp .card-body .card-text span{
