@@ -1,0 +1,15 @@
+.dang-ky-tiem-chung.bg-container {
+    background-image: url("../Images/background-register-vaccine.svg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.title {
+    text-align: center;
+}
+
+
+
+.dktc.title {
+    color: rgb(31, 31, 226);
+} 

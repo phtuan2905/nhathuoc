@@ -1,0 +1,30 @@
+<svg width="1438" height="815" viewBox="0 0 1438 815" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_18772_166413" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1438" height="816">
+<rect y="0.000976562" width="1438" height="815" fill="url(#paint0_linear_18772_166413)"/>
+</mask>
+<g mask="url(#mask0_18772_166413)">
+<rect y="0.000976562" width="1438" height="815" fill="url(#paint1_linear_18772_166413)"/>
+<ellipse cx="843.5" cy="173.501" rx="1014.5" ry="415.5" fill="white"/>
+<ellipse cx="168.033" cy="592.863" rx="7.48958" ry="7.48925" fill="#C1D0F6"/>
+<ellipse cx="773.172" cy="361.27" rx="7.6544" ry="7.70244" fill="#C1D0F6"/>
+<ellipse cx="739.708" cy="529.835" rx="2.97971" ry="2.99871" fill="#C1D0F6"/>
+<ellipse cx="1374.21" cy="225.069" rx="23.3043" ry="23.4506" fill="#C1D0F6"/>
+<ellipse cx="1265.21" cy="361.068" rx="8.79297" ry="8.84816" fill="#EAEFFA"/>
+<ellipse cx="158.962" cy="195.747" rx="12.9968" ry="12.9987" fill="#EAEFFA"/>
+<ellipse cx="448.389" cy="425.224" rx="6.4984" ry="6.49935" fill="#EAEFFA"/>
+<ellipse cx="594.853" cy="543.712" rx="8.99779" ry="8.9991" fill="#C1D0F6"/>
+<ellipse cx="210.947" cy="455.717" rx="8.99779" ry="8.9991" fill="#C1D0F6"/>
+<ellipse cx="1338.95" cy="475.65" rx="4.0498" ry="4.07522" fill="#C1D0F6"/>
+<ellipse cx="108.597" cy="341.358" rx="3.99944" ry="4" fill="#C1D0F6"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_18772_166413" x1="893.901" y1="-252.193" x2="263.971" y2="149.119" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F8FAFF"/>
+<stop offset="1" stop-color="#ECF1FD"/>
+</linearGradient>
+<linearGradient id="paint1_linear_18772_166413" x1="893.901" y1="-252.193" x2="263.971" y2="149.119" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F8FAFF"/>
+<stop offset="1" stop-color="#ECF1FD"/>
+</linearGradient>
+</defs>
+</svg>
