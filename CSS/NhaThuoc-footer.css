@@ -21,7 +21,6 @@
     background-color: #fff;
     border-radius: 8px;
     padding: 20px; /* Tăng padding để tạo không gian hơn cho nội dung */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     line-height: 1.5;

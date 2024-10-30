@@ -1,11 +1,35 @@
-function changePage(_contentfile) {
-    window.location.assign('NhaThuoc-layout.html');
-}
+// function changePage(_contentfile) {
+//     window.location.assign(_contentfile);
+// }
 
 function loadContent() {
-    const initialContent = "<h2>Welcome to the Home Page</h2><p>This is the main content of the homepage.</p>";
-    document.getElementById('content-container').innerHTML = initialContent;
+    fetch('NhaThuoc-layout.html')
+            .then(response => response.text())
+            .then(data => {
+                // Tạo một thẻ div tạm để chứa nội dung được tải
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = data;
+
+                // Chọn phần tử trong nội dung đã tải với selector và chèn vào targetElement
+                const contentToLoad = tempDiv.querySelector('#header-to-load');
+                if (contentToLoad) {
+                    document.getElementById('header-to-here').innerHTML = contentToLoad.innerHTML;
+                }
+            })
+            .catch(error => console.error("Error loading HTML:", error));
+    
+    fetch('NhaThuoc-layout.html')
+            .then(response => response.text())
+            .then(data => {
+                // Tạo một thẻ div tạm để chứa nội dung được tải
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = data;
+
+                // Chọn phần tử trong nội dung đã tải với selector và chèn vào targetElement
+                const contentToLoad = tempDiv.querySelector('#footer-to-load');
+                if (contentToLoad) {
+                    document.getElementById('footer-to-here').innerHTML = contentToLoad.innerHTML;
+                }
+            })
+            .catch(error => console.error("Error loading HTML:", error));
 }
-
-document.addEventListener('DOMContentLoaded', () => { loadContent(); });
-
