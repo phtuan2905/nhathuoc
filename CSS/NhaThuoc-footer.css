@@ -1,0 +1,218 @@
+/* Đảm bảo không có khoảng trắng không mong muốn */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Đảm bảo toàn bộ container chiếm hết chiều cao trang trừ phần footer */
+.container.infor {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px; /* Khoảng cách giữa các khối */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: calc(100vh - 60px); /* Tính toán chiều cao trừ footer */
+}
+
+/* Khối con - mỗi khối sẽ nằm trong một cột */
+.container.infor > div {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px; /* Tăng padding để tạo không gian hơn cho nội dung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+/* Tiêu đề trong khối */
+.container.infor h4 {
+    font-size: 15px; /* Tăng kích thước chữ */
+    font-weight: bold;
+    color: #7c7c7c;
+    text-transform: uppercase;
+    margin-bottom: 10px; /* Giảm khoảng cách dưới tiêu đề */
+}
+
+/* Danh sách */
+.container.infor ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Đặt lại margin */
+}
+
+.container.infor ul li {
+    margin-bottom: 5px; /* Giảm khoảng cách giữa các item trong danh sách */
+}
+
+.container.infor ul li a {
+    text-decoration: none;
+    color: #0056b3;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.container.infor ul li a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/* Tổng Đài */
+.container.infor .tong-dai div {
+    margin-bottom: 10px;
+}
+
+.container.infor .tong-dai a {
+    font-size: 16px;
+    color: #0056b3;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.container.infor .tong-dai a:hover {
+    text-decoration: underline;
+}
+
+.container.infor .tong-dai span {
+    color: #777;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+/* Hỗ trợ thanh toán */
+.container.infor .thanh-toan {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.container.infor .thanh-toan-icons a {
+    margin-right: 5px;
+}
+
+.thanh-toan img {
+    max-width: 50px;
+    height: auto; /* Đảm bảo tỷ lệ hình ảnh */
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid rgb(164, 164, 164);
+    transition: transform 0.3s ease;
+}
+
+.thanh-toan img:hover {
+    transform: scale(1.1);
+}
+
+/* Kết nối với chúng tôi */
+.ket-noi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.ket-noi a {
+    display: inline-block;
+}
+
+.ket-noi img {
+    max-width: 35px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.ket-noi img:hover {
+    transform: scale(1.1);
+}
+
+/* Chứng nhận */
+.chung-nhan, .thanh-toan {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.chung-nhan img, .thanh-toan img {
+    max-width: 90px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+/* Tải ứng dụng */
+.tai-ung-dung {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tai-ung-dung a {
+    margin-bottom: 10px;
+}
+
+.tai-ung-dung img {
+    max-width: 100px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 14px; /* Giảm kích thước chữ footer */
+    line-height: 1.5;
+    padding: 10px 0; /* Giảm padding để không chiếm quá nhiều không gian */
+    background-color: #f1f1f1;
+    color: #333;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #0056b3;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #ff6600;
+}
+
+.footer p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container.infor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container.infor > div {
+        margin-bottom: 20px; /* Tăng khoảng cách dưới mỗi khối */
+    }
+}
+
+@media (max-width: 480px) {
+    .container.infor {
+        grid-template-columns: 1fr; /* Chuyển về một cột */
+    }
+}

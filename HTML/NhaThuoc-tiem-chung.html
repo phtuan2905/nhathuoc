@@ -120,54 +120,112 @@
         </div>
     </header>
 
-    <main>
-        <div class="bang-gia-tiem-chung bg-container">
+    <main id="content-to-load">
+        <div class="bang-gia-tiem-chung bg-container" id="bang-gia-tiem-chung">
             <section class="bang-gia-tiem-chung container">
                 <div class="bgtc title">
                     <h2>
-                        Bảng gia tiêm chủng
+                        Bảng giá tiêm chủng
                     </h2>
                     <p>
                         Giá bán lẻ tham khảo, có thể sẽ thay đổi từng thời điểm
                     </p>
                 </div>
-
-                <table class="bgtc tble">
-                    <tr>
-                        <th>Phòng bệnh</th>
-                        <th>Tên vắc xin</th>
-                        <th>Nước sản xuất</th>
-                        <th>Giá niêm yết (VND)</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
+                <div class="bgtc-scrollspy">
+                    <table class="bgtc-table">
+                        <thead>
+                            <tr>
+                                <th>Phòng bệnh</th>
+                                <th>Tên vắc xin</th>
+                                <th>Nước sản xuất</th>
+                                <th>Giá niêm yết (VND)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Ung Thư do Vi Rút HPV</td>
+                                <td>GARDASIL 9</td>
+                                <td>Mỹ</td>
+                                <td>2.940.000đ</td>
+                            </tr>
+                            <tr>
+                                <td>GARDASIL 4</td>
+                                <td>Mỹ</td>
+                                <td>1.780.000đ</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Cúm mùa</td>
+                                <td>GARDASIL 9</td>
+                                <td>Mỹ</td>
+                                <td>2.940.000đ</td>
+                            </tr>
+                            <tr>
+                                <td>GARDASIL 4</td>
+                                <td>Mỹ</td>
+                                <td>1.780.000đ</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Ung Thư do Vi Rút HPV</td>
+                                <td>GARDASIL 9</td>
+                                <td>Mỹ</td>
+                                <td>2.940.000đ</td>
+                            </tr>
+                            <tr>
+                                <td>GARDASIL 4</td>
+                                <td>Mỹ</td>
+                                <td>1.780.000đ</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Ung Thư do Vi Rút HPV</td>
+                                <td>GARDASIL 9</td>
+                                <td>Mỹ</td>
+                                <td>2.940.000đ</td>
+                            </tr>
+                            <tr>
+                                <td>GARDASIL 4</td>
+                                <td>Mỹ</td>
+                                <td>1.780.000đ</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Ung Thư do Vi Rút HPV</td>
+                                <td>GARDASIL 9</td>
+                                <td>Mỹ</td>
+                                <td>2.940.000đ</td>
+                            </tr>
+                            <tr>
+                                <td>GARDASIL 4</td>
+                                <td>Mỹ</td>
+                                <td>1.780.000đ</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Ung Thư do Vi Rút HPV</td>
+                                <td>GARDASIL 9</td>
+                                <td>Mỹ</td>
+                                <td>2.940.000đ</td>
+                            </tr>
+                            <tr>
+                                <td>GARDASIL 4</td>
+                                <td>Mỹ</td>
+                                <td>1.780.000đ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
             </section>
         </div>
 
-        <div class="dang-ky-tiem-chung bg-container">
+        <div class="dang-ky-tiem-chung bg-container" id="dang-ky-tiem-chung">
             <section class="dang-ky-tiem-chung container">
                 <div class="dktc title">
                     <h2>
@@ -178,8 +236,48 @@
                     </p>
                 </div>
 
-                <div class="dktc input-form">
+                <div class="dktc input-form bg-container">
+                    <div class="dktc container">
+                        <form class="thong-tin-nguoi-dang-ky">
+                            <div class="item-1 item dktc-header">
+                                <h6><i class="fa-solid fa-address-card" style="color: rgb(31, 84, 199);"></i> Thông tin người đăng ký</h6>
+                            </div>
+                            <div class="item-2 item">
+                                <input type="text" id="fname" name="fname" placeholder="Họ và tên"><br>
+                            </div>
+                            <div class="item-3 item">
+                                <input type="text" id="fname" name="fname" placeholder="Ngày sinh"><br>
+                            </div>
+                            <div class="item-4 item">
+                                <input type="text" id="fname" name="fname" placeholder="Số điện thoại"><br>
+                            </div>
+                            <div class="item-5 item">
+                                <input type="text" id="fname" name="fname" placeholder="Email (Không bắt buộc)"><br>
+                            </div>
 
+                            <div class="item-6 item dktc-header">
+                                <h6><i class="fa-solid fa-map-location-dot" style="color: rgb(31, 84, 199);" id="dia-diem-tiem-chung"></i> Chọn trung tâm tiêm chủng</h6>
+                            </div>
+                            <div class="item-7 item">
+                                <select name="" id="">
+                                    <option value="hanoi">Hà Nội</option>
+                                    <option value="hochiminh">Hồ Chí Minh</option>
+                                </select>
+                            </div>
+                            <div class="item-8 item">
+                                <select name="" id="">
+
+                                </select>
+                            </div>
+                            <div class="item-9 item">
+
+                            </div>
+
+                            <div class="item-10 item dktc-header">
+                                <h6><i class="fa-solid fa-address-card" style="color: rgb(31, 84, 199);"></i> Thông tin tiêm chủng</h6>
+                            </div>
+                        </form>
+                    </div>
                 </div>
 
             </section>
