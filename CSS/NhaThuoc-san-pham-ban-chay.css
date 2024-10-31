@@ -2,6 +2,21 @@
     background-color: rgb(255, 241, 224);
 }
 
+.spbc-bg {
+    position: relative;
+    top: -20px;
+}
+
+.spbc-bg img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.spbc-txt {
+    position: relative;
+    top: -30px;
+}
+
 .san-pham-ban-chay.container {
     box-sizing: border-box;
     padding: 10px;
@@ -10,5 +25,4 @@
 .spbc-title {
     text-align: center;
     color: whitesmoke;
-    margin-bottom: 20px;
 }

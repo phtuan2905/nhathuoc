@@ -1,15 +1,12 @@
 .san-pham-theo-doi-tuong.bg-container {
     background-color:rgb(240, 240, 250);
-}
-
-.san-pham-theo-doi-tuong.container {
     box-sizing: border-box;
-    padding: 20px 0;
+    padding-top: 100px;
 }
 
 #sptdt-slide {
-    padding-top: 97px;
-}
+    box-sizing: border-box;
+} 
 
 .sptdt.carousel-inner {
     background-color:rgb(79, 116, 196);
@@ -20,18 +17,47 @@
 }
 
 .sptdt-indicator {
-    height: fit-content;
+    height: min-content;
+    width: 100%;
+    overflow-x:hidden;
+}
+
+@media only screen and (max-width: 767px) {
+    .sptdt-indicator button {
+        width: 98%;
+        box-sizing: border-box;
+    }
 }
 
 .sptdt-indicator button {
     box-sizing: border-box;
     padding: 8px 15px;
-    margin: 0 5px;
+    margin: 5px 5px;
     text-decoration: none;
     color: black;
     font-weight: 600;
     border-radius: 25px;
     border: none;
     background-color: white;
+    z-index: 10;
+    display: inline;
 }
 
+@media only screen and (max-width: 767px) {
+    .sptdt-img {
+        display: none;
+    }
+}
+
+.sptdt-img {
+    position: absolute;
+    top: -90px;
+    width: 100%;
+    text-align: right;
+    pointer-events: none;
+}
+
+.sptdt-img img {
+    width: 100%;
+    max-width: 320px;
+}

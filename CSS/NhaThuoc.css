@@ -12,7 +12,7 @@ p {
     text-decoration: none;
 }
 
-img {
+.header img {
     border-radius: 25px;
 }
 
@@ -38,17 +38,76 @@ img {
     color: white;
 }
 
-.tu-van > p {
-    text-align: right;
+@media only screen and (max-width: 767px) {
+    /* For mobile */
+    .tu-van-1 {
+        display: none;
+        text-align: left;
+    }
 }
 
-.header-p2 div {
+@media only screen and (min-width: 768px) {
+    /* For desktop */
+    .tu-van-1 > p {
+        text-align: right;
+    }
+}
+
+div.header-p2 {
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+.header-p2 > div {
     text-align: center;
+    display: inline-flex;
+}
+
+.logo {
+    padding: 0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .logo > div .logo > a {
+        width: 85%;
+        display: inline;
+    }
+    .logo > div {
+        width: 15%;
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .tien-ich {
+        display: none;
+    }
+}
+
+.tien-ich {
+    width: fit-content;
+    margin: auto;
+}
+
+.tien-ich button {
+    background: none;
+    background-color: rgba(35, 92, 216, 0.527);
+    box-sizing: border-box;
+    padding: 4px 12px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: x-large;
+}
+
+.tien-ich button:active  {
+    background-color: rgb(20, 70, 179);
 }
 
 .logo > a {
     height: 55px;
     width: 100%;
+    padding: 0;
 }
 
 .logo-img {
@@ -73,8 +132,63 @@ img {
     padding: 8px 0px;
 }
 
+.dang-nhap-gio-hang {
+    padding: 0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+    div.dang-nhap, div.dang-nhap > a, div.dang-nhap > a > i  {
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* For desktop */
+    .dang-nhap {
+        display: block;
+    }
+    .dang-nhap > a > p, .gio-hang > a > p{
+        display: inline;
+    }
+    .dang-nhap > a > i, .gio-hang > a > i {
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .dang-nhap > a > p, .gio-hang > a > p {
+        font-size: medium;
+    }
+    .dang-nhap > a > i, .gio-hang > a > i {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    /* For mobile */
+    .dang-nhap, .dang-nhap > a > i {
+        display: inline;
+    }
+    .dang-nhap > a > p, .gio-hang > a > p {
+        display: none;
+    }
+    .dang-nhap > a > i, .gio-hang > a > i {
+        display: inline;
+    }
+}
+
 .dang-nhap, .gio-hang {
     width: 50% !important;
+}
+
+.dang-nhap a *, .gio-hang a * {
+    width: 50% !important;
+    display: inline;
+}
+
+.dang-nhap a, .gio-hang a {
+    box-sizing: border-box;
+    margin-top: 10px;
 }
 
 .dang-nhap a {
@@ -84,7 +198,12 @@ img {
 .gio-hang a {
     border-radius: 25px;
     box-sizing: border-box;
-    margin: 5px;
+}
+
+@media only screen and (max-width: 991px) {
+    ul.header-p3, div.nav-bar {
+        display: none;
+    }
 }
 
 .header-p3 {
@@ -117,5 +236,115 @@ img {
     display: none;
 }
 
+@media only screen and (max-width: 767px) {
+    .dang-nhap-box {
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .dang-nhap-inner {
+        top: 50%;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
 
+@media only screen and (min-width: 768px) {
+    .dang-nhap-box {
+        border-radius: 15px;
+        width: fit-content;
+        height: fit-content;
+    }
+}
 
+#dangnhapmodal {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background-color: #33333349;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    text-align: center;
+    display: none;
+}
+
+.dang-nhap-box {
+    background-color: white;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    top: 50%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dang-nhap-box > * {
+    box-sizing: border-box;
+    max-width: 70%;
+    width: 100;
+    margin: auto;
+    padding: 5px 0;
+}
+
+.dang-nhap-sdt input#sdt {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.tiep-tuc-sdt {
+    width: 100%;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    background-color:rgb(35, 92, 216);
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.dang-nhap-bang {
+    box-sizing: border-box;
+    padding: 15px 0;
+}
+
+.dang-nhap-khac button {
+    border: none;
+    border-radius: 100%;
+}
+
+.dang-nhap-khac button:hover, .dang-nhap-khac button:active {
+    background-color: #3333332c;
+}
+
+.dang-nhap-khac button img {
+    box-sizing: border-box;
+    height: 45px;
+    width: 45px;
+}
+
+.dang-nhap-box-exit {
+    text-align: end;
+    margin: 0;
+    max-width: 100%;
+    height: fit-content;
+    padding: 0;
+}
+
+.dang-nhap-box-exit button {
+    border: none;
+    background: none;
+    font-size:xx-large;
+    color: #313131ab;
+}
+
+.dang-nhap-box-exit button:hover {
+    color: #333;
+}
