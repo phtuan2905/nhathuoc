@@ -7,7 +7,7 @@ p {
     margin: 0 !important;
 }
 
-a {
+.header a {
     color: white;
     text-decoration: none;
 }

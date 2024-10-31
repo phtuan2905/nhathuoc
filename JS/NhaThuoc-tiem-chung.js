@@ -26,7 +26,47 @@ function checkFormInformation(formid, informationclass) {
     var form = document.getElementById(formid);
     var infors = document.getElementsByClassName(informationclass);
     var formvalid = true;
+    let alertstr = "";
     for (let infor of infors ){
-        // if (infor)
+        if (infor.value.trim() === "") {
+            formvalid = false;
+            //alertstr = alertstr.concat(infor.placeholder, ", ");
+            if (infor.tagName === "INPUT"){
+                alertstr = alertstr.concat(infor.placeholder, ", ");
+            }
+            else if (infor.tagName === "SELECT") {
+                alertstr = alertstr.concat(infor.options[infor.selectedIndex].text, ", ");
+            }
+        }
+        
+    }
+
+    if (formvalid == false) {
+        alertstr = alertstr.substring(0, alertstr.length - 2);
+        alertstr = alertstr.concat(" không được để trống");
+        alert(alertstr);
+    }
+    return formvalid;
+}
+
+function checkRadioButton(radioname) {
+    var radios = document.getElementsByName(radioname);
+    var ischecked = false;
+    for (let i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+            ischecked = true;
+            break;
+        }
+    }
+
+    if (ischecked == false) {
+        alert("Chọn nhà thuốc không được để trống");
+    }
+    return ischecked;
+}
+
+function checkForm(formid, informationclass, radioname) {
+    if (checkFormInformation(formid, informationclass) && checkRadioButton(radioname)) {
+        alert("Đăng ký thành công");
     }
 }

@@ -133,7 +133,7 @@
 
                 <div class="dktc input-form bg-container">
                     <div class="dktc container">
-                        <form class="thong-tin-dang-ky" id="dktc-form" onsubmit="checkFormInformation('dktc-form')">
+                        <form class="thong-tin-dang-ky" id="dktc-form" onsubmit="checkForm('dktc-form', 'dktc-information', 'cstc')">
                             <div class="item-1 item dktc-header">
                                 <h6><i class="fa-solid fa-address-card" style="color: rgb(31, 84, 199);"></i> Thông tin người đăng ký</h6>
                             </div>
@@ -147,7 +147,7 @@
                                 <input type="tel" id="sdt" class="dktc-information" name="fname" placeholder="Số điện thoại"><br>
                             </div>
                             <div class="item-5 item">
-                                <input type="email" id="email" class="dktc-information" name="fname" placeholder="Email (Không bắt buộc)"><br>
+                                <input type="email" id="email" name="fname" placeholder="Email (Không bắt buộc)"><br>
                             </div>
                             <div class="item-13 item">
                                 <div>
@@ -222,7 +222,7 @@
                                 <h6><i class="fa-solid fa-shield-virus" style="color: rgb(31, 84, 199);"></i> Thông tin tiêm chủng</h6>
                             </div>
                             <div class="item-11 item">
-                                <select name="" id="">
+                                <select name="" id="" class="dktc-information">
                                     <option value="" disabled selected>Chọn vắc xin</option>
                                     
                                     <option value="GARDASIL 9">GARDASIL 9</option>

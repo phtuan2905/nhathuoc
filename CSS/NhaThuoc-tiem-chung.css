@@ -69,12 +69,24 @@
     margin: 20px 0;
 }
 
+@media only screen and (max-width: 767px) {
+    /* For mobile */
+    .thong-tin-dang-ky {
+        grid-template-columns: 100%;
+    }
+}
+  
+ @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .thong-tin-dang-ky {
+    grid-template-columns: 50% 50%;
+    }
+}
+
 .thong-tin-dang-ky {
     display: grid;
-    grid-template-columns: 50% 50%;
     width: 90%;
     margin: 0 5%;
-
 }
 
 .thong-tin-dang-ky .item {
@@ -95,8 +107,8 @@
     border: 1px solid black;
 }
 
-.thong-tin-dang-ky .item.dktc-header {
-    grid-column: 1 / 3;
+.thong-tin-dang-ky .item.dktc-header, .thong-tin-dang-ky .item-13 {
+    grid-column: 1 / -1;
 }
 
 .thong-tin-dang-ky .item-12 {
@@ -119,7 +131,7 @@
 }
 
 .thong-tin-dang-ky .item-17, .thong-tin-dang-ky .item-9 {
-    grid-column: 1 / 3;
+    grid-column: 1 / -1;
 }
 
 .thong-tin-dang-ky .item-17 input {
