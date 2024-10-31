@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- js to load --> <script src="../JS/NhaThuoc-load-content.js" onload="loadContent()"></script>
+     <script src="../JS/NhaThuoc-tiem-chung.js"></script>
 </head>
 
 <body>
@@ -132,49 +133,98 @@
 
                 <div class="dktc input-form bg-container">
                     <div class="dktc container">
-                        <form class="thong-tin-nguoi-dang-ky">
+                        <form class="thong-tin-dang-ky" id="dktc-form" onsubmit="checkFormInformation('dktc-form')">
                             <div class="item-1 item dktc-header">
                                 <h6><i class="fa-solid fa-address-card" style="color: rgb(31, 84, 199);"></i> Thông tin người đăng ký</h6>
                             </div>
                             <div class="item-2 item">
-                                <input type="text" id="ten" name="fname" placeholder="Họ và tên"><br>
+                                <input type="text" id="ten" class="dktc-information" name="fname" placeholder="Họ và tên"><br>
                             </div>
                             <div class="item-3 item">
-                                <input type="text" id="ngaysinh" name="fname" placeholder="Ngày sinh"><br>
+                                <input type="text" id="ngaysinh" class="dktc-information" name="fname" placeholder="Ngày sinh" onfocus="(this.type='date')" onblur="(this.type='text')"><br>
                             </div>
                             <div class="item-4 item">
-                                <input type="text" id="sdt" name="fname" placeholder="Số điện thoại"><br>
+                                <input type="tel" id="sdt" class="dktc-information" name="fname" placeholder="Số điện thoại"><br>
                             </div>
                             <div class="item-5 item">
-                                <input type="text" id="email" name="fname" placeholder="Email (Không bắt buộc)"><br>
+                                <input type="email" id="email" class="dktc-information" name="fname" placeholder="Email (Không bắt buộc)"><br>
+                            </div>
+                            <div class="item-13 item">
+                                <div>
+                                    <div>
+                                        <input type="radio" id="cho-nguoi-than" name="tiem-cho" value="" onclick="hideShow(true, 'tcnt')" checked>
+                                        <label for="cho-nguoi-than"> Tiêm cho người thân</label><br>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="cho-toi" name="tiem-cho" value="" onclick="hideShow(false, 'tcnt')">
+                                        <label for="cho-toi"> Tiêm cho tôi</label><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-14 item dktc-header tcnt">
+                                <h6><i class="fa-solid fa-address-card" style="color: rgb(31, 84, 199);"></i> Thông tin người tiêm</h6>
+                            </div>
+                            <div class="item-15 item tcnt">
+                                <input type="text" id="ten" class="dktc-information" name="fname" placeholder="Họ và tên"><br>
+                            </div>
+                            <div class="item-16 item tcnt">
+                                <input type="text" id="ngaysinh1" class="dktc-information" name="fname" placeholder="Ngày sinh" onfocus="(this.type='date')" onblur="(this.type='text')"><br>
                             </div>
 
                             <div class="item-6 item dktc-header">
                                 <h6><i class="fa-solid fa-map-location-dot" style="color: rgb(31, 84, 199);" id="dia-diem-tiem-chung"></i> Chọn trung tâm tiêm chủng</h6>
                             </div>
                             <div class="item-7 item">
-                                <select name="" id="">
+                                <select name="" id="thanhpho-tinh" class="dktc-information" onchange="hideShow_list('quan-huyen', 'thanhpho-tinh'), hideShow(true, 'item-8')">
                                     <option value="" disabled selected>Chọn Tỉnh/Thành phố</option>
                                     <option value="hanoi">Hà Nội</option>
                                     <option value="hochiminh">Hồ Chí Minh</option>
                                 </select>
                             </div>
-                            <div class="item-8 item">
-                                <select name="" id="">
-
+                            <div class="item-8 item" style="display: none;">
+                                <select name="" id="quan-huyen" class="dktc-information" onchange="hideShow_list('cstc', 'quan-huyen')">
+                                    <option value="" disabled selected>Chọn Quận/Huyện</option>
+                                    <optgroup class="quan-huyen" id="hanoi" label="Hà Nội">
+                                        <option value="hanoi-caugiay">Quận Cầu Giấy</option>
+                                        <option value="hanoi-hoangmai">Quận Hoàng Mai</option>
+                                    </optgroup>
+                                    <optgroup class="quan-huyen" id="hochiminh" label="Hồ Chí Minh">
+                                        <option value="hochiminh-3">Quận 3</option>
+                                    </optgroup>
                                 </select>
                             </div>
-                            <div class="item-9 item">
-
+                            <div class="item-9 item cst-scrollspy">
+                                <div class="cstc" id="hanoi-caugiay">
+                                    <div>
+                                        <input type="radio" name="cstc">
+                                        <h5><i class="fa-solid fa-house-chimney-medical" style="color: rgb(31, 84, 199);"></i> TC Long Châu: 129 Lạc Long Quân (Đầu Ngõ Chợ Tạm), P. Nghĩa Đô, Q. Cầu Giấy, TP. Hà Nội.</h5>
+                                    </div>
+                                </div>
+                                <div class="cstc" id="hanoi-hoangmai">
+                                    <div>
+                                        <input type="radio" name="cstc">
+                                        <h5><i class="fa-solid fa-house-chimney-medical" style="color: rgb(31, 84, 199);"></i> TC Long Châu: Tầng 1, Tòa Nhà CT4A (Ngay Ngã Tư Linh Đàm), KĐT Bắc Linh Đàm, P. Đại Kim, Q. Hoàng Mai, TP. Hà Nội.</h5>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="cstc">
+                                        <h5><i class="fa-solid fa-house-chimney-medical" style="color: rgb(31, 84, 199);"></i> TC Long Châu: 78 Trịnh Đình Cửu (Gần Chợ Xanh Định Công), P. Đình Công, Q. Hoàng Mai, TP. Hà Nội.</h5>
+                                    </div>
+                                </div>
+                                <div class="cstc" id="hochiminh-3">
+                                    <div>
+                                        <input type="radio" name="cstc">
+                                        <h5><i class="fa-solid fa-house-chimney-medical" style="color: rgb(31, 84, 199);"></i> TC Long Châu: 422-424 Cách Mạng Tháng 8 (Đối Diện Chợ Hòa Hưng), P. 11, Q. 3, TP. Hồ Chí Minh.</h5>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="item-10 item dktc-header">
                                 <h6><i class="fa-solid fa-shield-virus" style="color: rgb(31, 84, 199);"></i> Thông tin tiêm chủng</h6>
                             </div>
-
                             <div class="item-11 item">
                                 <select name="" id="">
                                     <option value="" disabled selected>Chọn vắc xin</option>
+                                    
                                     <option value="GARDASIL 9">GARDASIL 9</option>
                                     <option value="GARDASIL 4">GARDASIL 4</option>
                                 </select>
@@ -182,16 +232,22 @@
 
                             <div class="item-12 item">
                                 <div class="item-12-1 item">
-                                    <input type="text" id="ngaysinh" name="fname" placeholder="Ngày sinh"><br>
+                                    <input type="text" id="ngaytiem" class="dktc-information" name="fname" placeholder="Chọn ngày tiêm" onfocus="(this.type='date')" onblur="(this.type='text')"><br>
                                 </div>
                                 <div class="item-12-2 item">
-                                    <input type="text" id="ngaysinh" name="fname" placeholder="Ngày sinh"><br>
+                                    <select name="" id="" class="dktc-information">
+                                        <option value="" disabled selected>Chọn giờ tiêm</option>
+                                        <option value="7:30">7:30</option>
+                                        <option value="8:30">8:30</option>
+                                    </select>
                                 </div>
+                            </div>
+                            <div class="item-17 item">
+                                <input type="submit" value="Đăng ký ngay">
                             </div>
                         </form>
                     </div>
                 </div>
-
             </section>
         </div>
     </main>
