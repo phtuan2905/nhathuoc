@@ -69,7 +69,7 @@ div.header-p2 {
 
 @media only screen and (max-width: 767px) {
     .logo > div .logo > a {
-        width: 85%;
+        width: 70%;
         display: inline;
     }
     .logo > div {
@@ -206,9 +206,21 @@ div.header-p2 {
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
     ul.header-p3, div.nav-bar {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    div.nav-bar ul li a {
+        font-size: small !important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    div.nav-bar ul li a {
+        font-size: 14px;
     }
 }
 
@@ -218,7 +230,7 @@ div.header-p2 {
 
 .header-p3 li a {
     color: white;
-    font-size: 14px;
+    font-size: small;
 }
 
 .nav-bar {
@@ -229,7 +241,6 @@ div.header-p2 {
 .nav-bar a {
     color: #333;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
     font-weight: 600;
 }
 
@@ -281,17 +292,20 @@ div.header-p2 {
     transform: translate(-50%, -50%);
 }
 
-
+@media only screen and (max-width: 768px) {
+    .dang-nhap-box > * {
+        width: 90%;
+    }
+}
 
 @media only screen and (min-width: 768px) {
     .dang-nhap-box > * {
-        max-width: 70%;
+        width: 70%;
     }
 }
 
 .dang-nhap-box > * {
     box-sizing: border-box;
-    width: 100;
     margin: auto;
     padding: 5px 0;
 }
@@ -340,7 +354,7 @@ div.header-p2 {
 .dang-nhap-box-exit {
     text-align: end;
     margin: 0;
-    max-width: 100%;
+    width: 100% !important;
     height: fit-content;
     padding: 0;
 }
@@ -355,3 +369,117 @@ div.header-p2 {
 .dang-nhap-box-exit button:hover {
     color: #333;
 }
+
+#hidden-tab {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    background-color: #33333349;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    display: none;
+    z-index: 99;
+}
+
+.hidden-tab-box {
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: white;
+    height: 100%;
+    max-width: 300px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.hidden-tab-header {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    height: fit-content;
+    width: 100%;
+}
+
+.hidden-tab-logo img {
+    width: 100%;
+}
+
+.hidden-tab-exit {
+    margin: auto;
+    text-align: right;
+}
+
+.hidden-tab-exit button {
+    background:none;
+    border: none;
+    font-size:x-large;
+}
+
+.hidden-tab-dang-nhap {
+    padding: 30px 0;
+    border-top: 2px solid #33333385;
+    border-bottom: 2px solid #33333385;
+    background-color: rgb(35, 92, 216);
+}
+
+.hidden-tab-dang-nhap a {
+    text-decoration: none;
+    background-color: rgb(230, 238, 253);
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+
+.hidden-tab-dang-nhap a * {
+    display: inline;
+    font-weight: bold;
+    color: rgb(35, 92, 216);
+}
+
+.hidden-tab-items {
+    border-bottom: 2px solid #33333385;
+}
+
+.hidden-tab-item {
+    display: block;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    color: #333;
+    font-size: larger;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 20px 0;
+    border-top: 1px solid #33333385;
+}
+
+.hidden-tab-item.special {
+    border: none;
+}
+
+.hidden-tab-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    background-color: rgb(35, 92, 216);
+}
+
+.hidden-tab-hotline {
+    color: rgb(230, 238, 253);
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+
+
+
+
+
+
+

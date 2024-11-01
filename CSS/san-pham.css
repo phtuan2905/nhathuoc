@@ -109,13 +109,29 @@ a.bl {
     display: flex;
 }
 
-@media only screen and (max-width: 768px) {
+.thugon {
+    display: none;
+}
+
+.xemthem {
+    display: block;
+}
+
+.none {
+    display: inline;
+}
+
+@media only screen and (max-width: 426px) {
     [class*="col-"] {
         width: 100%;
     }
 
     .inl {
         display: block;
+    }
+
+    .none {
+        display: none;
     }
 
     .none1 {
