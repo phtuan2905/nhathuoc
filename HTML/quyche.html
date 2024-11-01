@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- js to load --> <script src="../JS/NhaThuoc-load-content.js" onload="loadContent()"></script>
+    <title>Quy chế hoạt động</title>
     <style>
-        body .quyche{
+        .quyche{
             padding: 50px 200px 50px 200px;
             font-family: 'Arial', sans-serif;
         }
         .quyche p{
-            font-size: 18px;
+            font-size: 16px;
+            line-height: 1.3em;
+        }
+        @media(max-width:850px){
+            .quyche{
+                width: 100%;
+                padding: 0px 10px 10px 0px;
+            }
         }
     </style>
 </head>
 <body>
     <!-- Header to load--> <header id="header-to-here"></header>
+
     <div class="quyche">
         <h1>Quy chế hoạt động website cung cấp dịch vụ TMĐT nhathuoclongchau.com.vn</h1>
         <h2>I. Nguyên tắc chung</h2>
@@ -123,5 +130,9 @@
         <p></p>
     </div>
     <!-- Footer to load --> <footer id="footer-to-here"></footer>
+    <!-- js to load --> <script src="../JS/NhaThuoc-load-content.js" onload="loadContent()"></script>
+    <script src="../JS/NhaThuoc-header.js" id="headerscr"></script>
+    <script src="../JS/NhaThuoc-footer.js" id="footerscr"></script>
+    
 </body>
 </html>

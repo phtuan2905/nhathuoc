@@ -4,45 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chính Sách Đổi Trả</title>
-    <!-- js to load --> <script src="../JS/NhaThuoc-load-content.js" onload="loadContent()"></script>
     <style>
-        body .doitra {
+        .doitra {
             font-family: Arial, sans-serif;
             margin: 20px;
+            padding: 20px 200px 50px 200px;
+            line-height: 1.3em;
         }
 
         .doitra table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
+            background-color: #ebebeb;
         }
 
         .doitra th, td {
-            border: 1px solid #ddd;
+            border: 1px solid #7e7e7e;
             padding: 8px;
             text-align: left;
         }
 
         .doitra th {
-            background-color: #f2f2f2;
+            background-color: #66c341;
         }
 
         .doitra h2 {
             margin-top: 40px;
         }
-
-        .doitra .section-title {
-            background-color: #4CAF50;
-            color: white;
-            padding: 8px;
+        @media(max-width:850px){
+            .doitra{
+                padding: 0px 10px 10px 0px;
+                width: 100%; 
+                margin: 0;   
+            }
+            .doitra table{
+                width: 100%;
+                padding: 0;
+            }
         }
+        
     </style>
+    <div id="link-to-here"></div>
 </head>
 <body>
     <!-- Header to load--> <header id="header-to-here"></header>
-    <div class="doitra container">
-        <h1>Chính Sách Đổi Trả</h1>
 
+<div class="doitra">
+
+    <h1>Chính Sách Đổi Trả</h1>
+    
     <table>
         <thead>
             <tr>
@@ -135,7 +146,12 @@
         </tbody>
     </table>
 
-    </div>
+
+</div>
     <!-- Footer to load --> <footer id="footer-to-here"></footer>
+    <script src="../JS/NhaThuoc-header.js" id="headerscr"></script>
+    <script src="../JS/NhaThuoc-footer.js" id="footerscr"></script>
+    <script src="../JS/NhaThuoc-load-content.js"></script>
+
 </body>
 </html>

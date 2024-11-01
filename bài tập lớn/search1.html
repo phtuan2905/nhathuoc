@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="search.css">
+</head>
+
+<body>
+  <main>
+    <!--//////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <div class="container mt-5">
+      <div class="row">
+
+        <div class="col-sm-4">
+          <!-- Carousel -->
+          <div style="position: sticky; top: 20px;">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+              <!-- ảnh -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" style="border: none;"> <img
+                      src="img/hhtp/1.webp" alt="chưa tải được ảnh" class="d-block" style="width:100%;"></button>
+                </div>
+                <div class="carousel-item">
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" style="border: none;"> <img
+                      src="img/hhtp/2.webp" alt="chưa tải được ảnh" class="d-block" style="width:100%;"></button>
+
+                </div>
+                <div class="carousel-item">
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" style="border: none;"> <img
+                      src="img/hhtp/3.webp" alt="chưa tải được ảnh" class="d-block" style="width:100%;"></button>
+                </div>
+                <div class="carousel-item">
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" style="border: none;"> <img
+                      src="img/hhtp/4.webp" alt="chưa tải được ảnh" class="d-block" style="width:100%;"></button>
+                </div>
+                <div class="carousel-item">
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" style="border: none;"> <img
+                      src="img/hhtp/5.webp" alt="chưa tải được ảnh" class="d-block" style="width:100%;"></button>
+                </div>
+                <div class="carousel-item">
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" style="border: none;"> <img
+                      src="img/hhtp/6.webp" alt="chưa tải được ảnh" class="d-block" style="width:100%;"></button>
+                </div>
+              </div>
+
+              <!-- mũi tên chuyển ảnh -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"
+                  style="background-color: rgb(82, 91, 91); border-radius: 50%;"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                  style="background-color: rgb(82, 91, 91); border-radius: 50%;"></span>
+              </button>
+            </div>
+            <!-- ảnh -->
+            <div class="container-fluid mt-3 none1">
+
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"
+                style="flex: 1; border: none;">
+                <img src="img/hhtp/1.webp" alt="Slide 1" style="width:100%; box-sizing: border-box;">
+              </button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1" style="flex: 1; border: none;">
+                <img src="img/hhtp/2.webp" alt="Slide 2" style="width:100%; box-sizing: border-box;">
+              </button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2" style="flex: 1; border: none;">
+                <img src="img/hhtp/3.webp" alt="Slide 3" style="width:100%; box-sizing: border-box;">
+              </button>
+
+              <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
+                style="flex: 1; border: none; background: none; color: rgb(1, 1, 1); position: relative;">
+                <img src="img/hhtp/3.webp" alt="Slide 4" style="width:100%; box-sizing: border-box; height: auto;">
+                <span class="overlay">Xem thêm</span>
+              </button>
+
+            </div>
+          </div>
+          <!-- The Modal -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title" style="text-align: center;">Thuốc Hoạt Huyết Trường Phúc giúp hoạt huyết, trị
+                    thiếu năng tuần hoàn (3 vỉ x 10 viên)</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div id="demo2" class="carousel slide" data-bs-ride="carousel">
+                    <!-- ảnh -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" style="text-align: center;">
+                        <img src="img/hhtp/1.webp" alt="chưa tải được ảnh" class="d-block"
+                          style="width:55vh; height: 55vh; margin: 0 auto;">
+                      </div>
+                      <div class="carousel-item active" style="text-align: center;">
+                        <img src="img/hhtp/2.webp" alt="chưa tải được ảnh" class="d-block"
+                          style="width:55vh; height: 55vh; margin: 0 auto;">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/hhtp/3.webp" alt="chưa tải được ảnh" class="d-block"
+                          style="width:55vh; height: 55vh; margin: 0 auto;">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/hhtp/4.webp" alt="chưa tải được ảnh" class="d-block"
+                          style="width:55vh; height: 55vh; margin: 0 auto;">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/hhtp/5.webp" alt="chưa tải được ảnh" class="d-block"
+                          style="width:55vh; height: 55vh; margin: 0 auto;">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/hhtp/6.webp" alt="chưa tải được ảnh" class="d-block"
+                          style="width:55vh; height: 55vh; margin: 0 auto;">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/hhtp/7.webp" alt="chưa tải được ảnh" class="d-block"
+                          style="width:55vh; height: 55vh; margin: 0 auto;">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/hhtp/8.webp" alt="chưa tải được ảnh" class="d-block"
+                          style="width:55vh; height: 55vh; margin: 0 auto;">
+                      </div>
+                    </div>
+                    <!-- mũi tên chuyển ảnh -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"
+                        style="background-color: rgb(82, 91, 91); border-radius: 50%;"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"
+                        style="background-color: rgb(82, 91, 91); border-radius: 50%;"></span>
+                    </button>
+                  </div>
+                  <!-- ảnh -->
+                  <div class="container-fluid mt-3 " style="display: flex; width: 100%;">
+
+                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"
+                      style="flex: 1; border: none;">
+                      <img src="img/hhtp/1.webp" alt="Slide 1" style="width:100%; box-sizing: border-box;">
+                    </button>
+                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="1" style="flex: 1; border: none;">
+                      <img src="img/hhtp/2.webp" alt="Slide 2" style="width:100%; box-sizing: border-box;">
+                    </button>
+                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="2" style="flex: 1; border: none;">
+                      <img src="img/hhtp/3.webp" alt="Slide 3" style="width:100%; box-sizing: border-box;">
+                    </button>
+                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="3" style="flex: 1; border: none;">
+                      <img src="img/hhtp/4.webp" alt="Slide 4" style="width:100%; box-sizing: border-box;">
+                    </button>
+                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="4" style="flex: 1; border: none;">
+                      <img src="img/hhtp/5.webp" alt="Slide 5" style="width:100%; box-sizing: border-box;">
+                    </button>
+                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="5" style="flex: 1; border: none;">
+                      <img src="img/hhtp/6.webp" alt="Slide 6" style="width:100%; box-sizing: border-box;">
+                    </button>
+                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="5" style="flex: 1; border: none;">
+                      <img src="img/hhtp/7.webp" alt="Slide 6" style="width:100%; box-sizing: border-box;">
+                    </button>
+                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="5" style="flex: 1; border: none;">
+                      <img src="img/hhtp/8.webp" alt="Slide 6" style="width:100%; box-sizing: border-box;">
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/////////////////////////////////////////////////////////////////-->
+        </div>
+        <div class="col-sm-8">
+          <p>Thương hiệu: <a href="#link">TRƯỜNG PHÚC</a></p>
+          <h5>Thuốc Hoạt Huyết Trường Phúc giúp hoạt huyết, trị thiếu năng tuần hoàn (3 vỉ x 10 viên) </h5>
+          <p>00500234 - 4.9 <span style="color: gold;">★</span> - <a href="#link">đánh giá </a> - <a href="#link">bình
+              luận</a></p>
+          <h2 style="color: rgb(9, 33, 170);">95.000đ
+            / Hộp</h2>
+          <table class="a">
+            <tr>
+              <td class="col1">Chọn đơn vị tính</td>
+              <td>Hộp</td>
+            </tr>
+            <tr>
+              <td class="col1">Danh mục</td>
+              <td><a href="#">Thuốc tăng cường tuần hoàn não</a></td>
+            </tr>
+            <tr>
+              <td class="col1">Dạng bào chế</td>
+              <td>Viên nén bao phim</td>
+            </tr>
+            <tr>
+              <td class="col1">Quy cách</td>
+              <td>
+                Hộp 3 Vỉ x 10 Viên </td>
+            </tr>
+            <tr>
+              <td class="col1">Xuất xứ thương hiệu</td>
+              <td>Việt Nam</td>
+            </tr>
+            <tr>
+              <td class="col1">Nhà sản xuất</td>
+              <td>CÔNG TY TNHH DƯỢC THẢO HOÀNG THÀNH</td>
+            </tr>
+            <tr>
+              <td class="col1">Nước sản xuất</td>
+              <td>
+                Việt Nam</td>
+            </tr>
+            <tr>
+              <td class="col1">Thành phần</td>
+              <td>Thục địa, Ích mẫu, Ngưu tất (Rễ), Đương quy, Xích thược, Xuyên khung</td>
+            </tr>
+            <tr>
+              <td class="col1">Mô tả ngắn</td>
+              <td>Hoạt Huyết Trường Phúc là sản phẩm của Công ty TNHH Dược Thảo Hoàng Thành có thành phần chính là cao
+                đặc
+                hỗn hợp các dược liệu đương quy, ích mẫu, ngưu tất, thục địa, xích thược, xuyên khung có công dụng điều
+                trị các chứng huyết hư, ứ trệ. Phòng ngừa và điều trị thiểu năng tuần hoàn não (mệt mỏi, đau đầu, chóng
+                mặt, mất thăng bằng, hoa mắt, mất ngủ, suy giảm trí nhớ), thiểu năng tuần hoàn ngoại vi (đau mỏi vai
+                gáy,
+                tê cứng cổ, đau cách hồi, đau cơ, tê bì chân tay), phòng ngừa và hỗ trợ điều trị xơ vữa động mạch, nghẽn
+                mạch, tai biến mạch máo não.</td>
+            </tr>
+            <tr>
+              <td class="col1">Số đăng ký</td>
+              <td>VD-30094-18</td>
+            </tr>
+          </table>
+
+          <table style="box-shadow: 0px 0px 1px rgb(65, 65, 60);">
+            <tr>
+              <td style="background-color: blanchedalmond;color: rgb(184, 89, 7);"><img src="imgs/phantram.png" alt=""
+                  class="icon2"> Khuyến mại được áp dụng</td>
+            </tr>
+            <tr>
+              <td style="height: 50px;"><img src="imgs/promotion_used.webp" alt="giảm giá" class="icon2"> Giảm ngay
+                50,000đ
+                áp dụng đến 31/10</td>
+            </tr>
+          </table>
+          <br>
+          <table style="box-shadow: 0px 0px 1px rgb(65, 65, 60);">
+            <tr>
+              <td>Gợi ý nhà thuốc gần bạn</td>
+            </tr>
+            <tr>
+              <td style="height: 300px;">chưa có</td>
+            </tr>
+          </table>
+
+          <div class="container mt-5 none">
+            <div class="d-flex">
+              <p>chọn số lượng</p>
+              <div class="input-group" style="width: 115px;margin-left: 10px; height: 10px;">
+
+                <button class="btn btn-outline-secondary vien" type="button" id="btn-minus">-</button>
+                <input type="number" class="form-control text-center" id="quantity" value="1" min="1" max="10">
+                <button class="btn btn-outline-secondary vien" type="button" id="btn-plus">+</button>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            document.getElementById('btn-plus').addEventListener('click', function () {
+              var quantity = document.getElementById('quantity');
+              if (quantity.value < 10) {
+                quantity.value = parseInt(quantity.value) + 1;
+              }
+            });
+
+            document.getElementById('btn-minus').addEventListener('click', function () {
+              var quantity = document.getElementById('quantity');
+              if (quantity.value > 1) {
+                quantity.value = parseInt(quantity.value) - 1;
+              }
+            });
+          </script>
+          <form action="#chuabiet">
+            <button type="submit" class="btn btn-primary vien" style="width: 200px;">chọn mua</button>
+          </form>
+          <table style="width: 100%;">
+            <tr class="inl">
+              <td class="col30" style=" display:flex ;"><img src="imgs/3.png" alt="" class="icon" style="height: 3em;">
+                <p><b>Đổi trả trong 30 ngày</b>
+                  <br> kể từ ngày mua hàng
+                </p>
+              </td>
+              <td class="col30" style=" display:flex ;"><img src="imgs/2.png" alt="" class="icon" style="height: 3em;">
+                <p><b>Miễn phí 100%</b>
+                  <br> đổi thuốc
+                </p>
+              </td>
+              <td class="col30" style=" display:flex ;"><img src="imgs/1.png" alt="" class="icon" style="height: 3em;">
+                <p><b>Miễn phí vận chuyển</b>
+                  <br> theo chính sách giao hàng
+                </p>
+              </td>
+            </tr>
+          </table>
+
+
+        </div>
+      </div>
+
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+
+        <div class="col-sm-2">
+          <div style="position:sticky; top: 0;">
+            <div class="none1">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link bl" href="#tp">Thành phần</a>
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link bl" href="#congdung">Công dụng</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link bl" href="#cachdung">Cách dùng</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link bl" href="#tdp">Tác dụng phụ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link bl" href="#ly">lưu ý</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link bl" href="#bq">Bảo quản<nav></nav></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <div id="tp">
+            <h5>Thành phần của Thuốc Hoạt Huyết</h5>
+            <table class="b">
+              <tr style="background-color: bisque;">
+                <td>Thông tin thành phần</td>
+                <td>Hàm lượng</td>
+              </tr>
+              <tr>
+                <td>Thục địa</td>
+                <td>1.5g</td>
+              </tr>
+              <tr>
+                <td>Ích mẫu</td>
+                <td>1.5g</td>
+              </tr>
+              <tr>
+                <td>Ngưu tất (Rễ)</td>
+                <td>1.5g</td>
+              </tr>
+              <tr>
+                <td>Đương quy</td>
+                <td>1.5g</td>
+              </tr>
+              <tr>
+                <td>Xích thược</td>
+                <td>0.75g</td>
+              </tr>
+              <tr>
+                <td>Xuyên khung</td>
+                <td>0.75g</td>
+              </tr>
+            </table>
+          </div>
+          <div id="congdung">
+            <h5>Công dụng của Thuốc Hoạt Huyết</h5>
+            <p><b style="font-size: 12px;">Chỉ định</b></p>
+            <p>Hoạt Huyết Trường Phúc chỉ định điều trị trong các trường hợp sau:</p>
+            <p>+ Điều trị các chứng huyết hư, ứ trệ.</p>
+            <p>+ Phòng ngừa và điều trị thiểu năng tuần hoàn não (mệt mỏi, đau đầu, chóng mặt, mất thăng bằng, hoa mắt,
+              mất ngủ, suy giảm trí nhớ), thiểu năng tuần hoàn ngoại vi (đau mỏi vai gáy, tê cứng cổ, đau cách hồi, đau
+              cơ, tê bì chân tay).</p>
+            <p>+ Phòng ngừa và hỗ trợ điều trị xơ vữa động mạch, nghẽn mạch, tai biến mạch máo não.</p>
+            <p><b>Dược lực học</b></p>
+            <p>Chưa có dữ liệu.</p>
+            <p>Dược động học</p>
+            <p>Chưa có dữ liệu.</p>
+
+          </div>
+          <div id="cachdung" class="thugon">
+            <h5>Cách dùng Thuốc Hoạt Huyết</h5>
+            <p><b style="font-size:12px;">Cách dùng</b></p>
+            <p>Hoạt Huyết Trường Phúc dạng viên nén bao phim dùng đường uống. Uống trước hoặc sau khi ăn 1 giờ.</p>
+            <p><b style="font-size:12px;">Liều dùng</b></p>
+            <p>Liều khuyến cáo:</p>
+            <p>+ Người lớn: Ngày uống 2 lần, mỗi lần 2 viên.</p>
+            <p>+ Trẻ em từ 12-15 tuổi: Ngày uống 2 lần, mỗi lần 1 viên.</p>
+            <p>Với bệnh mãn tính nên uống thuốc liên tục 3-6 tháng.</p>
+            <p>Lưu ý: Liều dùng trên chỉ mang tính chất tham khảo. Liều dùng cụ thể tùy thuộc vào thể trạng và mức độ
+              diễn
+              tiến của bệnh. Để có liều dùng phù hợp, bạn cần tham khảo ý kiến bác sĩ hoặc chuyên viên y tế.</p>
+            <p><b>Làm gì khi dùng quá liều?</b></p>
+            <p>Khi dùng thuốc quá liều có thể gặp một số tác dụng phụ. Theo dõi tích cực để có biện pháp xử lý kịp thời.
+              Khi xảy ra triệu chứng quá liều cần chuyển bệnh nhân đến cơ sở y tế gần nhất để được hỗ trợ.</p>
+            <p>Trong trường hợp khẩn cấp, hãy gọi ngay cho Trung tâm cấp cứu 115 hoặc đến trạm Y tế địa phương gần nhất.
+            </p>
+            <p><b>Làm gì khi quên 1 liều?</b></p>
+            <p>Bổ sung liều ngay khi nhớ ra. Tuy nhiên, nếu thời gian giãn cách với liều tiếp theo quá ngắn thì bỏ qua
+              liều đã quên và tiếp tục lịch dùng thuốc. Không dùng liều gấp đôi để bù cho liều đã bị bỏ lỡ.</p>
+          </div>
+
+          <div id="tdp" style="font-size: 14px;" class="thugon">
+            <h5><b>Tác dụng phụ</b></h5>
+            <p>Thông báo cho thầy thuốc các tác dụng không mong muốn gặp phải khi sử dụng thuốc.</p>
+          </div>
+          <div id="ly" style="background-color: bisque;font-size: 14px;" class="thugon">
+            <h4><img src="imgs/4.png" alt="" class="icon2">Lưu ý</h4>
+            <p>Trước khi sử dụng thuốc bạn cần đọc kỹ hướng dẫn sử dụng và tham khảo thông tin bên dưới.</p>
+            <p><b>Chống chỉ định</b></p>
+            <p>Hoạt Huyết Trường Phúc chống chỉ định trong các trường hợp sau:</p>
+            <p>+ Phụ nữ có thai, rong kinh, rong huyết.</p>
+            <p>+ Trẻ em dưới 12 tuổi. </p>
+            <p>+ Người có rối loạn đông máu, đang xuất huyết.</p>
+            <p>+ Người mẫn cảm với một trong các thành phần của thuốc.</p>
+            <p><b>Thận trọng khi sử dụng</b></p>
+            <p>Thận trọng khi sử dụng thuốc ở phụ nữ đang cho con bú.</p>
+            <p><b>Tương tác thuốc</b></p>
+            <p>Tương tác với các thuốc khác và các dạng tương tác khác: Uống cách xa thuốc khác 1-2 giờ.</p>
+          </div>
+          <div id="bq" class="thugon">
+            <p><b>Bảo quản</b></p>
+            <p>Để nơi mát, tránh ánh sáng, nhiệt độ dưới 30⁰C.</p>
+            <p>Để xa tầm tay trẻ em</p>
+
+          </div>
+          <button class="col-sm-10" id="thugon" style="border: none; font-style: italic;"><i>xem thêm</i></button>
+
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-12 ts" style="padding-right: 0;">
+          <div style="color: rgb(4, 22, 220); font-size: 12px;">
+            Mọi thông tin trên đây chỉ mang tính chất tham khảo. Việc sử dụng thuốc phải tuân theo hướng dẫn của bác
+            sĩ chuyên môn.</div>
+          <div class="row">
+
+            <div class="col-sm-11 " style="font-size: 13px;">
+              <p style="margin-bottom: 0;"><b>Dược sĩ Đại học Từ Vĩnh Khánh Tường</b></p>
+              <p>Tốt nghiệp Khoa Dược trường Đại học Võ Trường Toản. Có nhiều năm kinh nghiệm trong ngành Dược. Hiện
+                đang là giảng viên cho Dược sĩ tại Nhà thuốc Long Châu.
+
+              </p>
+            </div>
+          </div>
+
+
+          <!-- câu hỏi thường gặp-->
+          <div class="container mt-0 tal-l ts">
+            <p><b>Câu hỏi thường gặp</b></p>
+            <div>
+              <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#chtg1"> <span
+                  class="icon1">?</span>Dược lực học là gì?</button>
+              <div id="chtg1" class="collapse" style="margin-left: 10px;">
+                Dược lực học là nghiên cứu các ảnh hưởng sinh hóa, sinh lý, và phân tử của thuốc trên cơ thể và liên
+                quan đến thụ thể liên kết, hiệu ứng sau thụ thể, và tương tác hóa học. Dược lực học, với dược động
+                học, giúp giải thích mối quan hệ giữa liều và đáp ứng, tức là các tác dụng của thuốc. Đáp ứng dược
+                lý
+                phụ thuộc vào sự liên kết của thuốc với đích tác dụng. Nồng độ thuốc ở vị trí thụ thể ảnh hưởng đến
+                tác dụng của thuốc.
+              </div>
+            </div>
+            <div>
+              <button type="button" class="btn " data-bs-toggle="collapse" data-bs-target="#chtg2"><span
+                  class="icon1">?</span> Dược động học là gì?</button>
+              <div id="chtg2" class="collapse" style="margin-left: 10px;">
+                Dược động học là những tác động của cơ thể đối với thuốc trong suốt quá trình thuốc đi vào, ở trong
+                và
+                đi ra khỏi cơ thể- bao gồm các quá trình hấp thụ, sinh khả dụng, phân bố, chuyển hóa, và thải trừ.
+              </div>
+            </div>
+            <div>
+              <button type="button" class="btn " data-bs-toggle="collapse" data-bs-target="#chtg3"><span
+                  class="icon1">?</span> Tác dụng phụ của thuốc là gì? Cách phòng tránh tác dụng phụ của
+                thuốc</button>
+              <div id="chtg3" class="collapse" style="margin-left: 10px;">
+                Tác dụng phụ là những triệu chứng không mong muốn xảy ra khi chúng ta uống thuốc. Các tác dụng phụ
+                này
+                có thể không nghiêm trọng, chẳng hạn chỉ gây đau đầu hoặc khô miệng. Nhưng cũng có những tác dụng
+                phụ
+                đe dọa tính mạng. Cẩn phòng tránh tác dụng phụ của thuốc như: Thông báo các loại thuốc đang sử dụng
+                với bác sĩ, các bệnh lý nền hiện tại, các tương tác của thuốc đến thực phẩm hằng ngày. Đọc kỹ hướng
+                dẫn sử dụng thuốc và nếu gặp tác dụng phụ cần báo ngay cho bác sĩ.
+              </div>
+            </div>
+            <div>
+              <button type="button" class="btn " data-bs-toggle="collapse" data-bs-target="#chtg4"><span
+                  class="icon1">?</span> Sử dụng thuốc đúng cách như thế nào?</button>
+              <div id="chtg4" class="collapse" style="margin-left: 10px;">
+                Sử dụng thuốc đúng cách là uống thuốc theo chỉ dẫn của dược sĩ, bác sĩ. Ngoài ra không dùng nước
+                quả,
+                nước khoáng hoặc các loại nước ngọt đóng hộp có gas để uống thuốc. Không dùng sữa để uống thuốc vì
+                trong thành phần của sữa có chứa canxi. Không dùng cà phê hay nước chè để uống thuốc. Chỉ nên uống
+                cùng nước lọc.
+              </div>
+            </div>
+            <div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="search.js"></script>
+  </main>
+</body>
+
+</html>

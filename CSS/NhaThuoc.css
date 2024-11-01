@@ -16,7 +16,7 @@ p {
     border-radius: 25px;
 }
 
-.header {
+.header-header {
     background-image: url("../Images/header_desktop_a4bfadd206.webp");
     background-size: cover;
     background-repeat: no-repeat;
@@ -122,12 +122,18 @@ div.header-p2 {
     height: 55px;
     background-color: white;
     text-align: center;
+
+}
+
+.search-bar-box:active {
+    border: none !important;
 }
 
 .search-btn {
     background-color:rgb(199, 215, 250);
     width: 40px;
     height: 40px;
+    aspect-ratio: 1 / 1;
     box-sizing: border-box;
     padding: 8px 0px;
 }
@@ -227,14 +233,7 @@ div.header-p2 {
     font-weight: 600;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
-}
 
-.dropdown-toggle:after {
-    display: none;
-}
 
 @media only screen and (max-width: 767px) {
     .dang-nhap-box {
@@ -268,6 +267,7 @@ div.header-p2 {
     top: 0;
     text-align: center;
     display: none;
+    z-index: 100;
 }
 
 .dang-nhap-box {
@@ -281,9 +281,16 @@ div.header-p2 {
     transform: translate(-50%, -50%);
 }
 
+
+
+@media only screen and (min-width: 768px) {
+    .dang-nhap-box > * {
+        max-width: 70%;
+    }
+}
+
 .dang-nhap-box > * {
     box-sizing: border-box;
-    max-width: 70%;
     width: 100;
     margin: auto;
     padding: 5px 0;

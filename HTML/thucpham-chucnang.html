@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực phẩm chức năng</title>
+    <style>
+        body{
+            background-color: #e0e0e0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .thucpham {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            padding: 10px 150px 5px 150px;
+           
+        }
+        .thucpham > div {
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(66, 66, 66);
+            border-radius: 10px;
+        }
+        .thucpham a{
+            text-decoration: none;
+            color: rgb(15, 95, 215);
+            font-weight: bold;
+        }
+        .thucpham ul{
+            list-style: none;
+            gap: 5px;
+        }
+        .thucpham ul li{
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+        .thucpham a:hover{
+            color: rgb(206, 116, 6);
+        }
+        .thucpham .right{
+            text-align: center;
+            float: left;
+            width: 35%;
+        }
+        .thucpham img{
+            width: 40px;
+        }
+        .thucpham .left{
+            float: left;
+            width: 60%;
+        }
+        @media(max-width:850px){
+            .thucpham {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+            .thucpham > div {
+                flex-direction: column;
+            }
+            .right img {
+                width: 60px;
+            }
+            .left {
+                padding: 0;
+            }
+            .left ul li {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header to load--> <header id="header-to-here"></header>
+    <h2 style="text-align: center;">Thực phẩm chức năng</h2>
+    <div class="thucpham">
+        <div>
+            <div class="right">
+                <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/80x80/https://cms-prod.s3-sgn09.fptcloud.com/smalls/tpcn_vitamin_khoang_chat_level_2_91b99b5a64.png" alt="">
+                <h4>Vitamin&Khoáng chất</h4>
+                <p>212 sản phẩm</p>
+            </div>
+            <div class="left">
+                <ul>
+                    <li><a href="">Bổ sung Canxi & Vitamin D</a></li>
+                    <li><a href="">Vitamin tổng hợp</a></li>
+                    <li><a href="">Dầu cá, Omega 3, DHA</a></li>
+                    <li><a href="">Vitamin C các loại</a></li>
+                    <li><a href="">Bổ sung sắt & Axit Folic</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="right">
+                <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/80x80/https://cms-prod.s3-sgn09.fptcloud.com/smalls/sinh_li_noi_tiet_to_ec55ecdc29.png" alt="">
+                <h4>Sinh lý-Nội tiết tố</h4>
+                <p>84 sản phẩm</p>
+            </div>
+            <div class="left">
+                <ul>
+                    <li><a href="">Sinh lý nam</a></li>
+                    <li><a href="">Sức khỏe tình dục</a></li>
+                    <li><a href="">Cân bằng nội tiết tố</a></li>
+                    <li><a href="">Sinh lý nữ</a></li>
+                    <li><a href="">Hỗ trợ mãn kinh</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="right">
+                <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/80x80/https://cms-prod.s3-sgn09.fptcloud.com/smalls/cai_thien_tang_cuong_chuc_nang_level_2_18502416c0.png" alt="">
+                <h4>Cải thiện tăng cường chức năng</h4>
+                <p>220 sản phẩm</p>
+            </div>
+            <div class="left">
+                <ul>
+                    <li><a href="">Chức năng gan</a></li>
+                    <li><a href="">Tăng sức đề kháng, miễn dịch</a></li>
+                    <li><a href="">Bổ mắt, bảo vệ mắt</a></li>
+                    <li><a href="">Hỗ trợ trao đổi chất</a></li>
+                    <li><a href="">Giải rượu, cai rượu</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="right">
+                <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/80x80/https://cms-prod.s3-sgn09.fptcloud.com/smalls/ho_tro_dieu_tri_level_2_00d86ca048.png" alt="">
+                <h4>Hỗ trợ điều trị</h4>
+                <p>197 sản phẩm</p>
+            </div>
+            <div class="left">
+                <ul>
+                    <li><a href="">Cơ xương khớp</a></li>
+                    <li><a href="">Hô hấp, ho, xoang</a></li>
+                    <li><a href="">Thận, tiền liệt tuyến</a></li>
+                    <li><a href="">Hỗ trợ điều trị trĩ</a></li>
+                    <li><a href="">Hỗ trợ điều trị gout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="right">
+                <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/80x80/https://cms-prod.s3-sgn09.fptcloud.com/smalls/tpcn_vitamin_khoang_chat_level_2_91b99b5a64.png" alt="">
+                <h4>Hỗ trợ tiêu hóa</h4>
+                <p>122 sản phẩm</p>
+            </div>
+            <div class="left">
+                <ul>
+                    <li><a href="">Dạ tràng, tá tràng</a></li>
+                    <li><a href="">Táo bón</a></li>
+                    <li><a href="">Vi sinh - Probiotic</a></li>
+                    <li><a href="">Đại tràng</a></li>
+                    <li><a href="">Khó tiêu</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="right">
+                <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/80x80/https://cms-prod.s3-sgn09.fptcloud.com/smalls/than_kinh_nao_level_2_b0cc93af6f.png" alt="">
+                <h4>Thần kinh não</h4>
+                <p>106 sản phẩm</p>
+            </div>
+            <div class="left">
+                <ul>
+                    <li><a href="">Bổ não - cải thiện trí nhớ</a></li>
+                    <li><a href="">Hỗ trợ giấc ngủ ngon</a></li>
+                    <li><a href="">Tuần hoàn máu</a></li>
+                    <li><a href="">Kiểm soát giấc ngủ</a></li>
+                    <li><a href="">Hoạt huyết</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="right">
+                <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/80x80/https://cms-prod.s3-sgn09.fptcloud.com/smalls/ho_tro_lam_dep_level_2_87dfb56752.png" alt="">
+                <h4>Hỗ trợ làm đẹp</h4>
+                <p>49 sản phẩm</p>
+            </div>
+            <div class="left">
+                <ul>
+                    <li><a href="">Giảm cân</a></li>
+                    <li><a href="">Làm đẹp da, dưỡng da</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="right">
+                <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/80x80/https://cms-prod.s3-sgn09.fptcloud.com/smalls/suc_khoe_tim_mach_level_2_1fc9d156fd.png" alt="">
+                <h4>Sức khỏe tim mạch</h4>
+                <p>44 sản phẩm</p>
+            </div>
+            <div class="left">
+                <ul>
+                    <li><a href="">Giảm Cholesterol</a></li>
+                    <li><a href="">Huyết áp</a></li>
+                    <li><a href="">Suy giãn tim mạch</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="right">
+                <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/80x80/https://cms-prod.s3-sgn09.fptcloud.com/smalls/dinh_duong_level_2_6b1af6b735.png" alt="">
+                <h4>Dinh dưỡng</h4>
+                <p>78 sản phẩm</p>
+            </div>
+            <div class="left">
+                <ul>
+                    <li><a href="">Sữa</a></li>
+                    <li><a href="">Dinh dưỡng trẻ em</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer to load --> <footer id="footer-to-here"></footer>
+    <!-- js to load --> <script src="../JS/NhaThuoc-load-content.js" onload="loadContent()"></script>
+    <script src="../JS/NhaThuoc-header.js" id="headerscr"></script>
+    <script src="../JS/NhaThuoc-footer.js" id="footerscr"></script>
+</body>
+</html>

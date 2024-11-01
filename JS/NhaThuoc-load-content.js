@@ -33,3 +33,5 @@ function loadContent() {
             })
             .catch(error => console.error("Error loading HTML:", error));
 }
+
+loadContent();

@@ -1,102 +1,103 @@
-/* Đảm bảo không có khoảng trắng không mong muốn */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Đảm bảo toàn bộ container chiếm hết chiều cao trang trừ phần footer */
-.container.infor {
+html, body {
+    height: 100%;
+}
+
+
+.container-footer {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px; /* Khoảng cách giữa các khối */
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    min-height: calc(100vh - 60px); /* Tính toán chiều cao trừ footer */
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    gap: 10px;
+    padding: 10px 150px 5px 150px;
 }
-
-/* Khối con - mỗi khối sẽ nằm trong một cột */
-.container.infor > div {
+.container-footer > div {
     background-color: #fff;
     border-radius: 8px;
-    padding: 20px; /* Tăng padding để tạo không gian hơn cho nội dung */
-    display: flex;
-    flex-direction: column;
     line-height: 1.5;
+    padding: 15px;
 }
 
-/* Tiêu đề trong khối */
-.container.infor h4 {
-    font-size: 15px; /* Tăng kích thước chữ */
+.chung-toi{
+    grid-row: 1 / 4;
+}
+.danhmuc, .timhieuthem{
+    grid-row: 1 / 4;
+}
+.container-footer h4 {
+    font-size: 15px; 
     font-weight: bold;
-    color: #7c7c7c;
+    color: #666666;
     text-transform: uppercase;
-    margin-bottom: 10px; /* Giảm khoảng cách dưới tiêu đề */
+    margin-bottom: 10px; 
 }
 
-/* Danh sách */
-.container.infor ul {
+
+.container-footer ul {
     list-style-type: none;
     padding: 0;
-    margin: 0; /* Đặt lại margin */
+    margin: 0; 
 }
 
-.container.infor ul li {
-    margin-bottom: 5px; /* Giảm khoảng cách giữa các item trong danh sách */
+.container-footer ul li {
+    margin-bottom: 5px; 
 }
 
-.container.infor ul li a {
+.container-footer ul li a {
     text-decoration: none;
-    color: #0056b3;
-    font-size: 16px;
-    font-weight: 500;
+    color: #0273ed;
+    font-size: 15px;
+    font-weight: 200;
     transition: color 0.3s ease;
 }
 
-.container.infor ul li a:hover {
+.container-footer ul li a:hover {
     color: #ff6600;
     text-decoration: underline;
 }
-
-/* Tổng Đài */
-.container.infor .tong-dai div {
-    margin-bottom: 10px;
+.hethong{
+    background-color: #0056b3;
+    padding: 20px;
 }
-
-.container.infor .tong-dai a {
-    font-size: 16px;
-    color: #0056b3;
+.hethong > div{
+    background-color: white;
+    border-radius: 40px;
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+.hethong img{
+    height: 32px;
+}
+.hethong a{
+    text-decoration: none;
+    color: #4991ef;
+}
+.container-footer .tong-dai a {
+    font-size: 15px;
+    color: #0273ed;
     text-decoration: none;
     transition: text-decoration 0.3s ease;
 }
 
-.container.infor .tong-dai a:hover {
+.container-footer .tong-dai a:hover {
     text-decoration: underline;
 }
 
-.container.infor .tong-dai span {
+.container-footer .tong-dai span {
     color: #777;
     margin-left: 10px;
-    font-size: 14px;
-}
-
-/* Hỗ trợ thanh toán */
-.container.infor .thanh-toan {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    overflow-x: auto;
-    width: 100%;
-}
-
-.container.infor .thanh-toan-icons a {
-    margin-right: 5px;
+    font-size: 15px;
 }
 
 .thanh-toan img {
-    max-width: 50px;
-    height: auto; /* Đảm bảo tỷ lệ hình ảnh */
+    width: 40px;
+    height: auto; 
     border-radius: 5px;
     padding: 5px;
     border: 1px solid rgb(164, 164, 164);
@@ -107,12 +108,14 @@
     transform: scale(1.1);
 }
 
-/* Kết nối với chúng tôi */
-.ket-noi {
+.thanh-toan a {
+    display: inline-block;
+}
+
+.thanh-toan div {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    align-items: center;
 }
 
 .ket-noi a {
@@ -123,47 +126,35 @@
     max-width: 35px;
     height: auto;
     transition: transform 0.3s ease;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .ket-noi img:hover {
     transform: scale(1.1);
 }
-
-/* Chứng nhận */
 .chung-nhan, .thanh-toan {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+    grid-column: 4;
 }
-
-.chung-nhan img, .thanh-toan img {
+.chung-nhan img{
     max-width: 90px;
     height: auto;
-    margin-bottom: 5px;
 }
 
-/* Tải ứng dụng */
 .tai-ung-dung {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.tai-ung-dung a {
-    margin-bottom: 10px;
+    grid-column: 5;
+    grid-row: 2 / span 2;
 }
 
 .tai-ung-dung img {
     max-width: 100px;
 }
 
-/* Footer */
 .footer {
     text-align: center;
-    font-size: 14px; /* Giảm kích thước chữ footer */
+    font-size: 14px; 
     line-height: 1.5;
-    padding: 10px 0; /* Giảm padding để không chiếm quá nhiều không gian */
+    padding: 10px 0; 
     background-color: #f1f1f1;
     color: #333;
     border-top: 1px solid #ccc;
@@ -186,7 +177,7 @@
 .footer ul li a {
     text-decoration: none;
     color: #0056b3;
-    font-size: 16px;
+    font-size: 15px;
     transition: color 0.3s ease;
 }
 
@@ -195,23 +186,23 @@
 }
 
 .footer p {
-    font-size: 16px;
-    color: #777;
+    font-size: 15px;
+    color: #686767;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container.infor {
-        grid-template-columns: repeat(2, 1fr);
+@media(max-width: 850px){
+    .hethong{
+        display: none;
     }
-
-    .container.infor > div {
-        margin-bottom: 20px; /* Tăng khoảng cách dưới mỗi khối */
+    .container-footer{
+        display: block;
+        padding: 10px 50px 5px 50px;
     }
-}
-
-@media (max-width: 480px) {
-    .container.infor {
-        grid-template-columns: 1fr; /* Chuyển về một cột */
+    .container-footer > div{
+        width: 100%;
+        padding: 0;
+        border-bottom: 2px solid #ccc;
+        border-radius: 0;
+        padding: 10px;
     }
 }

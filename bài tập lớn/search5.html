@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+
+<body>
+    <main>
+
+        <!--//////////////////////////////////////////////////////////////////////////////////////////-->
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-4">
+                    <!-- Carousel -->
+                    <div style="position: sticky; top: 20px;">
+                        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                            <!-- ảnh -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
+                                        style="border: none;"> <img src="img/soki/1.webp" alt="chưa tải được ảnh"
+                                            class="d-block" style="width:100%;"></button>
+                                </div>
+                                <div class="carousel-item">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
+                                        style="border: none;"> <img src="img/soki/2.jpg" alt="chưa tải được ảnh"
+                                            class="d-block" style="width:100%;"></button>
+                                </div>
+                                <div class="carousel-item">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
+                                        style="border: none;"> <img src="img/soki/3.webp" alt="chưa tải được ảnh"
+                                            class="d-block" style="width:100%;"></button>
+                                </div>
+                                <div class="carousel-item">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
+                                        style="border: none;"> <img src="img/soki/4.webp" alt="chưa tải được ảnh"
+                                            class="d-block" style="width:100%;"></button>
+                                </div>
+                                <div class="carousel-item">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
+                                        style="border: none;"> <img src="img/soki/5.webp" alt="chưa tải được ảnh"
+                                            class="d-block" style="width:100%;"></button>
+                                </div>
+                                <div class="carousel-item">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
+                                        style="border: none;"> <img src="img/soki/6.webp" alt="chưa tải được ảnh"
+                                            class="d-block" style="width:100%;"></button>
+                                </div>
+                            </div>
+
+                            <!-- mũi tên chuyển ảnh -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demo"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"
+                                    style="background-color: rgb(82, 91, 91); border-radius: 50%;"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#demo"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"
+                                    style="background-color: rgb(82, 91, 91); border-radius: 50%;"></span>
+                            </button>
+                        </div>
+                        <!-- ảnh -->
+                        <div class="container-fluid mt-3 none1">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"
+                                style="flex: 1; border: none;">
+                                <img src="img/soki/1.webp" alt="Slide 1" style="width:100%; box-sizing: border-box;">
+                            </button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"
+                                style="flex: 1; border: none;">
+                                <img src="img/soki/2.jpg" alt="Slide 2" style="width:100%; box-sizing: border-box;">
+                            </button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"
+                                style="flex: 1; border: none;">
+                                <img src="img/soki/3.webp" alt="Slide 3" style="width:100%; box-sizing: border-box;">
+                            </button>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
+                                style="flex: 1; border: none; background: none; color: rgb(1, 1, 1); position: relative;">
+                                <img src="img/soki/3.webp" alt="Slide 4"
+                                    style="width:100%; box-sizing: border-box; height: auto;">
+                                <span class="overlay">Xem thêm</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title" style="text-align: center;">SBột hòa tan Soki-Tium giúp ngủ
+                                        ngon, tăng sức đề kháng (12 gói x 3g)</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <div id="demo2" class="carousel slide" data-bs-ride="carousel">
+                                        <!-- ảnh -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" style="text-align: center;">
+                                                <img src="img/soki/1.webp" alt="chưa tải được ảnh" class="d-block"
+                                                    style="width:55vh; height: 55vh; margin: 0 auto;">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/soki/2.jpg" alt="chưa tải được ảnh" class="d-block"
+                                                    style="width:55vh; height: 55vh; margin: 0 auto;">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/soki/3.webp" alt="chưa tải được ảnh" class="d-block"
+                                                    style="width:55vh; height: 55vh; margin: 0 auto;">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/soki/4.webp" alt="chưa tải được ảnh" class="d-block"
+                                                    style="width:55vh; height: 55vh; margin: 0 auto;">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/soki/5.webp" alt="chưa tải được ảnh" class="d-block"
+                                                    style="width:55vh; height: 55vh; margin: 0 auto;">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/soki/6.webp" alt="chưa tải được ảnh" class="d-block"
+                                                    style="width:55vh; height: 55vh; margin: 0 auto;">
+                                            </div>
+                                        </div>
+                                        <!-- mũi tên chuyển ảnh -->
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#demo2"
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon"
+                                                style="background-color: rgb(82, 91, 91); border-radius: 50%;"></span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#demo2"
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon"
+                                                style="background-color: rgb(82, 91, 91); border-radius: 50%;"></span>
+                                        </button>
+                                    </div>
+                                    <!-- ảnh -->
+                                    <div class="container-fluid mt-3 " style="display: flex; width: 100%;">
+
+                                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="0"
+                                            class="active" style="flex: 1; border: none;">
+                                            <img src="img/soki/1.webp" alt="Slide 1"
+                                                style="width:100%; box-sizing: border-box;">
+                                        </button>
+                                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"
+                                            style="flex: 1; border: none;">
+                                            <img src="img/soki/2.jpg" alt="Slide 2"
+                                                style="width:100%; box-sizing: border-box;">
+                                        </button>
+                                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="2"
+                                            style="flex: 1; border: none;">
+                                            <img src="img/soki/3.webp" alt="Slide 3"
+                                                style="width:100%; box-sizing: border-box;">
+                                        </button>
+                                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="3"
+                                            style="flex: 1; border: none;">
+                                            <img src="img/soki/4.webp" alt="Slide 4"
+                                                style="width:100%; box-sizing: border-box;">
+                                        </button>
+                                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="4"
+                                            style="flex: 1; border: none;">
+                                            <img src="img/soki/5.webp" alt="Slide 5"
+                                                style="width:100%; box-sizing: border-box;">
+                                        </button>
+                                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="5"
+                                            style="flex: 1; border: none;">
+                                            <img src="img/soki/6.webp" alt="Slide 6"
+                                                style="width:100%; box-sizing: border-box;">
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/////////////////////////////////////////////////////////////////-->
+                </div>
+                <div class="col-sm-8">
+                    <p>Thương hiệu: <a href="#link">Soki</a></p>
+                    <h5>Bột hòa tan Soki-Tium giúp ngủ ngon, tăng sức đề kháng (12 gói x 3g)</h5>
+                    <p>00009581 - 4.9 <span style="color: gold;">★</span> - <a href="#link">đánh giá </a> - <a
+                            href="#link">bình
+                            luận</a></p>
+                    <h2 style="color: rgb(9, 33, 170);">330.000đ/ Hộp</h2>
+
+                    <table class="a">
+                        <tr>
+                            <td class="col1">Chọn đơn vị tính</td>
+                            <td>Hộp</td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Danh mục</td>
+                            <td><a href="#">Hỗ trợ giấc ngủ ngon</a></td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Dạng bào chế</td>
+                            <td>Dạng bột</td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Quy cách</td>
+                            <td>Hộp 12 Gói x 3g</td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Xuất xứ thương hiệu</td>
+                            <td>Việt Nam</td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Nhà sản xuất</td>
+                            <td>PHARVINA</td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Nước sản xuất</td>
+                            <td>Việt Nam</td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Thành phần</td>
+                            <td>Colostrum, Lactium, Tá dược vừa đủ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Mô tả ngắn</td>
+                            <td>Soki-Tium giúp ngủ ngon, hỗ trợ tăng cường sức đề kháng. </td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Số đăng ký</td>
+                            <td>
+                                5267/2019/ĐKSP</td>
+                        </tr>
+                    </table>
+
+                    <table style="box-shadow: 0px 0px 1px rgb(65, 65, 60);">
+                        <tr>
+                            <td style="background-color: blanchedalmond;color: rgb(184, 89, 7);"><img
+                                    src="imgs/phantram.png" alt="" class="icon2"> Khuyến mại được áp dụng</td>
+                        </tr>
+                        <tr>
+                            <td style="height: 50px;">
+                            </td>
+                        </tr>
+
+
+                        <div class="container mt-5 none">
+                            <div class="d-flex">
+                                <p>chọn số lượng</p>
+                                <div class="input-group" style="width: 115px;margin-left: 10px; height: 10px;">
+
+                                    <button class="btn btn-outline-secondary vien" type="button"
+                                        id="btn-minus">-</button>
+                                    <input type="number" class="form-control text-center" id="quantity" value="1"
+                                        min="1" max="10">
+                                    <button class="btn btn-outline-secondary vien" type="button"
+                                        id="btn-plus">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            document.getElementById('btn-plus').addEventListener('click', function () {
+                                var quantity = document.getElementById('quantity');
+                                if (quantity.value < 10) {
+                                    quantity.value = parseInt(quantity.value) + 1;
+                                }
+                            });
+
+                            document.getElementById('btn-minus').addEventListener('click', function () {
+                                var quantity = document.getElementById('quantity');
+                                if (quantity.value > 1) {
+                                    quantity.value = parseInt(quantity.value) - 1;
+                                }
+                            });
+                        </script>
+                        <form action="#chuabiet">
+                            <button type="submit" class="btn btn-primary vien" style="width: 150px;">chọn mua</button>
+                        </form>
+                        <table style="width: 100%;">
+                            <tr class="inl">
+                                <td class="col30" style=" display:flex ;"><img src="imgs/3.png" alt="" class="icon"
+                                        style="height: 3em;">
+                                    <p><b>Đổi trả trong 30 ngày</b>
+                                        <br> kể từ ngày mua hàng
+                                    </p>
+                                </td>
+                                <td class="col30" style=" display:flex ;"><img src="imgs/2.png" alt="" class="icon"
+                                        style="height: 3em;">
+                                    <p><b>Miễn phí 100%</b>
+                                        <br> đổi thuốc
+                                    </p>
+                                </td>
+                                <td class="col30" style=" display:flex ;"><img src="imgs/1.png" alt="" class="icon"
+                                        style="height: 3em;">
+                                    <p><b>Miễn phí vận chuyển</b>
+                                        <br> theo chính sách giao hàng
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+
+                <div class="col-sm-2">
+                    <div style="position:sticky; top: 0;">
+                        <div class="none1">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link bl" href="#tp">Thành phần</a>
+                                    </button>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bl" href="#congdung">Công dụng</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bl" href="#cachdung">Cách dùng</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bl" href="#tdp">Tác dụng phụ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bl" href="#ly">lưu ý</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bl" href="#bq">Bảo quản<nav></nav></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--///////////////////////////////////////////////////////////////////////-->
+                <div class="col-sm-10">
+                    <div id="tp">
+                        <h5>Thành phần của Bột hòa tan Soki-Tium</h5>
+                        <p>Thành phần cho một gói</p>
+                        <table class="b">
+                            <tr style="background-color: bisque;">
+                                <td>Thông tin thành phần</td>
+                                <td>Hàm lượng</td>
+                            </tr>
+                            <tr>
+                                <td>Colostrum</td>
+                                <td>250mg </td>
+                            </tr>
+                            <tr>
+                                <td>Lactium</td>
+                                <td>250mg</td>
+                            </tr>
+                            <tr>
+                                <td>Tá dược vừa đủ</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <p><i>Đạm sữa thủy phân lactium:</i> Một loại đạm nhỏ có tác dụng thư giãn, được tạo ra nhờ quá
+                            trình mô phỏng thành công cơ chế tiêu hóa sữa mẹ ở trẻ sơ sinh. Lactium đã được FDA chứng
+                            nhận an toàn qua thực tế sử dụng, phòng chống stress mà không gây nghiện ngay cả khi sử dụng
+                            ở liều cao.
+                        </p>
+                        <p><i>Sữa non prodiet colostrum: </i> Được thu hoạch vào ngày thứ hai sau khi bò mẹ sinh con,
+                            giống
+                            nhất với sữa non ở người. Sữa non giúp tăng cường hệ miễn dịch, thúc đẩy sức khoẻ đường
+                            ruột,
+                            hoàn thiện các chức năng tiêu hóa và não bộ, giúp trẻ phát triển toàn diện. Nồng độ IgG hoạt
+                            tính của prodiet colostrum trong Soki-Tium tới 20%, cao nhất trên thị trường. Không chứa
+                            hormone
+                            dư thừa, không biến tính nhờ sản xuất ở nhiệt độ thấp.</p>
+                    </div>
+                    <div id="congdung">
+                        <h5>Công dụng của Bột hòa tan Soki-Tium</h5>
+                        <p>Soki-Tium giúp ngủ ngon, hỗ trợ tăng cường sức đề kháng.</p>
+                    </div>
+                    <div id="cachdung" class="thugon">
+                        <h5>Cách dùng Bột hòa tan Soki-Tium</h5>
+                        <p><b style="font-size:14px;">Cách dùng</b></p>
+                        <p>Trẻ dưới 1 tuổi: Uống 2 gói/ lần, ngày 1 lần.</p>
+                        <p>Trẻ từ 1 đến 6 tuổi: Uống 3 gói/lần, ngày 1 lần.</p>
+                        <p>Trẻ trên 6 tuổi và người lớn: Uống 4 gói/lần, ngày 1 lần.</p>
+                        <p>Uống trước khi đi ngủ 30 phút.</p>
+                        <p>Mỗi gói bột sữa pha với 10ml - 15ml nước, nhiệt độ 40°C - 50°C.</p>
+                        <p>Sử dụng liên tục trong 18 đến 30 ngày để đạt hiệu quả tốt nhất.</p>
+                        <p>Có thể sử dụng lâu dài, uống 1 đến 2 gói/lần, ngày 1 lần. </p>
+                        <p><b>Đối tượng sử dụng</b></p>
+                        <p>Soki-Tium dùng trong các trường hợp:</p>
+                        <p>+ Trẻ em sức đề kháng kém, ngủ không ngon giấc hay bị giật mình, quấy khóc.</p>
+                        <p>+ Người lớn suy nhược cơ thể do căng thẳng, khó ngủ, mất ngủ, ngủ không sâu giấc.</p>
+                        <p>Dùng được cho trẻ dưới 2 tuổi, phụ nữ có thai và cho con bú.</p>
+
+                    </div>
+                    <div id="tdp" style="font-size: 14px;" class="thugon">
+                        <h5><b>Tác dụng phụ</b></h5>
+                        <p>Chưa có thông tin về tác dụng phụ của sản phẩm.</p>
+                    </div>
+                    <div id="ly" style="background-color: bisque;font-size: 14px;" class="thugon">
+                        <h4><img src="imgs/4.png" alt="" class="icon2">Lưu ý</h4>
+                        <p>Không sử dụng cho người mẫn cảm với bất kỳ thành phần nào của sản phẩm.</p>
+                        <p>Trẻ dưới 2 tuổi tham khảo ý kiến của dược sĩ, bác sĩ trước khi dùng.</p>
+                        <p>Sản phẩm này không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh.</p>
+                        <p>Đọc kỹ hướng dẫn sử dụng trước khi dùng.</p>
+                    </div>
+                    <div id="bq" class="thugon">
+                        <h5><b>Bảo quản</b></h5>
+                        <p>Bảo quản nơi khô ráo, thoáng mát, nhiệt độ không quá 30 độ C, tránh ánh sáng trực tiếp.</p>
+                        <p>Để xa tầm tay trẻ em</p>
+                    </div>
+                    <button class="col-sm-10  " id="thugon" style="border: none; font-style: italic;"><i>xem
+                            thêm</i></button>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-12 ts" style="padding-right: 0;">
+                    <div style="color: rgb(4, 22, 220); font-size: 12px;">
+                        Thực phẩm bảo vệ sức khoẻ, không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh.
+                    </div>
+                    <div class="row">
+
+                        <div class="col-sm-11 " style="font-size: 13px;">
+                            <p style="margin-bottom: 0;"><b>Dược sĩ Đại học Phạm Nguyễn Hoàng Kim</b></p>
+                            <p>Dược sĩ chuyên ngành Dược lâm sàng, với nhiều năm kinh nghiệm làm việc trong lĩnh vực
+                                dược phẩm. Là Dược sĩ Long Châu đạt được chứng chỉ bệnh học cấp quốc tế. Hiện đang
+                                là giảng viên tại Trung tâm Đào tạo FPT Long Châu.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- câu hỏi thường gặp-->
+                    <div class="container mt-0 tal-l ts">
+                        <p><b>Câu hỏi thường gặp</b></p>
+                        <div>
+                            <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#chtg1">
+                                <span class="icon1">?</span> Có cần kiêng cử gì khi sử dụng Soki-Tium Pharvina
+                                không?</button>
+                            <div id="chtg1" class="collapse" style="margin-left: 10px;">
+                                Trong quá trình sử dụng Soki Tium Pharvina, người dùng không cần kiêng cữ gì do
+                                thành phần tự nhiên nên sản phẩm có thể sử dụng chung với các sản phẩm khác.
+
+
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn " data-bs-toggle="collapse" data-bs-target="#chtg2"><span
+                                    class="icon1">?</span> Cần lưu ý điều gì khi cho trẻ
+                                sử
+                                dụng Soki-Tium Pharvina?</button>
+                            <div id="chtg2" class="collapse" style="margin-left: 10px;">
+                                <p>Nên sử dụng Soki-Tium Pharvina sau bữa ăn từ 2,5 - 3 tiếng.</p>
+                                <p>Không nên cho trẻ sử dụng sản phẩm ngay sau một giấc ngủ dài.</p>
+                                <p>Trẻ sử dụng nên có sự kiểm soát của người lớn để tránh tình trạng uống quá liều.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn " data-bs-toggle="collapse" data-bs-target="#chtg3"><span
+                                    class="icon1">?</span> Phụ nữ có thai và cho con bú có
+                                uống Soki-Tium Pharvina được không?</button>
+                            <div id="chtg3" class="collapse" style="margin-left: 10px;">
+                                Soki-Tium Pharvina là thực phẩm hỗ trợ giấc ngủ ngon đã được chứng nhận an toàn với
+                                phụ nữ mang thai và cho con bú. Vì vậy, bạn có thể yên tâm sử dụng nếu đang mang
+                                thai hoặc cho con bú.</div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn " data-bs-toggle="collapse" data-bs-target="#chtg4"><span
+                                    class="icon1">?</span> Soki-Tium Pharvina có gây tác
+                                dụng phụ không?</button>
+                            <div id="chtg4" class="collapse" style="margin-left: 10px;">
+                                <p>Hiện tại vẫn chưa có báo cáo về tác dụng phụ khi sử dụng bột hòa tan Soki-Tium
+                                    Pharvina.</p>
+                                <p>Tuy nhiên, sau khi cho trẻ dùng cần phải theo dõi sức khỏe thật cẩn thận, nếu có
+                                    biểu hiện bất thường thì cần đưa trẻ đi thăm khám ngay.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn " data-bs-toggle="collapse" data-bs-target="#chtg5"><span
+                                    class="icon1">?</span> Tại sao bé hay khóc
+                                đêm?</button>
+                            <div id="chtg5" class="collapse" style="margin-left: 10px;">
+                                <p>Một số nguyên nhân chủ yếu khiến bé khóc đêm:</p>
+                                <p>Môi trường ngủ không thoải mái.</p>
+                                <p>Phân bổ thời gian ngủ của trẻ không hợp lý.</p>
+                                <p>Chăm sóc trẻ chưa đúng cách.</p>
+                                <p>Trẻ gặp vấn đề về bệnh lý: Rối loạn tiêu hóa và hô hấp, sốt,…</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="search.js"></script>
+    </main>
+</body>
+
+</html>

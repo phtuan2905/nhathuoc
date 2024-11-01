@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dược mỹ phẩm</title>
+    <style>
+        body{
+            background-color: #e0e0e0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .thucpham {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            padding: 10px 150px 5px 150px;
+           
+        }
+        .thucpham > div {
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(66, 66, 66);
+            border-radius: 10px;
+        }
+        .thucpham a{
+            text-decoration: none;
+            color: rgb(15, 95, 215);
+            font-weight: bold;
+        }
+        .thucpham ul{
+            list-style: none;
+            gap: 5px;
+        }
+        .thucpham ul li{
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+        .thucpham a:hover{
+            color: rgb(206, 116, 6);
+        }
+        .thucpham .right{
+            text-align: center;
+            float: left;
+            width: 35%;
+        }
+        .thucpham img{
+            width: 40px;
+        }
+        .thucpham .left{
+            float: left;
+            width: 60%;
+        }
+        @media(max-width:850px){
+            .thucpham {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+            .thucpham > div {
+                flex-direction: column;
+            }
+            .right img {
+                width: 60px;
+            }
+            .left {
+                padding: 0;
+            }
+            .left ul li {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <div id="link-to-here"></div>
+</head>
+<body>
+    <!-- Header to load--> <header id="header-to-here"></header>
+
+    <h2 style="text-align: center;">Dược mỹ phẩm</h2>
+    <div class="thucpham">
+        <div>
+            <div class="right">
+                <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/80x80/https://cms-prod.s3-sgn09.fptcloud.com/smalls/cham_soc_da_mat_level_2_83d5e5f264.png" alt="">
+                <h4>Chăm sóc da mặt</h4>
+                <p>165 sản phẩm</p>
+            </div>
+            <div class="left">
+                <ul>
+                    <li><a href="">Sữa rửa mặt(Kem, gel, sữa)</a></li>
+                    <li><a href="">Kem chống nắng da mặt</a></li>
+                    <li><a href="">Dưỡng da mặt</a></li>
+                    <li><a href="">Mặt nạ</a></li>
+                    <li><a href="">Serum, Essence hoặc Ampoule</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="right">
+                <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/80x80/https://cms-prod.s3-sgn09.fptcloud.com/smalls/cham_soc_co_the_level_2_3498128f6b.png" alt="">
+                <h4>Chăm sóc cơ thể</h4>
+                <p>204 sản phẩm</p>
+            </div>
+            <div class="left">
+                <ul>
+                    <li><a href="">Sữa tắm, xà bông</a></li>
+                    <li><a href="">Chống nắng toàn thân</a></li>
+                    <li><a href="">Lăn khử mùi, xịt khử mùi</a></li>
+                    <li><a href="">Sữa dưỡng thể, kem dưỡng thể</a></li>
+                    <li><a href="">Trị nứt da</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="right">
+                <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/80x80/https://cms-prod.s3-sgn09.fptcloud.com/smalls/giai_phap_lan_da_level_2_24c57abcd0.png" alt="">
+                <h4>Giải pháp làn da</h4>
+                <p>88 sản phẩm</p>
+            </div>
+            <div class="left">
+                <ul>
+                    <li><a href="">Trị sẹo, mờ vết thâm</a></li>
+                    <li><a href="">Kem trị mụn, gel trị mụn</a></li>
+                    <li><a href="">Dưỡng da bị khô, thiếu ẩm</a></li>
+                    <li><a href="">Kem trị nám, tàn nhang, đốm nâu</a></li>
+                    <li><a href="">Viêm da cơ địa</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="right">
+                <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/80x80/https://cms-prod.s3-sgn09.fptcloud.com/smalls/cham_soc_toc_da_dau_level_2_8ad8c93cf9.png" alt="">
+                <h4>Chăm sóc tóc - da đầu</h4>
+                <p>71 sản phẩm</p>
+            </div>
+            <div class="left">
+                <ul>
+                    <li><a href="">Dầu gội dầu xả</a></li>
+                    <li><a href="">Dầu gội trị nấm</a></li>
+                    <li><a href="">Dưỡng tóc, ủ tóc</a></li>
+                    <li><a href="">Đặc trị cho tóc</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="right">
+                <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/80x80/https://cms-prod.s3-sgn09.fptcloud.com/smalls/my_pham_trang_diem_level_2_f3eec172b2.png" alt="">
+                <h4>Mỹ phẩm trang điểm</h4>
+                <p>18 sản phẩm</p>
+            </div>
+            <div class="left">
+                <ul>
+                    <li><a href="">Son môi</a></li>
+                    <li><a href="">Trang điểm mặt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="right">
+                <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/80x80/https://cms-prod.s3-sgn09.fptcloud.com/smalls/cham_soc_da_vung_mat_level_2_a354c2cbf1.png" alt="">
+                <h4>Chăm sóc da vùng mắt</h4>
+                <p>6 sản phẩm</p>
+            </div>
+            <div class="left">
+                <ul>
+                    <li><a href="">Trị cuồng thâm, bọng mắt</a></li>
+                    <li><a href="">Xóa nếp nhăn vùng mắt</a></li>
+                    <li><a href="">Dưỡng da mắt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="right">
+                <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/80x80/https://cms-prod.s3-sgn09.fptcloud.com/smalls/san_pham_tu_thien_nhien_level_2_be7122dfa2.png" alt="">
+                <h4>Sản phẩm từ thiên nhiên</h4>
+                <p>5 sản phẩm</p>
+            </div>
+            <div class="left">
+                <ul>
+                    <li><a href="">Tinh dầu</a></li>
+                    <li><a href="">Dầu dừa</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer to load --> <footer id="footer-to-here"></footer>
+
+    <script src="../JS/NhaThuoc-header.js" id="headerscr"></script>
+    <script src="../JS/NhaThuoc-footer.js" id="footerscr"></script>
+    <script src="../JS/NhaThuoc-load-content.js"></script>
+
+</body>
+</html>

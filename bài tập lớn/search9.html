@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+
+<body>
+    <main>
+
+        <!--//////////////////////////////////////////////////////////////////////////////////////////-->
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-4">
+                    <!-- Carousel -->
+                    <div style="position: sticky; top: 20px;">
+                        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                            <!-- ảnh -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
+                                        style="border: none;"> <img src="img/crevil/1.webp" alt="chưa tải được ảnh"
+                                            class="d-block" style="width:100%;"></button>
+                                </div>
+                                <div class="carousel-item">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
+                                        style="border: none;"> <img src="img/crevil/2.webp" alt="chưa tải được ảnh"
+                                            class="d-block" style="width:100%;"></button>
+                                </div>
+                                <div class="carousel-item">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
+                                        style="border: none;"> <img src="img/crevil/3.webp" alt="chưa tải được ảnh"
+                                            class="d-block" style="width:100%;"></button>
+                                </div>
+                                <div class="carousel-item">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
+                                        style="border: none;"> <img src="img/crevil/4.webp" alt="chưa tải được ảnh"
+                                            class="d-block" style="width:100%;"></button>
+                                </div>
+                                <div class="carousel-item">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
+                                        style="border: none;"> <img src="img/crevil/5.webp" alt="chưa tải được ảnh"
+                                            class="d-block" style="width:100%;"></button>
+                                </div>
+                                <div class="carousel-item">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
+                                        style="border: none;"> <img src="img/crevil/6.webp" alt="chưa tải được ảnh"
+                                            class="d-block" style="width:100%;"></button>
+                                </div>
+                            </div>
+
+                            <!-- mũi tên chuyển ảnh -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demo"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"
+                                    style="background-color: rgb(82, 91, 91); border-radius: 50%;"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#demo"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"
+                                    style="background-color: rgb(82, 91, 91); border-radius: 50%;"></span>
+                            </button>
+                        </div>
+                        <!-- ảnh -->
+                        <div class="container-fluid mt-3 none1">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"
+                                style="flex: 1; border: none;">
+                                <img src="img/crevil/1.webp" alt="Slide 1" style="width:100%; box-sizing: border-box;">
+                            </button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"
+                                style="flex: 1; border: none;">
+                                <img src="img/crevil/2.webp" alt="Slide 2" style="width:100%; box-sizing: border-box;">
+                            </button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"
+                                style="flex: 1; border: none;">
+                                <img src="img/crevil/3.webp" alt="Slide 3" style="width:100%; box-sizing: border-box;">
+                            </button>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
+                                style="flex: 1; border: none; background: none; color: rgb(1, 1, 1); position: relative;">
+                                <img src="img/crevil/4.webp" alt="Slide 4"
+                                    style="width:100%; box-sizing: border-box; height: auto;">
+                                <span class="overlay">Xem thêm</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title" style="text-align: center;">Dung dịch vệ sinh phụ nữ Crevil
+                                        Intim Waschlotion diệt khuẩn, kháng viêm (100ml)</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <div id="demo2" class="carousel slide" data-bs-ride="carousel">
+                                        <!-- ảnh -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" style="text-align: center;">
+                                                <img src="img/crevil/1.webp" alt="chưa tải được ảnh" class="d-block"
+                                                    style="width:55vh; height: 55vh; margin: 0 auto;">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/crevil/2.webp" alt="chưa tải được ảnh" class="d-block"
+                                                    style="width:55vh; height: 55vh; margin: 0 auto;">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/crevil/3.webp" alt="chưa tải được ảnh" class="d-block"
+                                                    style="width:55vh; height: 55vh; margin: 0 auto;">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/crevil/4.webp" alt="chưa tải được ảnh" class="d-block"
+                                                    style="width:55vh; height: 55vh; margin: 0 auto;">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/crevil/5.webp" alt="chưa tải được ảnh" class="d-block"
+                                                    style="width:55vh; height: 55vh; margin: 0 auto;">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/crevil/6.webp" alt="chưa tải được ảnh" class="d-block"
+                                                    style="width:55vh; height: 55vh; margin: 0 auto;">
+                                            </div>
+                                        </div>
+                                        <!-- mũi tên chuyển ảnh -->
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#demo2"
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon"
+                                                style="background-color: rgb(82, 91, 91); border-radius: 50%;"></span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#demo2"
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon"
+                                                style="background-color: rgb(82, 91, 91); border-radius: 50%;"></span>
+                                        </button>
+                                    </div>
+                                    <!-- ảnh -->
+                                    <div class="container-fluid mt-3 " style="display: flex; width: 100%;">
+
+                                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="0"
+                                            class="active" style="flex: 1; border: none;">
+                                            <img src="img/crevil/1.webp" alt="Slide 1"
+                                                style="width:100%; box-sizing: border-box;">
+                                        </button>
+                                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"
+                                            style="flex: 1; border: none;">
+                                            <img src="img/crevil/2.webp" alt="Slide 2"
+                                                style="width:100%; box-sizing: border-box;">
+                                        </button>
+                                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="2"
+                                            style="flex: 1; border: none;">
+                                            <img src="img/crevil/3.webp" alt="Slide 3"
+                                                style="width:100%; box-sizing: border-box;">
+                                        </button>
+                                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="3"
+                                            style="flex: 1; border: none;">
+                                            <img src="img/crevil/4.webp" alt="Slide 4"
+                                                style="width:100%; box-sizing: border-box;">
+                                        </button>
+                                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="4"
+                                            style="flex: 1; border: none;">
+                                            <img src="img/crevil/5.webp" alt="Slide 5"
+                                                style="width:100%; box-sizing: border-box;">
+                                        </button>
+                                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="5"
+                                            style="flex: 1; border: none;">
+                                            <img src="img/crevil/6.webp" alt="Slide 6"
+                                                style="width:100%; box-sizing: border-box;">
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/////////////////////////////////////////////////////////////////-->
+                </div>
+                <div class="col-sm-8">
+                    <p>Thương hiệu: <a href="#link">Crevil</a></p>
+                    <h5>Dung dịch vệ sinh phụ nữ Crevil Intim Waschlotion diệt khuẩn, kháng viêm (100ml)</h5>
+                    <p>00345425 - 5 <span style="color: gold;">★</span> - <a href="#link">đánh giá </a> - <a
+                            href="#link">bình
+                            luận</a></p>
+                    <h2 style="color: rgb(9, 33, 170);">125.000đ
+                        / Chai</h2>
+                    <table class="a">
+                        <tr>
+                            <td class="col1">Chọn đơn vị tính</td>
+                            <td>Chai
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Danh mục</td>
+                            <td><a href="#">Dung dịch vệ sinh phụ nữ</a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="col1">Quy cách</td>
+                            <td>Chai x 100ml</td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Xuất xứ thương hiệu</td>
+                            <td>Đức</td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Nhà sản xuất</td>
+                            <td>Crevil</td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Nước sản xuất</td>
+                            <td>
+                                Đức</td>
+                        </tr>
+
+                        <tr>
+                            <td class="col1">Mô tả ngắn</td>
+                            <td>Crevil Intim Waschlotion dùng vệ sinh bộ phận sinh dục ngoài. Sản phẩm không chứa xà
+                                phòng, thành phần chiết xuất hoa cúc La Mã và các loại thảo dược thiên nhiên, giúp diệt
+                                khuẩn, kháng viêm và hỗ trợ điều trị các bệnh viêm nhiễm phụ khoa.</td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Số đăng ký</td>
+                            <td>12/2019/ĐKSP</td>
+                        </tr>
+                        <div class="container mt-5 none">
+                            <div class="d-flex">
+                                <p>chọn số lượng</p>
+                                <div class="input-group" style="width: 115px;margin-left: 10px; height: 10px;">
+
+                                    <button class="btn btn-outline-secondary vien" type="button"
+                                        id="btn-minus">-</button>
+                                    <input type="number" class="form-control text-center" id="quantity" value="1"
+                                        min="1" max="10">
+                                    <button class="btn btn-outline-secondary vien" type="button"
+                                        id="btn-plus">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            document.getElementById('btn-plus').addEventListener('click', function () {
+                                var quantity = document.getElementById('quantity');
+                                if (quantity.value < 10) {
+                                    quantity.value = parseInt(quantity.value) + 1;
+                                }
+                            });
+
+                            document.getElementById('btn-minus').addEventListener('click', function () {
+                                var quantity = document.getElementById('quantity');
+                                if (quantity.value > 1) {
+                                    quantity.value = parseInt(quantity.value) - 1;
+                                }
+                            });
+                        </script>
+                        <form action="#chuabiet">
+                            <button type="submit" class="btn btn-primary vien" style="width: 150px;">chọn mua</button>
+                        </form>
+                        <table style="width: 100%;">
+                            <tr class="inl">
+                                <td class="col30" style=" display:flex ;"><img src="imgs/3.png" alt="" class="icon"
+                                        style="height: 3em;">
+                                    <p><b>Đổi trả trong 30 ngày</b>
+                                        <br> kể từ ngày mua hàng
+                                    </p>
+                                </td>
+                                <td class="col30" style=" display:flex ;"><img src="imgs/2.png" alt="" class="icon"
+                                        style="height: 3em;">
+                                    <p><b>Miễn phí 100%</b>
+                                        <br> đổi thuốc
+                                    </p>
+                                </td>
+                                <td class="col30" style=" display:flex ;"><img src="imgs/1.png" alt="" class="icon"
+                                        style="height: 3em;">
+                                    <p><b>Miễn phí vận chuyển</b>
+                                        <br> theo chính sách giao hàng
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+
+                <div class="col-sm-2">
+                    <div style="position:sticky; top: 0;">
+                        <div class="none1">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link bl" href="#tp">Thành phần</a>
+                                    </button>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bl" href="#congdung">Công dụng</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bl" href="#cachdung">Cách dùng</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bl" href="#tdp">Tác dụng phụ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bl" href="#ly">lưu ý</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bl" href="#bq">Bảo quản<nav></nav></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--///////////////////////////////////////////////////////////////////////-->
+                <div class="col-sm-10">
+                    <div id="tp">
+                        <h5>Thành phần của Dung dịch vệ sinh phụ nữ Crevil</h5>
+                        <table class="b">
+                            <tr style="background-color: bisque;">
+                                <td>Thông tin thành phần</td>
+                                <td>Hàm lượng</td>
+                            </tr>
+                            <tr>
+                                <td>Aqua</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Sodium Laureth Sulfate</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Cocamidopropyl betaine</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Allantoin</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Glycerin</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Betaine</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Propylene glycol</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Styrene/Acrylates Copolymer</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Coco-Glucoside</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Glyceryl oleate</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Sodium benzoate</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Citric Acid</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Parfum</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Potassium sorbate</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>DMDM Hydantoin</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Methylisothiazolinone</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Alcohol</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Lactic Acid</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Magnesium chloride</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Magnesium nitrate</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Chamomilla Recutita Flower extract</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Salvia officinalis leaf extract</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Hydrolyzed milk protein</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Soyamide Dea</td>
+                                <td></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <div id="congdung" class="thugon">
+                        <h5>Công dụng của Dung dịch vệ sinh phụ nữ Crevil</h5>
+                        <p>Hỗ trợ điều trị các bệnh phụ khoa: Viêm âm đạo, viêm âm hộ, nấm, ngứa âm hộ.</p>
+                        <p>Vệ sinh phụ nữ trong thời kỳ kinh nguyệt.</p>
+                        <p>Vệ sinh trong thời kỳ mang thai và sau sinh.</p>
+                        <p>Duy trì cân bằng độ PH niêm mạc vùng kín nhờ acid lactic và các chiết xuất từ cúc La Mã và
+                            cây xô thơm, giúp tăng cường kháng khuẩn, kháng viêm.</p>
+                        <p>Dùng vệ sinh vùng kín hàng ngày.</p>
+                        <p>Sản phẩm được khuyến cáo dùng cho cả nam và nữ vệ sinh sau quan hệ. Dừng sử dụng khi có những
+                            biểu hiện dị ứng hoặc mẫn cảm với các thành phần của sản phẩm.</p>
+                    </div>
+                    <div id="cachdung" class="thugon">
+                        <h5>Cách dùng Dung dịch vệ sinh phụ nữ Crevil</h5>
+                        <p><b style="font-size:12px;">Cách dùng</b></p>
+                        <p>Lắc đều trước khi dùng. Dùng trực tiếp, bên ngoài.</p>
+                        <p>Làm ướt vùng kín, cho vài giọt dung dịch vệ sinh phụ nữ vào lòng bàn tay, thoa rửa nhẹ vùng
+                            kín trong khoảng 30 giây sau đó rửa lại thật sạch bằng nước sạch.</p>
+                        <p><b>Đối tượng sử dụng</b></p>
+                        <p>Crevil Intim Waschlotion dùng trong các trường hợp:</p>
+
+                        <ul>
+                            <li>Vệ sinh hàng ngày bộ phận sinh dục ngoài phụ nữ, phù hợp cho cả nam.</li>
+                            <li>Những người đang điều trị các bệnh phụ khoa: Viêm nhiễm âm đạo, viêm âm hộ, nấm ngứa âm
+                                hộ.</li>
+                            <li>Trong và sau thời kỳ kinh nguyệt.</li>
+                            <li>Phụ nữ mang thai và phụ nữ sau sinh.</li>
+                        </ul>
+
+                    </div>
+                    <div id="tdp" style="font-size: 14px;" class="thugon">
+                        <h5><b>Tác dụng phụ</b></h5>
+                        <p>Chưa có thông tin về tác dụng phụ của sản phẩm.</p>
+                    </div>
+                    <div id="ly" style="background-color: bisque;font-size: 14px;" class="thugon">
+                        <h4><img src="imgs/4.png" alt="" class="icon2">Lưu ý</h4>
+                        <p>Không dùng dung dịch này trong những trường hợp sau:</p>
+                        <ul>
+                            <li>Bơm thụt rửa bên trong âm đạo.</li>
+                            <li>Khi bị dị ứng với một trong các thành phần của sản phẩm.</li>
+                        </ul>
+                        <p>Dung dịch vệ sinh phụ nữ chỉ dùng ngoài da. Tránh để tiếp xúc trực tiếp với mắt. Trường hợp
+                            bị dính vào mắt cần rửa ngay bằng nước sạch.</p>
+                        <p>Đọc kỹ hướng dẫn sử dụng trước khi dùng.</p>
+                    </div>
+                    <div id="bq" class="thugon">
+                        <h5><b>Bảo quản</b></h5>
+                        <p>Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp từ mặt trời, những nơi gần nguồn
+                            nhiệt và ẩm mốc.</p>
+                        <p>Để xa tầm tay trẻ em</p>
+
+                    </div>
+                    <button class="col-sm-10  " id="thugon" style="border: none; font-style: italic;"><i>xem
+                            thêm</i></button>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-12 ts" style="padding-right: 0;">
+
+                    <div class="row">
+
+                        <div class="col-sm-11 " style="font-size: 13px;">
+                            <p style="margin-bottom: 0;"><b> Dược sĩ Đại học Nguyễn Vũ Kiều Ngân</b></p>
+                            <p>Tốt nghiệp Đại học Y Dược TP. Hồ Chí Minh. Có nhiều năm trong lĩnh vực dược phẩm.
+                                Hiện đang là giảng viên cho Dược sĩ tại Nhà thuốc Long Châu.
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- câu hỏi thường gặp-->
+                    <div class="container mt-0 tal-l ts">
+                        <p><b>Câu hỏi thường gặp</b></p>
+                        <div>
+                            <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#chtg1">
+                                <span class="icon1">?</span> Có nên sử dụng dung dịch vệ sinh phụ nữ Crevil Intim
+                                Waschlotion hàng ngày không?</button>
+                            <div id="chtg1" class="collapse" style="margin-left: 10px;">
+                                Dung dịch vệ sinh phụ nữ Crevil Intim Waschlotion hoàn toàn phù hợp để sử dụng hàng
+                                ngày, tuy nhiên không nên quá lạm dụng, chỉ nên sử dụng tối đa 2 lần/ngày.
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn " data-bs-toggle="collapse" data-bs-target="#chtg2"><span
+                                    class="icon1">?</span> Độ pH của dung dịch vệ sinh phụ
+                                nữ Crevil Intim Waschlotion là bao nhiêu?</button>
+                            <div id="chtg2" class="collapse" style="margin-left: 10px;">
+                                Dung dịch vệ sinh phụ nữ Crevil Intim Waschlotion có độ pH dao động từ 3,8 - 4,8,
+                                phù hợp với môi trường tự nhiên của âm đạo. </div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn " data-bs-toggle="collapse" data-bs-target="#chtg3"><span
+                                    class="icon1">?</span> Cần lưu ý những gì khi sử dụng
+                                dung dịch vệ sinh phụ nữ Crevil Intim Waschlotion?</button>
+                            <div id="chtg3" class="collapse" style="margin-left: 10px;">
+                                Khi sử dụng dung dịch vệ sinh phụ nữ Crevil Intim Waschlotion cần lưu ý: Không sử
+                                dụng sản phẩm khi có mẫn cảm với bất kỳ thành phần nào của sản phẩm, không dùng sản
+                                phẩm để thụt rửa bên trong âm đạo, tránh để sản phẩm dính vào mắt.</div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn " data-bs-toggle="collapse" data-bs-target="#chtg4"><span
+                                    class="icon1">?</span> Dung dịch vệ sinh phụ nữ có tác
+                                dụng gì?</button>
+                            <div id="chtg4" class="collapse" style="margin-left: 10px;">
+                                Dung dịch vệ sinh phụ nữ mang lại một số công dụng: Vệ sinh vùng kín, giữ cho vùng
+                                kín luôn sạch sẽ, loại bỏ mùi hôi, ngăn ngừa và hỗ trợ điều trị bệnh viêm âm đạo do
+                                vi khuẩn, nấm men,...</div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn " data-bs-toggle="collapse" data-bs-target="#chtg5"><span
+                                    class="icon1">?</span> Dung dịch vệ sinh phụ nữ là
+                                gì?</button>
+                            <div id="chtg5" class="collapse" style="margin-left: 10px;">
+                                Dung dịch vệ sinh phụ nữ là sản phẩm được bào chế phù hợp với các đặc điểm của môi
+                                trường âm đạo. Từ đó giúp vệ sinh, làm sạch vùng âm đạo của chị em phụ nữ, đồng thời
+                                chống lại các mầm bệnh xâm nhiễm.</div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="search.js"></script>
+    </main>
+</body>
+
+</html>
