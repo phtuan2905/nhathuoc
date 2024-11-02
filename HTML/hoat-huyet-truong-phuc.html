@@ -8,11 +8,12 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="search.css">
+  <link rel="stylesheet" href="../CSS/san-pham.css">
 </head>
 
 <body>
-  <main>
+    <!-- Header to load--> <header id="header-to-here"></header>
+    <main>
     <!--//////////////////////////////////////////////////////////////////////////////////////////-->
 
     <div class="container mt-5">
@@ -26,7 +27,7 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" style="border: none;"> <img
-                      src="img/hhtp/1.webp" alt="chưa tải được ảnh" class="d-block" style="width:100%;"></button>
+                      src="img/hhtp/1.webp" alt="chưa tải được ảnh" class="d-block" id="img-sp" style="width:100%;"></button>
                 </div>
                 <div class="carousel-item">
                   <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" style="border: none;"> <img
@@ -181,15 +182,15 @@
         </div>
         <div class="col-sm-8">
           <p>Thương hiệu: <a href="#link">TRƯỜNG PHÚC</a></p>
-          <h5>Thuốc Hoạt Huyết Trường Phúc giúp hoạt huyết, trị thiếu năng tuần hoàn (3 vỉ x 10 viên) </h5>
+          <h5 id="ten-sp">Thuốc Hoạt Huyết Trường Phúc giúp hoạt huyết, trị thiếu năng tuần hoàn (3 vỉ x 10 viên) </h5>
           <p>00500234 - 4.9 <span style="color: gold;">★</span> - <a href="#link">đánh giá </a> - <a href="#link">bình
               luận</a></p>
-          <h2 style="color: rgb(9, 33, 170);">95.000đ
+          <h2 style="color: rgb(9, 33, 170);" id="gia-tien-giam-gia-sp">95.000đ
             / Hộp</h2>
           <table class="a">
             <tr>
               <td class="col1">Chọn đơn vị tính</td>
-              <td>Hộp</td>
+              <td id="don-vi-sp">Hộp</td>
             </tr>
             <tr>
               <td class="col1">Danh mục</td>
@@ -201,7 +202,7 @@
             </tr>
             <tr>
               <td class="col1">Quy cách</td>
-              <td>
+              <td id="so-luong-sp">
                 Hộp 3 Vỉ x 10 Viên </td>
             </tr>
             <tr>
@@ -265,7 +266,7 @@
               <div class="input-group" style="width: 115px;margin-left: 10px; height: 10px;">
 
                 <button class="btn btn-outline-secondary vien" type="button" id="btn-minus">-</button>
-                <input type="number" class="form-control text-center" id="quantity" value="1" min="1" max="10">
+                <input type="number" class="form-control text-center" id="quantity" value="1" min="1" max="10" id="don-vi-sp">
                 <button class="btn btn-outline-secondary vien" type="button" id="btn-plus">+</button>
               </div>
             </div>
@@ -523,6 +524,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="search.js"></script>
   </main>
-</body>
+    <!-- Footer to load --> <footer id="footer-to-here"></footer>
+  <script src="../JS/san-pham.js"></script>
+  <script src="../JS/NhaThuoc-load-content.js"></script>
+  <script src="../JS/NhaThuoc-header.js" id="headerscr"></script>
+  <script src="../JS/NhaThuoc-footer.js" id="footerscr"></script>
+  </body>
 
 </html>

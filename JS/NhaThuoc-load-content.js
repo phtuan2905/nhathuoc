@@ -36,72 +36,58 @@ function loadContent() {
 
 async function loadItems(itemclass) {
     var items = document.getElementsByClassName(itemclass);
+    var itemslink = document.getElementsByClassName("link-sp");
+    var itemspic = document.getElementsByClassName("img-sp");
+    var itemsten = document.getElementsByClassName("ten-sp");
+    var itemsgtgg = document.getElementsByClassName("gia-tien-giam-gia-sp");
+    var itemsgtg = document.getElementsByClassName("gia-tien-goc-sp");
+    var itemssl = document.getElementsByClassName("so-luong-sp");
+    var itemsdv = document.getElementsByClassName("don-vi-sp");
+    var itemsgg = document.getElementsByClassName("giam-gia-sp");
     
     for (let i = 0; i < items.length; i++) {
-        var itemlink = items[i].querySelector("#link-sp").href;
-        var itempic = items[i].querySelector("#img-sp");
-        var itemten = items[i].querySelector("#ten-sp");
-        var itemgtgg = items[i].querySelector("#gia-tien-giam-gia-sp");
-        var itemgtg = items[i].querySelector("#gia-tien-goc-sp");
-        var itemsl = items[i].querySelector("#so-luong-sp");
-        var itemdv = items[i].querySelector("#don-vi-sp");
-        var itemgg = items[i].querySelector("#giam-gia-sp");
-
-        loadImgFromExternalHTML(itemlink, "#img-sp", "#img-sp");
-        loadTextFromExternalHTML(itemlink, "#ten-sp", "#ten-sp");
-        loadTextFromExternalHTML(itemlink, "#gia-tien-giam-gia-sp", "#gia-tien-giam-gia-sp")
-        loadTextFromExternalHTML(itemlink, "#gia-tien-goc-sp", "#gia-tien-goc-sp")
-        loadTextFromExternalHTML(itemlink, "#so-luong-sp", "#so-luong-sp")
-        var donvispan = document.createElement("span");
-        donvispan.id = "#don-vi-sp";
-        // donvispan.textContent = donvispan.textContent.concat(" / ");
-        itemgtgg.appendChild(donvispan);
-        loadTextFromExternalHTML(itemlink, "#don-vi-sp", "#don-vi-sp")
+        var outerdoc = await fetchFile(itemslink[i].href);
+        loadImgFromOuterDoc(outerdoc, "#img-sp", itemspic[i]);
+        loadTextFromOuterDoc(outerdoc, "#ten-sp", itemsten[i]);
+        loadTextFromOuterDoc(outerdoc, "#gia-tien-giam-gia-sp", itemsgtgg[i]);
+        loadTextFromOuterDoc(outerdoc, "#gia-tien-goc-sp", itemsgtg[i]);
+        loadTextFromOuterDoc(outerdoc, "#so-luong-sp", itemssl[i]);
+        loadTextFromOuterDoc(outerdoc, "#giam-gia-sp", itemsgg[i]); 
     }
 }
 
-async function loadTextFromExternalHTML(url, selector, targetSelector) {
+async function fetchFile(url) {
+    // Tải nội dung của file HTML bên ngoài
+    const response = await fetch(url);
+    const htmlText = await response.text();
+
+    // Phân tích HTML thành đối tượng DOM
+    const parser = new DOMParser();
+    const outerdoc = parser.parseFromString(htmlText, 'text/html');
+
+    return outerdoc;
+}
+
+async function loadTextFromOuterDoc(outerdoc, selectorid, targetElement) {
     try {
-        // Tải nội dung của file HTML bên ngoài
-        const response = await fetch(url);
-        const htmlText = await response.text();
-
-        // Phân tích HTML thành đối tượng DOM
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(htmlText, 'text/html');
-
         // Tìm phần tử trong file HTML bên ngoài
-        const sourceElement = doc.querySelector(selector);
+        const sourceElement = outerdoc.querySelector(selectorid);
         if (sourceElement) {
-            // Gán văn bản từ phần tử bên ngoài vào phần tử trong file hiện tại
-            document.querySelector(targetSelector).textContent = sourceElement.textContent;
+            targetElement.textContent = sourceElement.textContent;
         } else {
-            console.error("Phần tử không tồn tại trong file HTML bên ngoài.");
+            targetElement.textContent = null;
         }
     } catch (error) {
         console.error("Lỗi khi tải nội dung:", error);
     }
 }
 
-async function loadImgFromExternalHTML(url, selector, targetSelector) {
+async function loadImgFromOuterDoc(outerdoc, selectorid, targetElement) {
     try {
-        // Tải nội dung của file HTML bên ngoài
-        const response = await fetch(url);
-        const htmlText = await response.text();
-
-        // Phân tích HTML thành đối tượng DOM
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(htmlText, 'text/html');
-
         // Tìm phần tử trong file HTML bên ngoài
-        const sourceElement = doc.querySelector(selector);
+        const sourceElement = outerdoc.querySelector(selectorid);
         if (sourceElement) {
-            // Gán văn bản từ phần tử bên ngoài vào phần tử trong file hiện tại
-            const relativePath = sourceElement.src;
-            const absolutePath = `${window.location.origin}/${relativePath}`;
-            document.querySelector(targetSelector).src = absolutePath;
-        } else {
-            console.error("Phần tử không tồn tại trong file HTML bên ngoài.");
+            targetElement.src = sourceElement.src;
         }
     } catch (error) {
         console.error("Lỗi khi tải nội dung:", error);

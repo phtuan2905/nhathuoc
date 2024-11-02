@@ -1,0 +1,225 @@
+.shopping-cart {
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+  .cart-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    grid-column: 1 / 3;
+    margin-left: 180px;
+  }
+  .cart-table {
+    width: 700px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .cart-table th, .cart-table td {
+    padding: 10px;
+    text-align: left;
+  }
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .cart-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  .cart-item-description {
+    flex: 1;
+    margin-left: 10px;
+  }
+  .cart-item-price {
+    font-weight: bold;
+    color: #007bff;
+  }
+  .cart-item-price .old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  .quantity-control {
+    display: flex;
+    align-items: center;
+  }
+  .quantity-control button {
+    background-color: #ddd;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .quantity-control input {
+    width: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+  }
+  .delete-button {
+    cursor: pointer;
+    color: #e74c3c;
+    font-size: 20px;
+  }
+  .discount-banner {
+    background-color: #eaf5ff;
+    color: #007bff;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .select-all {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .select-all input {
+    margin-right: 10px;
+  }
+  .summary {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 180px;
+  }
+  .summary h3 {
+    margin-top: 0;
+  }
+  .summary .price-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .summary .total-price {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .summary button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .summary button:hover {
+    background-color: #0056b3;
+  }
+
+  .no-item {
+    display:none; 
+    color:red;
+    text-align: center;
+  }
+
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+  }
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  .modal-content button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+
+
+.form-container {
+    width: 700px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    justify-content: right;
+    grid-column: 1 / 3;
+    margin-left: 180px;
+}
+.form-section {
+    margin-bottom: 20px;
+}
+.form-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.form-group label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+.form-group input, .form-group select, .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.form-group input.error, .form-group input.error:focus {
+    border-color: red;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.submit-button:hover {
+    background-color: #0056b3;
+}

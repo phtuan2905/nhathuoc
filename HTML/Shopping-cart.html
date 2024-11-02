@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../CSS/Shopping-cart.css">
+    <link rel="stylesheet" href="../../CSS/san-pham.css">
+    <script src="../JS/NhaThuoc-header.js" id="headerscr"></script>
+    <script src="../JS/NhaThuoc-footer.js" id="footerscr"></script>
+    <script src="../JS/NhaThuoc-load-content.js"></script>
+</head>
+<body>
+  <!-- Header to load--> <header id="header-to-here"></header>
+  <main class="shopping-cart container">
+    <div class="cart-container">
+      <!-- Cart Table -->
+      <div class="cart-table">
+        <div class="select-all">
+          <input type="checkbox" id="select-all">
+          <label for="select-all">Chọn tất cả (2)</label>
+        </div>
+  
+        <!-- Cart Item 1 -->
+        <div class="cart-item" data-price="870000">
+          <input type="checkbox" class="item-checkbox" checked>
+          <img src="https://via.placeholder.com/60" alt="Collagen">
+          <div class="cart-item-description">
+            <p>Thực phẩm bổ sung Collagen Condition Beyou Ampoule 10,000mg hỗ trợ làm trắng da, chống lão hóa (1 lọ)</p>
+          </div>
+          <div class="cart-item-price">
+            870.000₫
+          </div>
+          <div class="quantity-control">
+            <button onclick="changeQuantity(this, -1)">-</button>
+            <input type="text" value="1" readonly>
+            <button onclick="changeQuantity(this, 1)">+</button>
+          </div>
+          <div>Hộp</div>
+          <span class="delete-button" onclick="deleteItem(this)">🗑️</span>
+        </div>
+  
+        <!-- Cart Item 2 -->
+        <div class="cart-item" data-price="96000">
+          <input type="checkbox" class="item-checkbox" checked>
+          <img src="https://via.placeholder.com/60" alt="Naturez Gold">
+          <div class="cart-item-description">
+            <p>Viên nang cứng Naturez Gold DHG Pharma hỗ trợ giảm các triệu chứng của viêm gan (3 vỉ x 10 viên)</p>
+            <div class="discount-banner">Giảm ngay 20% áp dụng đến 30/11</div>
+          </div>
+          <div class="cart-item-price">
+            96.000₫ <span class="old-price">120.000₫</span>
+          </div>
+          <div class="quantity-control">
+            <button onclick="changeQuantity(this, -1)">-</button>
+            <input type="text" value="1" readonly>
+            <button onclick="changeQuantity(this, 1)">+</button>
+          </div>
+          <div>Hộp</div>
+          <span class="delete-button" onclick="deleteItem(this)">🗑️</span>
+        </div>
+        <p id="empty-cart-message" class="no-item">Hãy chọn mặt hàng</p>
+      </div>
+    </div>
+      <!-- Summary Section -->
+      <div class="summary">
+        <h3>Áp dụng ưu đãi để được giảm giá</h3>
+        <div class="price-section">
+          <span>Tổng tiền</span>
+          <span id="total-price">966.000₫</span>
+        </div>
+        <div class="price-section">
+          <span>Giảm giá trực tiếp</span>
+          <span id="discount">-24.000₫</span>
+        </div>
+        <div class="price-section">
+          <span>Giảm giá voucher</span>
+          <span>0₫</span>
+        </div>
+        <div class="price-section">
+          <span>Tiết kiệm được</span>
+          <span id="saved-amount">24.000₫</span>
+        </div>
+        <div class="price-section total-price">
+          <span>Thành tiền</span>
+          <span id="final-price">966.000₫</span>
+        </div>
+        <button onclick="confirmOrder(checkForm('giao-hang-form', 'giao-hang-infor', ''))">Mua hàng</button>
+      </div>
+    
+  
+    <!-- Modal -->
+    <div class="modal" id="order-modal">
+      <div class="modal-content">
+        <h2>Cảm ơn bạn đã đặt hàng!</h2>
+        <p>Đơn hàng của bạn đã được đặt thành công.</p>
+        <p>Tổng tiền: <span id="modal-final-price">966.000₫</span></p>
+        <button onclick="closeModal()">Đóng</button>
+      </div>
+    </div>
+  
+      <div class="form-container" id="giao-hang-form">
+          <h2>Chọn hình thức nhận hàng</h2>
+          <div class="radio-group">
+              <label><input type="radio" name="delivery_method" checked> Giao hàng tận nơi</label>
+              <label><input type="radio" name="delivery_method"> Nhận tại nhà thuốc</label>
+          </div>
+          
+          <!-- Sender Information Section -->
+          <div class="form-section">
+              <h2>Thông tin người đặt</h2>
+              <div class="form-group">
+                  <label>Họ và tên người đặt</label>
+                  <input type="text" id="sender-name" placeholder="Họ và tên người đặt" class="giao-hang-infor">
+              </div>
+              <div class="form-group">
+                  <label>Số điện thoại</label>
+                  <input type="text" id="sender-phone" placeholder="Số điện thoại" class="giao-hang-infor">
+                  <span id="phone-error" class="error-message"></span>
+              </div>
+              <div class="form-group">
+                  <label>Email (không bắt buộc)</label>
+                  <input type="email" id="sender-email" placeholder="Email (không bắt buộc)">
+                  <span id="email-error" class="error-message"></span>
+              </div>
+          </div>
+          
+          <!-- Delivery Address Section -->
+          <div class="form-section">
+              <h2>Địa chỉ nhận hàng</h2>
+              <div class="form-group">
+                  <label>Họ và tên người nhận</label>
+                  <input type="text" placeholder="Họ và tên người nhận" class="giao-hang-infor">
+              </div>
+              <div class="form-group">
+                  <label>Số điện thoại</label>
+                  <input type="text" placeholder="Số điện thoại" class="giao-hang-infor">
+              </div>
+              <div class="form-group">
+                  <label>Chọn tỉnh/thành phố</label>
+                  <select id="thanhpho-tinh" class="giao-hang-information" onchange="hideShow_list('quan-huyen', 'thanhpho-tinh')">
+                    <option value="" disabled selected>Chọn Tỉnh/Thành phố</option>
+                    <option value="hanoi">Hà Nội</option>
+                    <option value="hochiminh">Hồ Chí Minh</option>
+                </select>
+              </div>
+              <div class="form-group">
+                  <label>Chọn quận/huyện</label>
+                  <select name="" id="quan-huyen" class="dktc-information">
+                    <option value="" disabled selected>Chọn Quận/Huyện</option>
+                    <optgroup class="quan-huyen" id="hanoi" label="Hà Nội">
+                        <option value="hanoi-caugiay">Quận Cầu Giấy</option>
+                        <option value="hanoi-hoangmai">Quận Hoàng Mai</option>
+                    </optgroup>
+                    <optgroup class="quan-huyen" id="hochiminh" label="Hồ Chí Minh">
+                        <option value="hochiminh-3">Quận 3</option>
+                    </optgroup>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label>Nhập địa chỉ cụ thể</label>
+                  <input type="text" placeholder="Nhập địa chỉ cụ thể" class="giao-hang-infor">
+              </div>
+              <div class="form-group">
+                  <label>Ghi chú (không bắt buộc)</label>
+                  <textarea rows="3" placeholder="Ví dụ: Hãy gọi cho tôi 15 phút trước khi giao"></textarea>
+              </div>
+          </div>
+          
+          <!-- Invoice Request Section -->
+          <div class="checkbox-group">
+              <input type="checkbox" id="invoice_request">
+              <label for="invoice_request">Yêu cầu xuất hóa đơn điện tử</label>
+          </div>
+  
+          <!-- Submit Button -->
+          <button class="submit-button" onclick="checkForm('giao-hang-form', 'giao-hang-infor', '')">Submit</button>
+      </div>
+  </main>
+  
+    <!-- Footer to load --> <footer id="footer-to-here"></footer>
+     <script src="../JS/NhaThuoc-tiem-chung.js"></script>
+    <script src="../JS/Shopping-cart.js"></script>
+</body>
+</html>

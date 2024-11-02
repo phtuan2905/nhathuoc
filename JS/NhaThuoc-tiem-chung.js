@@ -50,6 +50,7 @@ function checkFormInformation(formid, informationclass) {
 }
 
 function checkRadioButton(radioname) {
+    if (radioname === "") return true;
     var radios = document.getElementsByName(radioname);
     var ischecked = false;
     for (let i = 0; i < radios.length; i++) {
@@ -68,5 +69,9 @@ function checkRadioButton(radioname) {
 function checkForm(formid, informationclass, radioname) {
     if (checkFormInformation(formid, informationclass) && checkRadioButton(radioname)) {
         alert("Đăng ký thành công");
+        return true;
+    }
+    else {
+        return false;
     }
 }

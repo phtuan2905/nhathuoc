@@ -9,3 +9,9 @@ document.getElementById("thugon").addEventListener("click", function () {
         this.textContent = "thu gọn";
     }
 });
+
+function setTitle() {
+    document.title.textContent = document.getElementById("ten-sp").textContent;
+}
+
+setTitle();

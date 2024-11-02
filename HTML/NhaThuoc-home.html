@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="../CSS/NhaThuoc-san-pham-ban-chay.css">
     <link rel="stylesheet" href="../CSS/NhaThuoc-san-pham-theo-doi-tuong.css">
     <link rel="stylesheet" href="../CSS/NhaThuoc-tiem-chung-banner.css">
+    <link rel="stylesheet" href="../CSS/NhaThuoc-bac-si.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
     <div id="link-to-here"></div>
     <script src="../JS/NhaThuoc-header.js" id="headerscr"></script>
@@ -35,18 +37,18 @@
                       
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <a href="HTML-san-pham/sua-bot-nutren-junior.html">
+                            <a href="sua-bot-nutren-junior.html">
                                 <img src="../Images/1610x492_Banner_Destop_f34c01ae7f.webp" alt="Nutren Junior" class="d-block w-100">
                             </a>
                           </div>
                           <div class="carousel-item">
-                            <a href="HTML-san-pham/kem-tri-mun-effaclar.html">
+                            <a href="kem-tri-mun-effaclar.html">
                                 <img src="../Images/Banner_Web_PC_1610x492_11_8599674fc1.webp" alt="Kem duong da" class="d-block w-100">
                             </a>
                             
                           </div>
                           <div class="carousel-item">
-                            <a href="HTML-san-pham/hoat-huyet-truong-phuc.html">
+                            <a href="hoat-huyet-truong-phuc.html">
                                 <img src="../Images/Hoathuyettruongphuc_banner_homepage_PC_805x246_3f31b9c2ad.webp" alt="Hoat Huyet Truong Phuc" class="d-block w-100">
                             </a>
                           </div>
@@ -67,16 +69,86 @@
                 </div>
     
                 <div class="gt item-2 item">
-                    <a href="HTML-san-pham/xit-muoi-remos.html">
+                    <a href="xit-muoi-remos.html">
                         <img src="../Images/Kem_xua_muoi.webp" alt="Remos" class="d-block w-100">
                     </a>
                 </div>
                 <div class="gt item-3 item">
-                    <a href="HTML-san-pham/thuc-pham-bvsk-pregnacare.html">
+                    <a href="thuc-pham-bvsk-pregnacare.html">
                         <img src="../Images/thuoc_me_bau.webp" alt="thuc-pham-bve-skhoe-pregnacare" class="d-block w-100">
                     </a>
                 </div>
             </section>
+        </div>
+        
+        <div class="doctor bg-container">
+            <div class="container-doctor container">
+                <h1>Các bác sĩ làm việc và hợp tác</h1>
+                <p>Cố vấn bởi các bác sĩ có thông tin và kiến thức chuyên sâu về các lĩnh vực sức khỏe</p>
+            
+                <div id="doctorCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row row-cols-1 row-cols-md-3">
+                                <div class="col text-center bs-item">
+                                    <div class="doctor-card">
+                                        <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/BAC_SI_LC_682413889_3_cb1142c7f6.jpg" alt="Bác sĩ 1">
+                                        <h3>Bác sĩ Nguyễn Văn My</h3>
+                                        <p>Truyền nhiễm</p>
+                                    </div>
+                                </div>
+                                <div class="col text-center bs-item">
+                                    <div class="doctor-card">
+                                        <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/96x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/Bac_si_Nguyen_Anh_Tuan_bca1a1ec8d.png" alt="Bác sĩ 2">
+                                        <h3>Bác sĩ Nguyễn Anh Tuấn</h3>
+                                        <p>Chẩn đoán hình ảnh</p>
+                                    </div>
+                                </div>
+                                <div class="col text-center bs-item">
+                                    <div class="doctor-card">
+                                        <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/96x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/bs_giang_1_16c6bb2179.png" alt="Bác sĩ 3">
+                                        <h3>Bác sĩ Nguyễn Thị Khánh Vy</h3>
+                                        <p>Sản Phụ khoa</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row row-cols-1 row-cols-md-3">
+                                <div class="col text-center bs-item">
+                                    <div class="doctor-card">
+                                        <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/96x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/bs_linh_final_3367dffe82.png" alt="Bác sĩ 4">
+                                        <h3>Bác sĩ Trần Văn A</h3>
+                                        <p>Nội khoa</p>
+                                    </div>
+                                </div>
+                                <div class="col text-center bs-item">
+                                    <div class="doctor-card">
+                                        <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/96x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/nguyen_van_tuong_1_30e06a74d2.png" alt="Bác sĩ 5">
+                                        <h3>Bác sĩ Lê Thị B</h3>
+                                        <p>Đa khoa</p>
+                                    </div>
+                                </div>
+                                <div class="col text-center bs-item">
+                                    <div class="doctor-card">
+                                        <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/96x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/bs_linh_final_3367dffe82.png" alt="Bác sĩ 6">
+                                        <h3>Bác sĩ Phạm Văn C</h3>
+                                        <p>Tim mạch</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-controls">
+                        <i class="fas fa-chevron-left" onclick="$('#doctorCarousel').carousel('prev')">
+    
+                        </i>
+                        <i class="fas fa-chevron-right" onclick="$('#doctorCarousel').carousel('next')">
+                            
+                        </i>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="san-pham-ban-chay bg-container">
@@ -94,23 +166,248 @@
                     <div class="col">
                         <div class="sp card">
                             <div class="card-body p-0 d-flex flex-column sanpham">
-                                <a href="./HTML-san-pham/kem-tri-mun-effaclar.html"  id="link-sp">
-                                    <img src="../Images/drug-pic.png" alt="drug pic" class="w-100" id="img-sp">
-                                    <h6 class="card-title" id="ten-sp">Tên thuốc</h6>
+                                <a href="./bao-cao-su-sagami-classic.html"  class="link-sp">
+                                    <img src="../Images/drug-pic.png" alt="drug pic" class="w-100 img-sp" >
+                                    <h6 class="card-title ten-sp" id="">Tên thuốc</h6>
                                 </a>
-                                <h5 class="card-text text-primary" id="gia-tien-giam-gia-sp">
+                                <h5 class="card-text text-primary gia-tien-giam-gia-sp" id="">
                                     1.000.000đ
                                 </h5>
-                                <h6 class="card-text text-secondary" id="gia-tien-goc-sp">
+                                <h6 class="card-text text-secondary gia-tien-goc-sp" id="">
                                     1.250.000đ
                                 </h6>
                                 <div class="card-text so-luong">
-                                    <p class="text-muted" id="so-luong-sp">
+                                    <p class="text-muted so-luong-sp" id="">
                                         Hộp 1 tỉ viên
                                     </p>
                                 </div>
-                                <a type="button" href="./HTML-san-pham/kem-tri-mun-effaclar.html" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
-                                <span class="position-absolute top-0 start-0 badge bg-danger giam-gia" id="giam-gia-sp">
+                                <a type="button" onclick="addToGioHang(this)" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                <span class="position-absolute top-0 start-0 badge bg-danger giam-gia giam-gia-sp" id="">
+                                    -20%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sp card">
+                            <div class="card-body p-0 d-flex flex-column sanpham">
+                                <a href="./bom-tiem-dung-1-lan-vinahankook.html"  class="link-sp">
+                                    <img src="../Images/drug-pic.png" alt="drug pic" class="w-100 img-sp" >
+                                    <h6 class="card-title ten-sp" id="">Tên thuốc</h6>
+                                </a>
+                                <h5 class="card-text text-primary gia-tien-giam-gia-sp" id="">
+                                    1.000.000đ
+                                </h5>
+                                <h6 class="card-text text-secondary gia-tien-goc-sp" id="">
+                                    
+                                </h6>
+                                <div class="card-text so-luong">
+                                    <p class="text-muted so-luong-sp" id="">
+                                        Hộp 1 tỉ viên
+                                    </p>
+                                </div>
+                                <a type="button" onclick="addToGioHang(this)" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                <span class="position-absolute top-0 start-0 badge bg-danger giam-gia giam-gia-sp" id="">
+                                    -20%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sp card">
+                            <div class="card-body p-0 d-flex flex-column sanpham">
+                                <a href="./bot-hoa-tan-soki-tium.html"  class="link-sp">
+                                    <img src="../Images/drug-pic.png" alt="drug pic" class="w-100 img-sp" >
+                                    <h6 class="card-title ten-sp" id="">Tên thuốc</h6>
+                                </a>
+                                <h5 class="card-text text-primary gia-tien-giam-gia-sp" id="">
+                                    1.000.000đ
+                                </h5>
+                                <h6 class="card-text text-secondary gia-tien-goc-sp" id="">
+                                    
+                                </h6>
+                                <div class="card-text so-luong">
+                                    <p class="text-muted so-luong-sp" id="">
+                                        Hộp 1 tỉ viên
+                                    </p>
+                                </div>
+                                <a type="button" onclick="addToGioHang(this)" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                <span class="position-absolute top-0 start-0 badge bg-danger giam-gia giam-gia-sp" id="">
+                                    -20%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sp card">
+                            <div class="card-body p-0 d-flex flex-column sanpham">
+                                <a href="./dung-dich-vsinh-crevil.html"  class="link-sp">
+                                    <img src="../Images/drug-pic.png" alt="drug pic" class="w-100 img-sp" >
+                                    <h6 class="card-title ten-sp" id="">Tên thuốc</h6>
+                                </a>
+                                <h5 class="card-text text-primary gia-tien-giam-gia-sp" id="">
+                                    1.000.000đ
+                                </h5>
+                                <h6 class="card-text text-secondary gia-tien-goc-sp" id="">
+                                    
+                                </h6>
+                                <div class="card-text so-luong">
+                                    <p class="text-muted so-luong-sp" id="">
+                                        Hộp 1 tỉ viên
+                                    </p>
+                                </div>
+                                <a type="button" onclick="addToGioHang(this)" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                <span class="position-absolute top-0 start-0 badge bg-danger giam-gia giam-gia-sp" id="">
+                                    -20%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sp card">
+                            <div class="card-body p-0 d-flex flex-column sanpham">
+                                <a href="./hoat-huyet-truong-phuc.html"  class="link-sp">
+                                    <img src="../Images/drug-pic.png" alt="drug pic" class="w-100 img-sp" >
+                                    <h6 class="card-title ten-sp" id="">Tên thuốc</h6>
+                                </a>
+                                <h5 class="card-text text-primary gia-tien-giam-gia-sp" id="">
+                                    1.000.000đ
+                                </h5>
+                                <h6 class="card-text text-secondary gia-tien-goc-sp" id="">
+                                    
+                                </h6>
+                                <div class="card-text so-luong">
+                                    <p class="text-muted so-luong-sp" id="">
+                                        Hộp 1 tỉ viên
+                                    </p>
+                                </div>
+                                <a type="button" onclick="addToGioHang(this)" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                <span class="position-absolute top-0 start-0 badge bg-danger giam-gia giam-gia-sp" id="">
+                                    -20%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sp card">
+                            <div class="card-body p-0 d-flex flex-column sanpham">
+                                <a href="./kem-tri-mun-effaclar.html"  class="link-sp">
+                                    <img src="../Images/drug-pic.png" alt="drug pic" class="w-100 img-sp" >
+                                    <h6 class="card-title ten-sp" id="">Tên thuốc</h6>
+                                </a>
+                                <h5 class="card-text text-primary gia-tien-giam-gia-sp" id="">
+                                    1.000.000đ
+                                </h5>
+                                <h6 class="card-text text-secondary gia-tien-goc-sp" id="">
+                                    1.250.000đ
+                                </h6>
+                                <div class="card-text so-luong">
+                                    <p class="text-muted so-luong-sp" id="">
+                                        Hộp 1 tỉ viên
+                                    </p>
+                                </div>
+                                <a type="button" onclick="addToGioHang(this)" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                <span class="position-absolute top-0 start-0 badge bg-danger giam-gia giam-gia-sp" id="">
+                                    -20%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sp card">
+                            <div class="card-body p-0 d-flex flex-column sanpham">
+                                <a href="./sua-bot-nutren-junior.html"  class="link-sp">
+                                    <img src="../Images/drug-pic.png" alt="drug pic" class="w-100 img-sp" >
+                                    <h6 class="card-title ten-sp" id="">Tên thuốc</h6>
+                                </a>
+                                <h5 class="card-text text-primary gia-tien-giam-gia-sp" id="">
+                                    1.000.000đ
+                                </h5>
+                                <h6 class="card-text text-secondary gia-tien-goc-sp" id="">
+                                    1.250.000đ
+                                </h6>
+                                <div class="card-text so-luong">
+                                    <p class="text-muted so-luong-sp" id="">
+                                        Hộp 1 tỉ viên
+                                    </p>
+                                </div>
+                                <a type="button" onclick="addToGioHang(this)" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                <span class="position-absolute top-0 start-0 badge bg-danger giam-gia giam-gia-sp" id="">
+                                    -20%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sp card">
+                            <div class="card-body p-0 d-flex flex-column sanpham">
+                                <a href="./thuc-pham-bvsk-pregnacare.html"  class="link-sp">
+                                    <img src="../Images/drug-pic.png" alt="drug pic" class="w-100 img-sp" >
+                                    <h6 class="card-title ten-sp" id="">Tên thuốc</h6>
+                                </a>
+                                <h5 class="card-text text-primary gia-tien-giam-gia-sp" id="">
+                                    1.000.000đ
+                                </h5>
+                                <h6 class="card-text text-secondary gia-tien-goc-sp" id="">
+                                    1.250.000đ
+                                </h6>
+                                <div class="card-text so-luong">
+                                    <p class="text-muted so-luong-sp" id="">
+                                        Hộp 1 tỉ viên
+                                    </p>
+                                </div>
+                                <a type="button" onclick="addToGioHang(this)" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                <span class="position-absolute top-0 start-0 badge bg-danger giam-gia giam-gia-sp" id="">
+                                    -20%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sp card">
+                            <div class="card-body p-0 d-flex flex-column sanpham">
+                                <a href=".//vien-nang-cung-vuong-nu.html"  class="link-sp">
+                                    <img src="../Images/drug-pic.png" alt="drug pic" class="w-100 img-sp" >
+                                    <h6 class="card-title ten-sp" id="">Tên thuốc</h6>
+                                </a>
+                                <h5 class="card-text text-primary gia-tien-giam-gia-sp" id="">
+                                    1.000.000đ
+                                </h5>
+                                <h6 class="card-text text-secondary gia-tien-goc-sp" id="">
+                                    
+                                </h6>
+                                <div class="card-text so-luong">
+                                    <p class="text-muted so-luong-sp" id="">
+                                        Hộp 1 tỉ viên
+                                    </p>
+                                </div>
+                                <a type="button" onclick="addToGioHang(this)" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                <span class="position-absolute top-0 start-0 badge bg-danger giam-gia giam-gia-sp" id="">
+                                    -20%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sp card">
+                            <div class="card-body p-0 d-flex flex-column sanpham">
+                                <a href="./xit-muoi-remos.html"  class="link-sp">
+                                    <img src="../Images/drug-pic.png" alt="drug pic" class="w-100 img-sp" >
+                                    <h6 class="card-title ten-sp" id="">Tên thuốc</h6>
+                                </a>
+                                <h5 class="card-text text-primary gia-tien-giam-gia-sp" id="">
+                                    1.000.000đ
+                                </h5>
+                                <h6 class="card-text text-secondary gia-tien-goc-sp" id="">
+                                    1.250.000đ
+                                </h6>
+                                <div class="card-text so-luong">
+                                    <p class="text-muted so-luong-sp" id="">
+                                        Hộp 1 tỉ viên
+                                    </p>
+                                </div>
+                                <a type="button" onclick="addToGioHang(this)" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                <span class="position-absolute top-0 start-0 badge bg-danger giam-gia giam-gia-sp" id="">
                                     -20%
                                 </span>
                             </div>
@@ -119,7 +416,7 @@
                 </div>
             </section>
         </div>
-        
+
         <div class="tiem-chung-banner bg-container">
             <section class="tiem-chung-banner container">
                 <div class="tcb-header">
@@ -195,24 +492,24 @@
                             <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-6 gx-4 gy-4">
                                 <div class="col">
                                     <div class="sp card">
-                                        <div class="card-body p-0 d-flex flex-column">
-                                            <a href="" class=>
-                                                <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
-                                                <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín dung dịch vệ sinh dung dịch vệ sinh dung dịch vệ sinh</h6>
+                                        <div class="card-body p-0 d-flex flex-column sanpham">
+                                            <a href="./bot-hoa-tan-soki-tium.html"  class="link-sp">
+                                                <img src="../Images/drug-pic.png" alt="drug pic" class="w-100 img-sp" >
+                                                <h6 class="card-title ten-sp" id="">Tên thuốc</h6>
                                             </a>
-                                            <h5 class="card-text text-primary">
-                                                1.000.000đ <span>/ Hộp</span>
+                                            <h5 class="card-text text-primary gia-tien-giam-gia-sp" id="">
+                                                1.000.000đ
                                             </h5>
-                                            <h6 class="card-text text-secondary">
-                                                1.250.000đ
+                                            <h6 class="card-text text-secondary gia-tien-goc-sp" id="">
+                                                
                                             </h6>
                                             <div class="card-text so-luong">
-                                                <p class="text-muted">
+                                                <p class="text-muted so-luong-sp" id="">
                                                     Hộp 1 tỉ viên
                                                 </p>
                                             </div>
-                                            <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
-                                            <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
+                                            <a type="button" onclick="addToGioHang(this)" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                            <span class="position-absolute top-0 start-0 badge bg-danger giam-gia giam-gia-sp" id="">
                                                 -20%
                                             </span>
                                         </div>
@@ -220,124 +517,24 @@
                                 </div>
                                 <div class="col">
                                     <div class="sp card">
-                                        <div class="card-body p-0 d-flex flex-column">
-                                            <a href="" class=>
-                                                <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
-                                                <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín</h6>
+                                        <div class="card-body p-0 d-flex flex-column sanpham">
+                                            <a href="./sua-bot-nutren-junior.html"  class="link-sp">
+                                                <img src="../Images/drug-pic.png" alt="drug pic" class="w-100 img-sp" >
+                                                <h6 class="card-title ten-sp" id="">Tên thuốc</h6>
                                             </a>
-                                            <h5 class="card-text text-primary">
-                                                1.000.000đ <span>/ Hộp</span>
+                                            <h5 class="card-text text-primary gia-tien-giam-gia-sp" id="">
+                                                1.000.000đ
                                             </h5>
-                                            <h6 class="card-text text-secondary">
+                                            <h6 class="card-text text-secondary gia-tien-goc-sp" id="">
                                                 1.250.000đ
                                             </h6>
                                             <div class="card-text so-luong">
-                                                <p class="text-muted">
+                                                <p class="text-muted so-luong-sp" id="">
                                                     Hộp 1 tỉ viên
                                                 </p>
                                             </div>
-                                            <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
-                                            <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
-                                                -20%
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="sp card">
-                                        <div class="card-body p-0 d-flex flex-column">
-                                            <a href="" class=>
-                                                <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
-                                                <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín</h6>
-                                            </a>
-                                            <h5 class="card-text text-primary">
-                                                1.000.000đ <span>/ Hộp</span>
-                                            </h5>
-                                            <h6 class="card-text text-secondary">
-                                                1.250.000đ
-                                            </h6>
-                                            <div class="card-text so-luong">
-                                                <p class="text-muted">
-                                                    Hộp 1 tỉ viên
-                                                </p>
-                                            </div>
-                                            <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
-                                            <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
-                                                -20%
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="sp card">
-                                        <div class="card-body p-0 d-flex flex-column">
-                                            <a href="" class=>
-                                                <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
-                                                <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín</h6>
-                                            </a>
-                                            <h5 class="card-text text-primary">
-                                                1.000.000đ <span>/ Hộp</span>
-                                            </h5>
-                                            <h6 class="card-text text-secondary">
-                                                1.250.000đ
-                                            </h6>
-                                            <div class="card-text so-luong">
-                                                <p class="text-muted">
-                                                    Hộp 1 tỉ viên
-                                                </p>
-                                            </div>
-                                            <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
-                                            <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
-                                                -20%
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="sp card">
-                                        <div class="card-body p-0 d-flex flex-column">
-                                            <a href="" class=>
-                                                <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
-                                                <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín</h6>
-                                            </a>
-                                            <h5 class="card-text text-primary">
-                                                1.000.000đ <span>/ Hộp</span>
-                                            </h5>
-                                            <h6 class="card-text text-secondary">
-                                                1.250.000đ
-                                            </h6>
-                                            <div class="card-text so-luong">
-                                                <p class="text-muted">
-                                                    Hộp 1 tỉ viên
-                                                </p>
-                                            </div>
-                                            <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
-                                            <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
-                                                -20%
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="sp card">
-                                        <div class="card-body p-0 d-flex flex-column">
-                                            <a href="" class=>
-                                                <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
-                                                <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín</h6>
-                                            </a>
-                                            <h5 class="card-text text-primary">
-                                                1.000.000đ <span>/ Hộp</span>
-                                            </h5>
-                                            <h6 class="card-text text-secondary">
-                                                1.250.000đ
-                                            </h6>
-                                            <div class="card-text so-luong">
-                                                <p class="text-muted">
-                                                    Hộp 1 tỉ viên
-                                                </p>
-                                            </div>
-                                            <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
-                                            <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
+                                            <a type="button" onclick="addToGioHang(this)" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                            <span class="position-absolute top-0 start-0 badge bg-danger giam-gia giam-gia-sp" id="">
                                                 -20%
                                             </span>
                                         </div>
@@ -349,49 +546,24 @@
                             <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-6 gx-4 gy-4">
                                 <div class="col">
                                     <div class="sp card">
-                                        <div class="card-body p-0 d-flex flex-column">
-                                            <a href="" class=>
-                                                <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
-                                                <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín dung dịch vệ sinh dung dịch vệ sinh dung dịch vệ sinh</h6>
+                                        <div class="card-body p-0 d-flex flex-column sanpham">
+                                            <a href="./thuc-pham-bvsk-pregnacare.html"  class="link-sp">
+                                                <img src="../Images/drug-pic.png" alt="drug pic" class="w-100 img-sp" >
+                                                <h6 class="card-title ten-sp" id="">Tên thuốc</h6>
                                             </a>
-                                            <h5 class="card-text text-primary">
-                                                1.000.000đ <span>/ Hộp</span>
+                                            <h5 class="card-text text-primary gia-tien-giam-gia-sp" id="">
+                                                1.000.000đ
                                             </h5>
-                                            <h6 class="card-text text-secondary">
+                                            <h6 class="card-text text-secondary gia-tien-goc-sp" id="">
                                                 1.250.000đ
                                             </h6>
                                             <div class="card-text so-luong">
-                                                <p class="text-muted">
+                                                <p class="text-muted so-luong-sp" id="">
                                                     Hộp 1 tỉ viên
                                                 </p>
                                             </div>
-                                            <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
-                                            <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
-                                                -20%
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="sp card">
-                                        <div class="card-body p-0 d-flex flex-column">
-                                            <a href="" class=>
-                                                <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
-                                                <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín</h6>
-                                            </a>
-                                            <h5 class="card-text text-primary">
-                                                1.000.000đ <span>/ Hộp</span>
-                                            </h5>
-                                            <h6 class="card-text text-secondary">
-                                                1.250.000đ
-                                            </h6>
-                                            <div class="card-text so-luong">
-                                                <p class="text-muted">
-                                                    Hộp 1 tỉ viên
-                                                </p>
-                                            </div>
-                                            <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
-                                            <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
+                                            <a type="button" onclick="addToGioHang(this)" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                            <span class="position-absolute top-0 start-0 badge bg-danger giam-gia giam-gia-sp" id="">
                                                 -20%
                                             </span>
                                         </div>
@@ -403,24 +575,24 @@
                             <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-6 gx-4 gy-4">
                                 <div class="col">
                                     <div class="sp card">
-                                        <div class="card-body p-0 d-flex flex-column">
-                                            <a href="" class=>
-                                                <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
-                                                <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín dung dịch vệ sinh dung dịch vệ sinh dung dịch vệ sinh</h6>
+                                        <div class="card-body p-0 d-flex flex-column sanpham">
+                                            <a href="./dung-dich-vsinh-crevil.html"  class="link-sp">
+                                                <img src="../Images/drug-pic.png" alt="drug pic" class="w-100 img-sp" >
+                                                <h6 class="card-title ten-sp" id="">Tên thuốc</h6>
                                             </a>
-                                            <h5 class="card-text text-primary">
-                                                1.000.000đ <span>/ Hộp</span>
+                                            <h5 class="card-text text-primary gia-tien-giam-gia-sp" id="">
+                                                1.000.000đ
                                             </h5>
-                                            <h6 class="card-text text-secondary">
-                                                1.250.000đ
+                                            <h6 class="card-text text-secondary gia-tien-goc-sp" id="">
+                                                
                                             </h6>
                                             <div class="card-text so-luong">
-                                                <p class="text-muted">
+                                                <p class="text-muted so-luong-sp" id="">
                                                     Hộp 1 tỉ viên
                                                 </p>
                                             </div>
-                                            <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
-                                            <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
+                                            <a type="button" onclick="addToGioHang(this)" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                            <span class="position-absolute top-0 start-0 badge bg-danger giam-gia giam-gia-sp" id="">
                                                 -20%
                                             </span>
                                         </div>
@@ -428,24 +600,74 @@
                                 </div>
                                 <div class="col">
                                     <div class="sp card">
-                                        <div class="card-body p-0 d-flex flex-column">
-                                            <a href="" class=>
-                                                <img src="../Images/drug-pic.png" alt="drug pic" class="w-100">
-                                                <h6 class="card-title">Tên thuốc ouehjb; sỉubs rinbs lkrnbln ín</h6>
+                                        <div class="card-body p-0 d-flex flex-column sanpham">
+                                            <a href="./kem-tri-mun-effaclar.html"  class="link-sp">
+                                                <img src="../Images/drug-pic.png" alt="drug pic" class="w-100 img-sp" >
+                                                <h6 class="card-title ten-sp" id="">Tên thuốc</h6>
                                             </a>
-                                            <h5 class="card-text text-primary">
-                                                1.000.000đ <span>/ Hộp</span>
+                                            <h5 class="card-text text-primary gia-tien-giam-gia-sp" id="">
+                                                1.000.000đ
                                             </h5>
-                                            <h6 class="card-text text-secondary">
+                                            <h6 class="card-text text-secondary gia-tien-goc-sp" id="">
                                                 1.250.000đ
                                             </h6>
                                             <div class="card-text so-luong">
-                                                <p class="text-muted">
+                                                <p class="text-muted so-luong-sp" id="">
                                                     Hộp 1 tỉ viên
                                                 </p>
                                             </div>
-                                            <a type="button" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
-                                            <span class="position-absolute top-0 start-0 badge bg-danger giam-gia">
+                                            <a type="button" onclick="addToGioHang(this)" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                            <span class="position-absolute top-0 start-0 badge bg-danger giam-gia giam-gia-sp" id="">
+                                                -20%
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="sp card">
+                                        <div class="card-body p-0 d-flex flex-column sanpham">
+                                            <a href=".//vien-nang-cung-vuong-nu.html"  class="link-sp">
+                                                <img src="../Images/drug-pic.png" alt="drug pic" class="w-100 img-sp" >
+                                                <h6 class="card-title ten-sp" id="">Tên thuốc</h6>
+                                            </a>
+                                            <h5 class="card-text text-primary gia-tien-giam-gia-sp" id="">
+                                                1.000.000đ
+                                            </h5>
+                                            <h6 class="card-text text-secondary gia-tien-goc-sp" id="">
+                                                
+                                            </h6>
+                                            <div class="card-text so-luong">
+                                                <p class="text-muted so-luong-sp" id="">
+                                                    Hộp 1 tỉ viên
+                                                </p>
+                                            </div>
+                                            <a type="button" onclick="addToGioHang(this)" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                            <span class="position-absolute top-0 start-0 badge bg-danger giam-gia giam-gia-sp" id="">
+                                                -20%
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="sp card">
+                                        <div class="card-body p-0 d-flex flex-column sanpham">
+                                            <a href="./xit-muoi-remos.html"  class="link-sp">
+                                                <img src="../Images/drug-pic.png" alt="drug pic" class="w-100 img-sp" >
+                                                <h6 class="card-title ten-sp" id="">Tên thuốc</h6>
+                                            </a>
+                                            <h5 class="card-text text-primary gia-tien-giam-gia-sp" id="">
+                                                1.000.000đ
+                                            </h5>
+                                            <h6 class="card-text text-secondary gia-tien-goc-sp" id="">
+                                                1.250.000đ
+                                            </h6>
+                                            <div class="card-text so-luong">
+                                                <p class="text-muted so-luong-sp" id="">
+                                                    Hộp 1 tỉ viên
+                                                </p>
+                                            </div>
+                                            <a type="button" onclick="addToGioHang(this)" class="btn btn-primary rounded-pill btn-chon-mua mt-auto">Chọn mua</a>
+                                            <span class="position-absolute top-0 start-0 badge bg-danger giam-gia giam-gia-sp" id="">
                                                 -20%
                                             </span>
                                         </div>

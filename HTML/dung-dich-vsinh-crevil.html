@@ -9,9 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="../CSS/san-pham.css">
 </head>
 
 <body>
+    <!-- Header to load--> <header id="header-to-here"></header>
     <main>
 
         <!--//////////////////////////////////////////////////////////////////////////////////////////-->
@@ -27,7 +29,7 @@
                                 <div class="carousel-item active">
                                     <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
                                         style="border: none;"> <img src="img/crevil/1.webp" alt="chưa tải được ảnh"
-                                            class="d-block" style="width:100%;"></button>
+                                            class="d-block" style="width:100%;"id="img-sp"></button>
                                 </div>
                                 <div class="carousel-item">
                                     <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
@@ -185,16 +187,16 @@
                 </div>
                 <div class="col-sm-8">
                     <p>Thương hiệu: <a href="#link">Crevil</a></p>
-                    <h5>Dung dịch vệ sinh phụ nữ Crevil Intim Waschlotion diệt khuẩn, kháng viêm (100ml)</h5>
+                    <h5 id="ten-sp">Dung dịch vệ sinh phụ nữ Crevil Intim Waschlotion diệt khuẩn, kháng viêm (100ml)</h5>
                     <p>00345425 - 5 <span style="color: gold;">★</span> - <a href="#link">đánh giá </a> - <a
                             href="#link">bình
                             luận</a></p>
-                    <h2 style="color: rgb(9, 33, 170);">125.000đ
+                    <h2 style="color: rgb(9, 33, 170);" id="gia-tien-giam-gia-sp">125.000đ
                         / Chai</h2>
                     <table class="a">
                         <tr>
                             <td class="col1">Chọn đơn vị tính</td>
-                            <td>Chai
+                            <td id="don-vi-sp">Chai
                             </td>
                         </tr>
                         <tr>
@@ -204,7 +206,7 @@
 
                         <tr>
                             <td class="col1">Quy cách</td>
-                            <td>Chai x 100ml</td>
+                            <td id="so-luong-sp">Chai x 100ml</td>
                         </tr>
                         <tr>
                             <td class="col1">Xuất xứ thương hiệu</td>
@@ -238,7 +240,7 @@
                                     <button class="btn btn-outline-secondary vien" type="button"
                                         id="btn-minus">-</button>
                                     <input type="number" class="form-control text-center" id="quantity" value="1"
-                                        min="1" max="10">
+                                        min="1" max="10" id="don-vi-sp">
                                     <button class="btn btn-outline-secondary vien" type="button"
                                         id="btn-plus">+</button>
                                 </div>
@@ -563,6 +565,11 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="search.js"></script>
     </main>
+    <!-- Footer to load --> <footer id="footer-to-here"></footer>
+    <script src="../JS/san-pham.js"></script>
+    <script src="../JS/NhaThuoc-load-content.js"></script>
+    <script src="../JS/NhaThuoc-header.js" id="headerscr"></script>
+    <script src="../JS/NhaThuoc-footer.js" id="footerscr"></script>
 </body>
 
 </html>
