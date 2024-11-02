@@ -1,3 +1,8 @@
+.spbc-sp .col {
+    box-sizing: border-box;
+    padding: 5px !important;
+}
+
 .sp.card {
     padding: 10px;
     border-radius: 15px;
