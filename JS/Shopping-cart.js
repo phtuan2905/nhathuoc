@@ -26,8 +26,7 @@ function changeQuantity(button, amount) {
   
     // Update the total price and final amount in the summary
     document.getElementById('total-price').textContent = `${totalPrice.toLocaleString()}₫`;
-    document.getElementById('final-price').textContent = `${(totalPrice - discount).toLocaleString()}₫`;
-    document.getElementById('saved-amount').textContent = `${savedAmount.toLocaleString()}₫`;
+    document.getElementById('final-price').textContent = `${(totalPrice).toLocaleString()}₫`;
   
     // If the total price is 0 or below, show a message and disable the "Mua hàng" button
     if (totalPrice <= 0) {
@@ -71,5 +70,16 @@ function changeQuantity(button, amount) {
     checkbox.addEventListener('change', updateCart);
   });
   
+window.addEventListener("beforeunload", function (event) {
+  localStorage.clear();
+  var itemslink = document.getElementsByClassName("link-sp");
+  var itemsdv = document.getElementsByClassName("don-vi-sp");
+  for (let i = 0; i < itemslink.length; i++) {
+    var keyname = "@@@@@" + itemslink[i].href;
+    var keyvalue = itemsdv[i].value;
+    localStorage.setItem(keyname, keyvalue);
+  }
+});
+
   // Initial cart update
   updateCart();

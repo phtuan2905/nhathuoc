@@ -24,9 +24,3 @@ function checkInputBox(boxid) {
         dangnhapmodal.style.display = "block";
     }
 }
-
-const giohangbtn = document.getElementById("gio-hang-btn");
-
-giohangbtn.addEventListener("mouseover", function() {
-    yourFunction();
-});

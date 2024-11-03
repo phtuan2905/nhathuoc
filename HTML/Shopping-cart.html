@@ -6,9 +6,6 @@
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="../CSS/Shopping-cart.css">
     <link rel="stylesheet" href="../../CSS/san-pham.css">
-    <script src="../JS/NhaThuoc-header.js" id="headerscr"></script>
-    <script src="../JS/NhaThuoc-footer.js" id="footerscr"></script>
-    <script src="../JS/NhaThuoc-load-content.js"></script>
 </head>
 <body>
   <!-- Header to load--> <header id="header-to-here"></header>
@@ -18,72 +15,53 @@
       <div class="cart-table">
         <div class="select-all">
           <input type="checkbox" id="select-all">
-          <label for="select-all">Chọn tất cả (2)</label>
+          <label for="select-all">Chọn tất cả</label>
         </div>
   
-        <!-- Cart Item 1 -->
-        <div class="cart-item" data-price="870000">
-          <input type="checkbox" class="item-checkbox" checked>
-          <img src="https://via.placeholder.com/60" alt="Collagen">
+        <!-- Cart Item Origin -->
+        <div class="cart-item sanpham" data-price="0">
+          <input type="checkbox" class="item-checkbox">
+          <img src="../Images/drug-pic.png" alt="Collagen" class="img-sp">
           <div class="cart-item-description">
-            <p>Thực phẩm bổ sung Collagen Condition Beyou Ampoule 10,000mg hỗ trợ làm trắng da, chống lão hóa (1 lọ)</p>
+            <a href="" class="ten-sp link-sp" style="text-decoration: none;">Drug name</a>
           </div>
-          <div class="cart-item-price">
-            870.000₫
+          <div class="cart-item-price gia-tien-giam-gia-sp">
+            100.100
           </div>
           <div class="quantity-control">
             <button onclick="changeQuantity(this, -1)">-</button>
-            <input type="text" value="1" readonly>
+            <input type="text" class="don-vi-sp" value="1" readonly>
             <button onclick="changeQuantity(this, 1)">+</button>
           </div>
-          <div>Hộp</div>
+          <div class="so-luong-sp">Hộp</div>
           <span class="delete-button" onclick="deleteItem(this)">🗑️</span>
         </div>
-  
-        <!-- Cart Item 2 -->
-        <div class="cart-item" data-price="96000">
-          <input type="checkbox" class="item-checkbox" checked>
-          <img src="https://via.placeholder.com/60" alt="Naturez Gold">
-          <div class="cart-item-description">
-            <p>Viên nang cứng Naturez Gold DHG Pharma hỗ trợ giảm các triệu chứng của viêm gan (3 vỉ x 10 viên)</p>
-            <div class="discount-banner">Giảm ngay 20% áp dụng đến 30/11</div>
-          </div>
-          <div class="cart-item-price">
-            96.000₫ <span class="old-price">120.000₫</span>
-          </div>
-          <div class="quantity-control">
-            <button onclick="changeQuantity(this, -1)">-</button>
-            <input type="text" value="1" readonly>
-            <button onclick="changeQuantity(this, 1)">+</button>
-          </div>
-          <div>Hộp</div>
-          <span class="delete-button" onclick="deleteItem(this)">🗑️</span>
-        </div>
+
         <p id="empty-cart-message" class="no-item">Hãy chọn mặt hàng</p>
       </div>
     </div>
       <!-- Summary Section -->
       <div class="summary">
-        <h3>Áp dụng ưu đãi để được giảm giá</h3>
+        <h3>Tổng số tiền đơn hàng</h3>
         <div class="price-section">
           <span>Tổng tiền</span>
-          <span id="total-price">966.000₫</span>
+          <span id="total-price">0</span>
         </div>
         <div class="price-section">
           <span>Giảm giá trực tiếp</span>
-          <span id="discount">-24.000₫</span>
+          <span id="discount">0</span>
         </div>
         <div class="price-section">
           <span>Giảm giá voucher</span>
-          <span>0₫</span>
+          <span>0</span>
         </div>
         <div class="price-section">
           <span>Tiết kiệm được</span>
-          <span id="saved-amount">24.000₫</span>
+          <span id="saved-amount">0</span>
         </div>
         <div class="price-section total-price">
           <span>Thành tiền</span>
-          <span id="final-price">966.000₫</span>
+          <span id="final-price">0</span>
         </div>
         <button onclick="confirmOrder(checkForm('giao-hang-form', 'giao-hang-infor', ''))">Mua hàng</button>
       </div>
@@ -180,6 +158,9 @@
   
     <!-- Footer to load --> <footer id="footer-to-here"></footer>
      <script src="../JS/NhaThuoc-tiem-chung.js"></script>
+     <script src="../JS/NhaThuoc-header.js" id="headerscr"></script>
+     <script src="../JS/NhaThuoc-footer.js" id="footerscr"></script>
+     <script src="../JS/NhaThuoc-load-content.js"></script>
     <script src="../JS/Shopping-cart.js"></script>
 </body>
 </html>
