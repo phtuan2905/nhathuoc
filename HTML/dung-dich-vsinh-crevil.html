@@ -232,61 +232,63 @@
                             <td class="col1">Số đăng ký</td>
                             <td>12/2019/ĐKSP</td>
                         </tr>
-                        <div class="container mt-5 none">
-                            <div class="d-flex">
-                                <p>chọn số lượng</p>
-                                <div class="input-group" style="width: 115px;margin-left: 10px; height: 10px;">
+                        
+                    </table>    
 
-                                    <button class="btn btn-outline-secondary vien" type="button"
-                                        id="btn-minus">-</button>
-                                    <input type="number" class="form-control text-center" id="quantity" value="1"
-                                        min="1" max="10" id="don-vi-sp">
-                                    <button class="btn btn-outline-secondary vien" type="button"
-                                        id="btn-plus">+</button>
-                                </div>
+                    <div class="container mt-5 none">
+                        <div class="d-flex">
+                            <p>chọn số lượng</p>
+                            <div class="input-group" style="width: 115px;margin-left: 10px; height: fit-content;">
+
+                                <button class="btn btn-outline-secondary vien" type="button"
+                                    id="btn-minus">-</button>
+                                <input type="number" class="form-control text-center" id="quantity" value="1"
+                                    min="1" max="10" id="don-vi-sp">
+                                <button class="btn btn-outline-secondary vien" type="button"
+                                    id="btn-plus">+</button>
                             </div>
                         </div>
+                    </div>
+                    <script>
+                        document.getElementById('btn-plus').addEventListener('click', function () {
+                            var quantity = document.getElementById('quantity');
+                            if (quantity.value < 10) {
+                                quantity.value = parseInt(quantity.value) + 1;
+                            }
+                        });
 
-                        <script>
-                            document.getElementById('btn-plus').addEventListener('click', function () {
-                                var quantity = document.getElementById('quantity');
-                                if (quantity.value < 10) {
-                                    quantity.value = parseInt(quantity.value) + 1;
-                                }
-                            });
-
-                            document.getElementById('btn-minus').addEventListener('click', function () {
-                                var quantity = document.getElementById('quantity');
-                                if (quantity.value > 1) {
-                                    quantity.value = parseInt(quantity.value) - 1;
-                                }
-                            });
-                        </script>
-                        <form action="#chuabiet">
-                            <button type="submit" class="btn btn-primary vien" style="width: 150px;">chọn mua</button>
-                        </form>
-                        <table style="width: 100%;">
-                            <tr class="inl">
-                                <td class="col30" style=" display:flex ;"><img src="imgs/3.png" alt="" class="icon"
-                                        style="height: 3em;">
-                                    <p><b>Đổi trả trong 30 ngày</b>
-                                        <br> kể từ ngày mua hàng
-                                    </p>
-                                </td>
-                                <td class="col30" style=" display:flex ;"><img src="imgs/2.png" alt="" class="icon"
-                                        style="height: 3em;">
-                                    <p><b>Miễn phí 100%</b>
-                                        <br> đổi thuốc
-                                    </p>
-                                </td>
-                                <td class="col30" style=" display:flex ;"><img src="imgs/1.png" alt="" class="icon"
-                                        style="height: 3em;">
-                                    <p><b>Miễn phí vận chuyển</b>
-                                        <br> theo chính sách giao hàng
-                                    </p>
-                                </td>
-                            </tr>
-                        </table>
+                        document.getElementById('btn-minus').addEventListener('click', function () {
+                            var quantity = document.getElementById('quantity');
+                            if (quantity.value > 1) {
+                                quantity.value = parseInt(quantity.value) - 1;
+                            }
+                        });
+                    </script>
+                    <form action="#chuabiet">
+                        <button type="submit" class="btn btn-primary vien" style="width: 150px;">chọn mua</button>
+                    </form>
+                    <table style="width: 100%;">
+                        <tr class="inl">
+                            <td class="col30" style=" display:flex ;"><img src="imgs/3.png" alt="" class="icon"
+                                    style="height: 3em;">
+                                <p><b>Đổi trả trong 30 ngày</b>
+                                    <br> kể từ ngày mua hàng
+                                </p>
+                            </td>
+                            <td class="col30" style=" display:flex ;"><img src="imgs/2.png" alt="" class="icon"
+                                    style="height: 3em;">
+                                <p><b>Miễn phí 100%</b>
+                                    <br> đổi thuốc
+                                </p>
+                            </td>
+                            <td class="col30" style=" display:flex ;"><img src="imgs/1.png" alt="" class="icon"
+                                    style="height: 3em;">
+                                <p><b>Miễn phí vận chuyển</b>
+                                    <br> theo chính sách giao hàng
+                                </p>
+                            </td>
+                        </tr>
+                    </table>    
 
 
                 </div>
