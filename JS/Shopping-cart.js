@@ -44,6 +44,7 @@ function changeQuantity(button, amount) {
     const finalPrice = document.getElementById('final-price').textContent;
     document.getElementById('modal-final-price').textContent = finalPrice;
     document.getElementById('order-modal').style.display = 'flex';
+    
   }
   
   // Function to close the modal

@@ -14,7 +14,7 @@
 
 <body>
     <!-- Header to load--> <header id="header-to-here"></header>
-    <main>
+    <main id="page-sp">
 
 
     <!--//////////////////////////////////////////////////////////////////////////////////////////-->
@@ -217,7 +217,7 @@
               <td>Gợi ý nhà thuốc gần bạn</td>
             </tr>
             <tr>
-              <td style="height: 300px;">chưa có</td>
+              
             </tr>
           </table>
 
@@ -227,7 +227,7 @@
               <div class="input-group" style="width: 115px;margin-left: 10px; height: fit-content;">
 
                 <button class="btn btn-outline-secondary vien" type="button" id="btn-minus">-</button>
-                <input type="number" class="form-control text-center" id="quantity" value="1" min="1" max="10" id="don-vi-sp">
+                <input type="number" class="form-control text-center" id="quantity" value="1" min="1" max="10">
                 <button class="btn btn-outline-secondary vien" type="button" id="btn-plus">+</button>
               </div>
             </div>
@@ -248,8 +248,8 @@
               }
             });
           </script>
-          <form action="#chuabiet">
-            <button type="submit" class="btn btn-primary vien" style="width: 200px;">chọn mua</button>
+          <form>
+            <button class="btn btn-primary vien btn-chon-mua"  onclick="addToGioHang(this)" style="width: 150px;" data-link="">chọn mua</button>
           </form>
           <table style="width: 100%;">
             <tr class="inl">

@@ -35,6 +35,12 @@ function loadContent() {
 }
 
 async function loadItems(itemclass) {
+    if (document.getElementById("page-sp")) {
+        if (document.getElementsByClassName("btn-chon-mua").length > 0) {
+            document.getElementsByClassName("btn-chon-mua")[0].setAttribute("data-link", window.location.href);
+        }
+        return;
+    }
     var items = document.getElementsByClassName(itemclass);
     var itemslink = document.getElementsByClassName("link-sp");
     var itemspic = document.getElementsByClassName("img-sp");
@@ -116,8 +122,8 @@ function loadImgFromOuterDoc(outerdoc, selectorid, targetElement) {
 function addToGioHang(item) {
     var keyname = "@@@@@".concat(item.getAttribute("data-link"));
     var keyvalue = "1";
-    if (document.getElementById("don-vi-sp")) {
-        keyvalue = document.getElementById("don-vi-sp").textContent;
+    if (document.getElementById("quantity")) {
+        keyvalue = document.getElementById("quantity").value;
     }
     if (localStorage.getItem(keyname) !== null) {
         var newvalue = Number(keyvalue) + Number(localStorage.getItem(keyname));
