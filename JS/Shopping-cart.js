@@ -44,7 +44,14 @@ function changeQuantity(button, amount) {
     const finalPrice = document.getElementById('final-price').textContent;
     document.getElementById('modal-final-price').textContent = finalPrice;
     document.getElementById('order-modal').style.display = 'flex';
-    
+    var checkboxes = document.getElementsByClassName("item-checkbox");
+    for (let i = checkboxes.length - 1; i >= 0; i--) {
+      if (checkboxes[i].checked) {
+        checkboxes[i].parentNode.remove();
+      }
+    }
+    updateCart();
+    document.getElementById("select-all").checked = false;
   }
   
   // Function to close the modal
