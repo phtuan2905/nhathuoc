@@ -2,7 +2,7 @@
 //     window.location.assign(_contentfile);
 // }
 
-function loadContent() {
+async function loadContent() {
     fetch('NhaThuoc-layout.html')
             .then(response => response.text())
             .then(data => {
@@ -119,7 +119,16 @@ function loadImgFromOuterDoc(outerdoc, selectorid, targetElement) {
     }
 }
 
-function addToGioHang(item) {
+function loadScriptFromOuterDoc(outerdoc, selectorid, targetElement) {
+    const script = outerdoc.getElementById("auto-remove-alert");
+        
+    const newscript = document.createElement('script');
+    newscript.textContent = script.textContent;
+    targetElement.insertAdjacentElement("afterend", newscript);
+    targetElement.remove();
+}
+
+async function addToGioHang(item) {
     var keyname = "@@@@@".concat(item.getAttribute("data-link"));
     var keyvalue = "1";
     if (document.getElementById("quantity")) {
@@ -130,6 +139,23 @@ function addToGioHang(item) {
         keyvalue = newvalue.toString();
     }
     localStorage.setItem(keyname, keyvalue);
+
+    var itemalert = document.getElementById("sanpham-alert");
+    var newalert = itemalert.cloneNode(true);
+    newalert.id = "";
+    var file = await fetchFile(item.getAttribute("data-link"));
+    var newitemimg = null;
+    for (var i = 0; i < newalert.childNodes.length; i++) {
+        if (newalert.childNodes[i].className == "alert-pic") {
+            loadImgFromOuterDoc(file, "#img-sp", newalert.childNodes[i]);
+          break;
+        }        
+    }
+    newalert.style.display = "block";
+    itemalert.insertAdjacentElement("afterend", newalert);
+    setTimeout(() => {
+        newalert.remove();
+    }, 3000);
 }
 
 function loadShoppingCart() {
@@ -185,3 +211,11 @@ loadContent();
 loadShoppingCart();
 loadItems("sanpham");
 // setGiaTien();
+
+function removeAlert(button) {
+    button.parentNode.parentNode.remove();
+}
+
+function autoRemoveAlert() {
+    console.log("it work111111111");
+}
